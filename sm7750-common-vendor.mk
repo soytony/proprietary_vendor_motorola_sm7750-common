@@ -1803,12 +1803,10 @@ PRODUCT_PACKAGES += \
     libDcfHalLogger \
     libDxHdcp \
     libDxHdcp_ext \
-    libEGL_adreno \
     libEvrcSwCodec \
     libFaceUnlock \
     libFileMux_proprietary \
     libFlacSwDec \
-    libGLESv2_adreno \
     libGPMTEEC_vendor \
     libGPQeSE \
     libGPTEE_vendor \
@@ -1822,7 +1820,6 @@ PRODUCT_PACKAGES += \
     libQcelp13SwCodec \
     libQnnHtp \
     libQnnHtpV73Stub \
-    libQnnSystem \
     libQtiRilLoadable \
     libQtiSocket \
     libRSCpuRef \
@@ -2251,7 +2248,6 @@ PRODUCT_PACKAGES += \
     libpsmoptfeature \
     libpuresoftkeymasterdevice \
     libq-perflog \
-    libq3dtools_adreno \
     libqape_oem_ext \
     libqapesdk \
     libqasr \
@@ -2887,14 +2883,6 @@ PRODUCT_PACKAGES += \
     android.hidl.base@1.0 \
     com.qualcomm.qti.ant@1.0 \
     com.qualcomm.qti.bluetooth_audio@1.0 \
-    com.qualcomm.qti.dpm.api@1.0 \
-    com.qualcomm.qti.imscmservice@2.0 \
-    com.qualcomm.qti.imscmservice@2.1 \
-    com.qualcomm.qti.imscmservice@2.2 \
-    com.qualcomm.qti.uceservice@2.0 \
-    com.qualcomm.qti.uceservice@2.1 \
-    com.qualcomm.qti.uceservice@2.2 \
-    com.qualcomm.qti.uceservice@2.3 \
     com.quicinc.cne.api@1.0 \
     com.quicinc.cne.api@1.1 \
     com.quicinc.cne.constants@1.0 \
@@ -2998,7 +2986,6 @@ PRODUCT_PACKAGES += \
     libqti-iopd-client_system \
     libqti-perfd-client_system \
     libqti_performance \
-    libqti_vndfwk_detect \
     libqti_vndfwk_detect_system \
     libqti_workloadclassifiermodel \
     libqxrsplitauxservice.qti \
@@ -3011,7 +2998,6 @@ PRODUCT_PACKAGES += \
     libthermalclient.qti \
     libtrigger-handler \
     libupdateprof.qti \
-    libvndfwk_detect_jni.qti \
     libvndfwk_detect_jni.qti_system \
     libvr_amb_engine \
     libvr_object_engine \
@@ -3032,20 +3018,6 @@ PRODUCT_PACKAGES += \
     libwfduibcsinkinterface \
     libwfduibcsrc \
     libwfduibcsrcinterface \
-    qti-audio-types-aidl-V1-ndk \
-    vendor.display.color@1.0 \
-    vendor.display.color@1.1 \
-    vendor.display.color@1.2 \
-    vendor.display.color@1.3 \
-    vendor.display.config@1.0 \
-    vendor.display.config@1.1 \
-    vendor.display.config@1.2 \
-    vendor.display.config@1.3 \
-    vendor.display.config@1.4 \
-    vendor.display.config@1.5 \
-    vendor.display.config@2.0 \
-    vendor.display.postproc@1.0 \
-    vendor.qti.ImsRtpService-V1-ndk \
     vendor.qti.ImsRtpService-V2-ndk \
     vendor.qti.data.dmapconsent-V1-ndk \
     vendor.qti.data.dmapconsent-V2-ndk \
@@ -3059,15 +3031,9 @@ PRODUCT_PACKAGES += \
     vendor.qti.data.factory@2.6 \
     vendor.qti.data.factory@2.7 \
     vendor.qti.data.factory@2.8 \
-    vendor.qti.data.factoryservice-V1-ndk \
     vendor.qti.data.factoryservice-V2-ndk \
-    vendor.qti.data.mwqem@1.0 \
-    vendor.qti.data.mwqemaidlservice-V1-ndk \
-    vendor.qti.data.slm@1.0 \
-    vendor.qti.diaghal@1.0 \
     vendor.qti.hardware.ListenSoundModel@1.0 \
     vendor.qti.hardware.alarm@1.0 \
-    vendor.qti.hardware.cacertaidlservice-V1-ndk \
     vendor.qti.hardware.capabilityconfigstore@1.0 \
     vendor.qti.hardware.cvp@1.0 \
     vendor.qti.hardware.data.cne.internal.api@1.0 \
@@ -3076,119 +3042,41 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.data.cne.internal.server@1.1 \
     vendor.qti.hardware.data.cne.internal.server@1.2 \
     vendor.qti.hardware.data.cne.internal.server@1.3 \
-    vendor.qti.hardware.data.cneaidlservice.internal.api-V1-ndk \
-    vendor.qti.hardware.data.cneaidlservice.internal.constants-V1-ndk \
-    vendor.qti.hardware.data.cneaidlservice.internal.server-V1-ndk \
     vendor.qti.hardware.data.cneaidlservice.internal.server-V2-ndk \
-    vendor.qti.hardware.data.connection@1.0 \
-    vendor.qti.hardware.data.connection@1.1 \
-    vendor.qti.hardware.data.connectionfactory-V1-ndk \
-    vendor.qti.hardware.data.dataactivity-V1-ndk \
-    vendor.qti.hardware.data.dynamicdds@1.0 \
-    vendor.qti.hardware.data.dynamicdds@1.1 \
-    vendor.qti.hardware.data.dynamicddsaidlservice-V1-ndk \
-    vendor.qti.hardware.data.flow@1.0 \
-    vendor.qti.hardware.data.flow@1.1 \
-    vendor.qti.hardware.data.flowaidlservice-V1-ndk \
     vendor.qti.hardware.data.iwlan@1.0 \
     vendor.qti.hardware.data.iwlan@1.1 \
     vendor.qti.hardware.data.iwlandata-V1-ndk \
-    vendor.qti.hardware.data.ka-V1-ndk \
-    vendor.qti.hardware.data.latency@1.0 \
-    vendor.qti.hardware.data.lce@1.0 \
-    vendor.qti.hardware.data.lceaidlservice-V1-ndk \
     vendor.qti.hardware.data.qmi@1.0 \
-    vendor.qti.hardware.data.qmiaidlservice-V1-ndk \
     vendor.qti.hardware.display.composer@3.0 \
     vendor.qti.hardware.display.composer@3.1 \
-    vendor.qti.hardware.display.config-V1-ndk \
-    vendor.qti.hardware.display.config-V10-ndk \
-    vendor.qti.hardware.display.config-V11-ndk \
-    vendor.qti.hardware.display.config-V12-ndk \
-    vendor.qti.hardware.display.config-V2-ndk \
-    vendor.qti.hardware.display.config-V3-ndk \
-    vendor.qti.hardware.display.config-V4-ndk \
-    vendor.qti.hardware.display.config-V5-ndk \
-    vendor.qti.hardware.display.config-V6-ndk \
-    vendor.qti.hardware.display.config-V7-ndk \
-    vendor.qti.hardware.display.config-V8-ndk \
-    vendor.qti.hardware.display.config-V9-ndk \
-    vendor.qti.hardware.dpmaidlservice-V1-ndk \
     vendor.qti.hardware.dpmservice@1.0 \
     vendor.qti.hardware.dpmservice@1.1 \
     vendor.qti.hardware.embmssl@1.0 \
     vendor.qti.hardware.embmssl@1.1 \
-    vendor.qti.hardware.embmsslaidl-V2-ndk \
-    vendor.qti.hardware.fm@1.0 \
-    vendor.qti.hardware.iop@2.0 \
     vendor.qti.hardware.limits@1.0 \
     vendor.qti.hardware.limits@1.1 \
-    vendor.qti.hardware.minkipcbinder-V1-ndk \
     vendor.qti.hardware.mwqemadapter@1.0 \
-    vendor.qti.hardware.mwqemadapteraidlservice-V1-ndk \
-    vendor.qti.hardware.perf@2.0 \
-    vendor.qti.hardware.perf@2.1 \
-    vendor.qti.hardware.perf@2.2 \
     vendor.qti.hardware.perf@2.3 \
     vendor.qti.hardware.qccsyshal@1.0 \
     vendor.qti.hardware.qccsyshal@1.1 \
     vendor.qti.hardware.qccsyshal@1.2-halimpl \
     vendor.qti.hardware.qccsyshal@1.2 \
     vendor.qti.hardware.qccvndhal@1.0 \
-    vendor.qti.hardware.qseecom-V1-ndk \
-    vendor.qti.hardware.qseecom@1.0 \
     vendor.qti.hardware.qteeconnector-V1-ndk \
-    vendor.qti.hardware.qteeconnector@1.0 \
     vendor.qti.hardware.qxr-V1-ndk \
-    vendor.qti.hardware.radio.am@1.0 \
-    vendor.qti.hardware.radio.ims@1.0 \
-    vendor.qti.hardware.radio.ims@1.1 \
     vendor.qti.hardware.radio.ims@1.10 \
-    vendor.qti.hardware.radio.ims@1.2 \
-    vendor.qti.hardware.radio.ims@1.3 \
-    vendor.qti.hardware.radio.ims@1.4 \
-    vendor.qti.hardware.radio.ims@1.5 \
-    vendor.qti.hardware.radio.ims@1.6 \
-    vendor.qti.hardware.radio.ims@1.7 \
-    vendor.qti.hardware.radio.ims@1.8 \
     vendor.qti.hardware.radio.ims@1.9 \
-    vendor.qti.hardware.radio.lpa@1.0 \
-    vendor.qti.hardware.radio.lpa@1.1 \
-    vendor.qti.hardware.radio.lpa@1.2 \
     vendor.qti.hardware.radio.lpa@1.3 \
-    vendor.qti.hardware.radio.qtiradio@1.0 \
-    vendor.qti.hardware.radio.qtiradio@2.0 \
-    vendor.qti.hardware.radio.qtiradio@2.1 \
-    vendor.qti.hardware.radio.qtiradio@2.2 \
-    vendor.qti.hardware.radio.qtiradio@2.3 \
-    vendor.qti.hardware.radio.qtiradio@2.4 \
-    vendor.qti.hardware.radio.qtiradio@2.5 \
-    vendor.qti.hardware.radio.qtiradio@2.6 \
     vendor.qti.hardware.radio.qtiradio@2.7 \
-    vendor.qti.hardware.radio.uim@1.0 \
-    vendor.qti.hardware.radio.uim@1.1 \
-    vendor.qti.hardware.radio.uim@1.2 \
-    vendor.qti.hardware.radio.uim_remote_client@1.0 \
-    vendor.qti.hardware.radio.uim_remote_client@1.1 \
-    vendor.qti.hardware.radio.uim_remote_client@1.2 \
-    vendor.qti.hardware.radio.uim_remote_server@1.0 \
     vendor.qti.hardware.seccam@1.0 \
     vendor.qti.hardware.sigma_miracast@1.0-halimpl \
     vendor.qti.hardware.sigma_miracast@1.0 \
-    vendor.qti.hardware.sigma_miracast_aidl-V1-ndk \
     vendor.qti.hardware.sigma_miracast_aidl-halimpl \
     vendor.qti.hardware.slmadapter@1.0 \
-    vendor.qti.hardware.vpp@1.1 \
     vendor.qti.hardware.wifidisplaysession@1.0 \
-    vendor.qti.hardware.wifidisplaysession_aidl-V1-ndk \
-    vendor.qti.ims.callcapability@1.0 \
-    vendor.qti.ims.callcapabilityaidlservice-V1-ndk \
-    vendor.qti.ims.callinfo@1.0 \
-    vendor.qti.ims.configaidlservice-V1-ndk \
     vendor.qti.ims.configservice@1.0 \
     vendor.qti.ims.configservice@1.1 \
     vendor.qti.ims.connection@1.0 \
-    vendor.qti.ims.connectionaidlservice-V1-ndk \
     vendor.qti.ims.datachannelservice-V1-ndk \
     vendor.qti.ims.datachannelservice-V2-ndk \
     vendor.qti.ims.datachannelservice-V3-ndk \
@@ -3197,46 +3085,18 @@ PRODUCT_PACKAGES += \
     vendor.qti.ims.factory@2.0 \
     vendor.qti.ims.factory@2.1 \
     vendor.qti.ims.factory@2.2 \
-    vendor.qti.ims.factoryaidlservice-V1-ndk \
-    vendor.qti.ims.imscmaidlservice-V1-ndk \
-    vendor.qti.ims.rcsconfig@1.0 \
-    vendor.qti.ims.rcsconfig@1.1 \
-    vendor.qti.ims.rcsconfig@2.0 \
-    vendor.qti.ims.rcsconfig@2.1 \
     vendor.qti.ims.rcssip@1.0 \
     vendor.qti.ims.rcssip@1.1 \
     vendor.qti.ims.rcssip@1.2 \
-    vendor.qti.ims.rcssipaidlservice-V1-ndk \
     vendor.qti.ims.rcsuce@1.0 \
     vendor.qti.ims.rcsuce@1.1 \
     vendor.qti.ims.rcsuce@1.2 \
-    vendor.qti.ims.rcsuceaidlservice-V1-ndk \
-    vendor.qti.ims.uceaidlservice-V1-ndk \
     vendor.qti.imsrtpservice@3.0 \
     vendor.qti.imsrtpservice@3.1 \
-    vendor.qti.latency@2.0 \
-    vendor.qti.latency@2.1 \
-    vendor.qti.latency@2.2 \
     vendor.qti.latency@2.3 \
-    vendor.qti.latencyaidlservice-V1-ndk \
     vendor.qti.mstatservice@1.0 \
-    vendor.qti.qccsyshal_aidl-V1-ndk \
     vendor.qti.qccsyshal_aidl-halimpl \
-    vendor.qti.qccvndhal_aidl-V1-ndk \
-    vendor.qti.qesdhal@1.0 \
-    vendor.qti.qesdhal@1.1 \
-    vendor.qti.qesdhal@1.2 \
-    vendor.qti.qesdhalaidl-V2-ndk \
-    vendor.qti.qspmhal-V1-ndk \
     vendor.qti.qspmhal@1.0 \
-    com.android.hardware.cas \
-    com.google.android.widevine-12498615 \
-    com.android.compos \
-    com.android.vndk.v30 \
-    com.android.vndk.v31 \
-    com.android.vndk.v32 \
-    com.android.vndk.v33 \
-    com.android.vndk.v34 \
     CACertService \
     CneApp \
     IWlanService \
@@ -3272,15 +3132,12 @@ PRODUCT_PACKAGES += \
     libc++_shared \
     libcameraOIS_jni \
     libcameraraw_jni \
-    libdiag \
-    libdiagjni \
     libgcorejni \
     libjigancalibration_jni \
     libjiganverification_jni \
     libopencv_java4 \
     libtestcore \
     libtestsdk \
-    libtime_genoff \
     libwa_calibrationtool2 \
     ChromeHomePageProvider \
     CoreSettingsExt \
