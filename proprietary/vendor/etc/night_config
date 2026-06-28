@@ -1,0 +1,64 @@
+{
+  //                   back      |   front
+  "imagers" :     [ "mot_s5kgnj",  "mot_s5kjns"],
+  "camera-type" : [ "back-main",   "front-main"],
+  "mfnr-night" : {
+    "enable":                     [ true,       true ],
+    "params-dynamic" : [
+         { // default
+           "lux-upper" :          [ 20.0,       20.0 ],
+           "lux-lower" :          [ 0.0,        0.0  ],
+           "normal-ev" :          [ 0,          0    ],
+           "ev-exp-time" :        [ 0,          0    ]
+         },
+         { // 1st
+           "lux-upper" :          [ 0.3,        0.3  ],
+           "lux-lower" :          [ 0,          0    ],
+           "normal-ev" :          [ 5,          5    ],
+           "ev-exp-time" :        [ 144,        125  ]
+         },
+         { // 2th
+          "lux-upper" :           [ 0.5,        0.5  ],
+          "lux-lower" :           [ 0.3,        0.3  ],
+          "normal-ev" :           [ 5,          5    ],
+          "ev-exp-time" :         [ 144,        125  ]
+         },
+         { // 3st
+           "lux-upper" :          [ 3.0,        3.0  ],
+           "lux-lower" :          [ 0.5,        0.5  ],
+           "normal-ev" :          [ 4,          4    ],
+           "ev-exp-time" :        [ 140,        100  ]
+         },
+         { // 4nd
+           "lux-upper" :          [ 7.0,        7.0  ],
+           "lux-lower" :          [ 3.0,        3.0  ],
+           "normal-ev" :          [ 3,          3    ],
+           "ev-exp-time" :        [ 120,        86   ]
+         },
+         { // 5rd
+           "lux-upper" :          [ 15.0,       15.0 ],
+           "lux-lower" :          [ 7.0,        7.0  ],
+           "normal-ev" :          [ 2,          2    ],
+           "ev-exp-time" :        [ 100,        66   ]
+         },
+         { // 6th
+           "lux-upper" :          [ 20.0,      20.0  ],
+           "lux-lower" :          [ 15.0,      15.0  ],
+           "normal-ev" :          [ 1,         1     ],
+           "ev-exp-time" :        [ 83,        50    ]
+         }
+   ],
+    "lux-idx-to-std-params" : [
+      {
+        "sensor-name" : "mot_s5kgnj", // Rear Main
+        "aCoefficient" : -33.83,
+        "bCoefficient" : 502.03
+      },
+      {
+        "sensor-name" : "mot_s5kjns", // Front Main
+        "aCoefficient" : -30.42,
+        "bCoefficient" : 410.35
+      }
+    ]
+  }
+}

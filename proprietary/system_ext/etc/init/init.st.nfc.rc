@@ -1,0 +1,21 @@
+on property:ro.vendor.hw.nfc=st
+   setprop ro.hw.nfc.vendor st
+   setprop persist.nfc_cfg.config_file_name "libnfc-nci-st.conf"
+   setprop persist.nfc_vendor_extn.lib_file_name libnfc_vendor_extn_st.so
+
+on property:ro.vendor.hw.nfc=ese_st
+   setprop ro.hw.nfc.vendor st
+   setprop persist.nfc_cfg.config_file_name "libnfc-nci-st.conf"
+   setprop persist.nfc_vendor_extn.lib_file_name libnfc_vendor_extn_st.so
+
+on property:ro.vendor.hw.nfc=esim_st
+   setprop ro.hw.nfc.vendor st
+   setprop persist.nfc_cfg.config_file_name "libnfc-nci-st.conf"
+   setprop persist.nfc_vendor_extn.lib_file_name libnfc_vendor_extn_st.so
+
+on property:ro.vendor.hw.felica=true && property:ro.hw.nfc.vendor=st
+   setprop ro.hw.nfc.felica true
+   setprop persist.nfc_cfg.config_file_name "libnfc-nci-st-felica.conf"
+
+on property:ro.vendor.hw.felica=false && property:ro.hw.nfc.vendor=st
+   setprop ro.hw.nfc.felica false

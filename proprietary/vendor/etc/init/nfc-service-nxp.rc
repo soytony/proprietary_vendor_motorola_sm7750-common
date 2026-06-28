@@ -1,0 +1,11 @@
+on boot && property:ro.vendor.hw.nfc=ese_nq
+    start vendor.nfc_hal_service
+
+on boot && property:ro.vendor.hw.nfc=nq
+    start vendor.nfc_hal_service
+
+service vendor.nfc_hal_service /vendor/bin/hw/android.hardware.nqnfc-service.nxp
+    class early_hal
+    user nfc
+    group nfc oem_2912
+    disabled

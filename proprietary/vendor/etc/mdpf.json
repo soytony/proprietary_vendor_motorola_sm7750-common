@@ -1,0 +1,196 @@
+{
+  "Nodes": [
+    {
+      "Name": "CPUGoldClusterMinFreq",
+      "Path": "/sys/devices/system/cpu/cpu3/cpufreq/scaling_min_freq",
+      "Values": [
+        "633600",
+        "1190400",
+        "2400000"
+      ],
+      "DefaultIndex": 0,
+      "ResetOnInit": true
+    },
+    {
+      "Name": "GPUMinPwrlevel",
+      "Path": "/sys/class/kgsl/kgsl-3d0/min_pwrlevel",
+      "Values": [
+        "9",
+        "4",
+        "3",
+        "1",
+        "0"
+      ],
+      "DefaultIndex": 0,
+      "ResetOnInit": true
+    },
+    {
+      "Name": "SF_ADPF_PROFILES",
+      "Path": "<MdpfConfig>:SURFACEFLINGER",
+      "Values": [
+        "SF_DEFAULT"
+      ],
+      "DefaultIndex": 0,
+      "ResetOnInit": true,
+      "Type": "Event"
+    },
+    {
+      "Name": "SYSTEMUI_ADPF_PROFILES",
+      "Path": "<MdpfConfig>:SYSTEM_UI",
+      "Values": [
+        "SYSTEMUI_DEFAULT"
+      ],
+      "DefaultIndex": 0,
+      "ResetOnInit": true,
+      "Type": "Event"
+    }
+  ],
+  "Actions": [
+    {
+      "PowerHint": "CPUGoldMinUp",
+      "Node": "CPUGoldClusterMinFreq",
+      "Duration": 25,
+      "Value": "1190400"
+    },
+    {
+      "PowerHint": "INTERACTION_SEVERE_SCROLL",
+      "Node": "GPUMinPwrlevel",
+      "Duration": 1000,
+      "Value": "0"
+    },
+    {
+      "PowerHint": "INTERACTION_MODERATE_SCROLL",
+      "Node": "GPUMinPwrlevel",
+      "Duration": 1000,
+      "Value": "1"
+    },
+    {
+      "PowerHint": "INTERACTION_SEVERE_TOUCH",
+      "Node": "GPUMinPwrlevel",
+      "Duration": 3000,
+      "Value": "0"
+    },
+    {
+      "PowerHint": "INTERACTION_MODERATE_TOUCH",
+      "Node": "GPUMinPwrlevel",
+      "Duration": 3000,
+      "Value": "1"
+    },
+    {
+      "PowerHint": "EXPENSIVE_RENDERING",
+      "Node": "GPUMinPwrlevel",
+      "Duration": 3000,
+      "Value": "0"
+    },
+  ],
+  "MdpfConfig": [
+    {
+      "Name": "DEFAULT",
+      "PID_On": true,
+      "PID_Po": 1.6,
+      "PID_Pu": 1.0,
+      "PID_I": 0.0,
+      "PID_I_Init": 200,
+      "PID_I_High": 512,
+      "PID_I_Low": -30,
+      "PID_Do": 500.0,
+      "PID_Du": 0.0,
+      "UclampMin_On": true,
+      "UclampMin_Init": 231,
+      "UclampMin_LoadUp": 520,
+      "UclampMin_LoadReset": 520,
+      "UclampMin_High": 520,
+      "UclampMin_Low": 10,
+      "UclampMax_EfficientBase": 520,
+      "UclampMax_EfficientOffset": 200,
+      "SamplingWindow_P": 2,
+      "SamplingWindow_I": 5,
+      "SamplingWindow_D": 2,
+      "ReportingRateLimitNs": 166666660,
+      "TargetTimeFactor": 1.0,
+      "StaleTimeFactor": 15.0,
+      "HeuristicBoost_On": true,
+      "HBoostModerateJankThreshold": 4,
+      "HBoostOffMaxAvgDurRatio": 4.0,
+      "HBoostSevereJankPidPu": 0.5,
+      "HBoostSevereJankThreshold": 10,
+      "HBoostUclampMinCeilingRange": [520, 880],
+      "HBoostUclampMinFloorRange": [230, 430],
+      "JankCheckTimeFactor": 1.2,
+      "LowFrameRateThreshold": 25,
+      "MaxRecordsNum": 300
+    },
+    {
+      "Name": "SF_DEFAULT",
+      "PID_On": true,
+      "PID_Po": 1.6,
+      "PID_Pu": 0.8,
+      "PID_I": 0.0,
+      "PID_I_Init": 200,
+      "PID_I_High": 512,
+      "PID_I_Low": -30,
+      "PID_Do": 500.0,
+      "PID_Du": 0.0,
+      "UclampMin_On": true,
+      "UclampMin_Init": 231,
+      "UclampMin_LoadUp": 620,
+      "UclampMin_LoadReset": 620,
+      "UclampMin_High": 580,
+      "UclampMin_Low": 10,
+      "UclampMax_EfficientBase": 520,
+      "UclampMax_EfficientOffset": 200,
+      "SamplingWindow_P": 2,
+      "SamplingWindow_I": 5,
+      "SamplingWindow_D": 2,
+      "ReportingRateLimitNs": 166666660,
+      "TargetTimeFactor": 1.0,
+      "StaleTimeFactor": 15.0,
+      "HeuristicBoost_On": true,
+      "HBoostModerateJankThreshold": 2,
+      "HBoostOffMaxAvgDurRatio": 4.0,
+      "HBoostSevereJankPidPu": 0.3,
+      "HBoostSevereJankThreshold": 8,
+      "HBoostUclampMinCeilingRange": [580, 820],
+      "HBoostUclampMinFloorRange": [280, 480],
+      "JankCheckTimeFactor": 1.2,
+      "LowFrameRateThreshold": 25,
+      "MaxRecordsNum": 300
+    },
+    {
+      "Name": "SYSTEMUI_DEFAULT",
+      "PID_On": true,
+      "PID_Po": 1.6,
+      "PID_Pu": 0.9,
+      "PID_I": 0.0,
+      "PID_I_Init": 200,
+      "PID_I_High": 512,
+      "PID_I_Low": -30,
+      "PID_Do": 500.0,
+      "PID_Du": 0.0,
+      "UclampMin_On": true,
+      "UclampMin_Init": 231,
+      "UclampMin_LoadUp": 480,
+      "UclampMin_LoadReset": 480,
+      "UclampMin_High": 550,
+      "UclampMin_Low": 10,
+      "UclampMax_EfficientBase": 520,
+      "UclampMax_EfficientOffset": 200,
+      "SamplingWindow_P": 2,
+      "SamplingWindow_I": 5,
+      "SamplingWindow_D": 2,
+      "ReportingRateLimitNs": 166666660,
+      "TargetTimeFactor": 1.0,
+      "StaleTimeFactor": 15.0,
+      "HeuristicBoost_On": true,
+      "HBoostModerateJankThreshold": 3,
+      "HBoostOffMaxAvgDurRatio": 4.0,
+      "HBoostSevereJankPidPu": 0.4,
+      "HBoostSevereJankThreshold": 9,
+      "HBoostUclampMinCeilingRange": [550, 820],
+      "HBoostUclampMinFloorRange": [250, 450],
+      "JankCheckTimeFactor": 1.2,
+      "LowFrameRateThreshold": 25,
+      "MaxRecordsNum": 300
+    }
+  ]
+}

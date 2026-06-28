@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<exceptions>
+    <exception package="com.motorola.magicwords">
+        <permission name="android.permission.SYSTEM_ALERT_WINDOW" fixed="false"/>
+    </exception>
+</exceptions>

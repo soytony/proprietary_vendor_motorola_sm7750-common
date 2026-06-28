@@ -1,0 +1,3 @@
+arcfox
+motorola razr 40 ultra
+Pineapple for arm64

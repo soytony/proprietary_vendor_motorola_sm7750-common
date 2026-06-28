@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<permissions>
+        <privapp-permissions package="com.motorola.installer">
+        <permission name="android.permission.INSTALL_PACKAGES" />
+        <permission name="android.permission.INSTALL_PACKAGE_UPDATES"/>
+        <permission name="android.permission.READ_PRIVILEGED_PHONE_STATE"/>
+        <permission name="android.permission.POST_NOTIFICATIONS"/>
+        <permission name="android.permission.QUERY_ALL_PACKAGES"/>
+        <permission name="android.permission.START_ACTIVITIES_FROM_BACKGROUND" />
+    </privapp-permissions>
+</permissions>
+

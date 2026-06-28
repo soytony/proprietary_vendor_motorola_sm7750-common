@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configstore>
+	<config type="default">
+		<configuration>
+			<name>panelId</name>
+			<value>1</value>
+		</configuration>
+		<!-- type 0:qdutils::DISPLAY_PRIMARY 3:qdutils::DISPLAY_BUILTIN_2-->
+		<configuration>
+			<name>qdutilsDisplayType</name>
+			<value>0</value>
+		</configuration>
+		<configuration>
+			<name>dbvNodePath</name>
+			<value>/sys/class/backlight/panel0-backlight/brightness</value>
+		</configuration>
+		<configuration>
+			<name>dpmsNodePath</name>
+			<value>/sys/class/drm/card0-DSI-1/dpms</value>
+		</configuration>
+		<configuration>
+			<name>dcNodePath</name>
+			<value>/sys/class/drm/card0-DSI-1/panelDC</value>
+		</configuration>
+		<configuration>
+			<name>brightnessRange</name>
+			<value>14060</value>
+		</configuration>
+		<!-- windowLeft Top Width Height -->
+		<configuration>
+			<name>windowRect</name>
+			<value>672,2,120,120</value>
+		</configuration>
+		<configuration>
+			<name>panelWidthCorrect</name>
+			<value>1220</value>
+		</configuration>
+		<configuration>
+			<name>passByLuxThresh</name>
+			<value>10000.0</value>
+		</configuration>
+		<configuration>
+			<name>pwmToDcDbv</name>
+			<value>3520</value>
+		</configuration>
+		<!-- model input select  0:juno 1:maven/frontier -->
+		<configuration>
+			<name>model_input_select</name>
+			<value>0</value>
+		</configuration>
+		<configuration>
+			<name>lux_filter_so</name>
+			<value>panel_als_comp_filter_roadstr.so</value>
+		</configuration>
+		<configuration>
+			<name>als_lux_ch_coefs</name>
+			<value>0.1,53.65513,138.34633,21.01069,-18.8516</value>
+		</configuration>
+		<configuration>
+			<name>lux_coef_correct</name>
+			<value>1.0</value>
+		</configuration>
+		<configuration>
+			<name>dvt1_lux_coef_correct</name>
+			<value>1.0</value>
+		</configuration>
+		<configuration>
+			<name>lux_fov_compensation</name>
+			<value>1</value>
+		</configuration>
+		<!-- channel raw data under dvb 10000 -->
+		<configuration>
+			<name>single_golden_ch</name>
+			<value>121.62023,68.858734,46.77657,21.966454</value>
+		</configuration>
+		<!-- channel raw data under multi panel dbv & fps -->
+		<configuration>
+			<name>multi_dbv_golden_ch_new</name>
+			<value>10,0,0,60,2000,0,98,113,21,292,0,0,60,4500,0,450,481,103,1329,0,0,60,6716,0,981,991,223,2812,0,0,60,9000,0,1830,1767,412,5166,0,0,60,14000,0,4829,4412,1110,13316,0,0,60,435,1,34,39,4,101,0,0,60,1200,1,54,63,11,165,0,0,60,2000,1,101,113,18,296,0,0,60,4500,1,443,435,87,1238,0,0,60,6716,1,1008,922,193,2727</value>
+		</configuration>
+		<!-- type 1:dc on and dc off model 2: one model-->
+		<configuration>
+			<name>tensorflow_use_type</name>
+			<value>1</value>
+		</configuration>
+		<configuration>
+			<name>tfModePath</name>
+			<value>/vendor/etc/sensors/als_comp_tf_csot_dc0.config</value>
+		</configuration>
+		<configuration>
+			<name>tfModeDcPath</name>
+			<value>/vendor/etc/sensors/als_comp_tf_csot_dc1.config</value>
+		</configuration>
+	</config>
+	<!-- config for csot_nt37706_667_1220x2712_dsc_vdo_v1 -->
+	<config type="1">
+		<configuration>
+			<name>als_lux_ch_coefs</name>
+			<value>0.1,53.65513,138.34633,21.01069,-18.8516</value>
+		</configuration>
+		<!-- channel raw data under dvb 10000 -->
+		<configuration>
+			<name>single_golden_ch</name>
+			<value>121.62023,68.858734,46.77657,21.966454</value>
+		</configuration>
+		<!-- channel raw data under multi panel dbv & fps -->
+		<configuration>
+			<name>multi_dbv_golden_ch_new</name>
+			<value>10,0,0,60,2000,0,98,113,21,292,0,0,60,4500,0,450,481,103,1329,0,0,60,6716,0,981,991,223,2812,0,0,60,9000,0,1830,1767,412,5166,0,0,60,14000,0,4829,4412,1110,13316,0,0,60,435,1,34,39,4,101,0,0,60,1200,1,54,63,11,165,0,0,60,2000,1,101,113,18,296,0,0,60,4500,1,443,435,87,1238,0,0,60,6716,1,1008,922,193,2727</value>
+		</configuration>
+		<configuration>
+			<name>tensorflow_use_type</name>
+			<value>1</value>
+		</configuration>
+		<configuration>
+			<name>tfModePath</name>
+			<value>/vendor/etc/sensors/als_comp_tf_csot_dc0.config</value>
+		</configuration>
+		<configuration>
+			<name>tfModeDcPath</name>
+			<value>/vendor/etc/sensors/als_comp_tf_csot_dc1.config</value>
+		</configuration>
+	</config>
+	<!-- config for  boe_nt37706_667_1220x2712_dsc_vdo_v1 -->
+	<config type="2">
+		<configuration>
+			<name>als_lux_ch_coefs</name>
+			<value>0.1,53.65513,138.34633,21.01069,-18.8516</value>
+		</configuration>
+		<!-- channel raw data under dvb 10000 -->
+		<configuration>
+			<name>single_golden_ch</name>
+			<value>121.62023,68.858734,46.77657,21.966454</value>
+		</configuration>
+		<!-- channel raw data under multi panel dbv & fps -->
+		<configuration>
+			<name>multi_dbv_golden_ch_new</name>
+			<value>10,0,0,60,2000,0,149,162,30,419,0,0,60,4500,0,536,586,112,1514,0,0,60,6716,0,1071,1155,241,3047,0,0,60,9000,0,1822,1960,434,5245,0,0,60,14000,0,4304,4571,1058,12354,0,0,60,435,1,79,82,14,210,0,0,60,1200,1,114,117,18,304,0,0,60,2000,1,191,203,33,522,0,0,60,4500,1,567,604,115,1581,0,0,60,6716,1,1111,1160,244,3109</value>
+		</configuration>
+		<configuration>
+			<name>tensorflow_use_type</name>
+			<value>1</value>
+		</configuration>
+		<configuration>
+			<name>tfModePath</name>
+			<value>/vendor/etc/sensors/als_comp_tf_boe_dc0.config</value>
+		</configuration>
+		<configuration>
+			<name>tfModeDcPath</name>
+			<value>/vendor/etc/sensors/als_comp_tf_boe_dc1.config</value>
+		</configuration>
+	</config>
+</Configstore>

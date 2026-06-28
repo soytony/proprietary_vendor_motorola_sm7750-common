@@ -1,0 +1,26 @@
+# common initialization
+
+service mmi-bootlog-dmesg /system_ext/bin/init.mmi.bootlog-dmesg.sh
+    class core
+    user root
+    group system
+    oneshot
+    disabled
+
+service mmi-bootlog-logcat /system_ext/bin/init.mmi.bootlog-logcat.sh
+    class core
+    user root
+    group system
+    oneshot
+    disabled
+
+service mmi-bootlog /system_ext/bin/init.mmi.bootlog.sh
+    class core
+    user root
+    group system
+    oneshot
+    disabled
+
+on post-fs
+    restorecon_recursive /mnt/product/logks
+

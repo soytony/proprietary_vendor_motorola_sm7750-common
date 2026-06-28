@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<enable-disable-package>
+    <package-disable-enable-criteria package="com.motorola.systemui.desk" default_action="enable">
+        <criteria action="disable" prop="ro.config.moto_mid_ram" prop_value="true"/>
+    </package-disable-enable-criteria>
+</enable-disable-package>

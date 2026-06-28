@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configstore>
+	<config type="default">
+		<configuration>
+			<name>wifi_svc</name>
+			<version>1</version>
+			<type>adsp</type>
+		</configuration>
+		<configuration>
+			<name>mot_presence_front</name>
+			<version>1</version>
+			<type>adsp</type>
+		</configuration>
+		<configuration>
+			<name>mot_presence_flip</name>
+			<version>1</version>
+			<type>adsp</type>
+		</configuration>
+		<configuration>
+			<name>mot_gaze_flip</name>
+			<version>1</version>
+			<type>adsp</type>
+		</configuration>
+	</config>
+</Configstore>

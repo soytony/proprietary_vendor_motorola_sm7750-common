@@ -1,0 +1,77 @@
+# Charge only mode configuration
+import /vendor/etc/init/hw/init.mmi.charge_only.rc
+
+on init
+    wait_for_prop vendor.all.modules.ready 1
+
+on init && property:ro.boot.default_usb_mode=device
+    setprop vendor.usb.controller ${ro.boot.usbcontroller}
+    setprop sys.usb.controller ${vendor.usb.controller}
+    wait /sys/bus/platform/devices/${ro.boot.usb.dwc3_msm:-a600000.ssusb}/mode
+    write /sys/bus/platform/devices/${ro.boot.usb.dwc3_msm:-a600000.ssusb}/mode peripheral
+
+on early-boot
+    start vendor.mmi-usb-sh
+
+on early-boot && property:ro.bootmode=mot-factory
+    chown system system /sys/private/tlmm_count
+    chown system system /sys/private/tlmm_num
+    chmod 0660 /sys/private/tlmm_count
+    chmod 0660 /sys/private/tlmm_num
+
+on early-boot && property:ro.boot.bm_ulog_enabled=1
+    write /sys/module/bm_adsp_ulog/parameters/debug_enabled 1
+
+on moto-charger && property:ro.boot.bm_ulog_enabled=1
+    write /sys/module/bm_adsp_ulog/parameters/debug_enabled 1
+
+on property:sys.boot_completed=1
+    chown root system /sys/class/qcom-battery/restrict_cur
+    chown root system /sys/class/qcom-battery/restrict_chg
+    chmod 0660 /sys/class/qcom-battery/restrict_cur
+    chmod 0660 /sys/class/qcom-battery/restrict_chg
+    chown root system /sys/devices/platform/soc/soc:qcom,pmic_glink/soc:qcom,pmic_glink:mmi,qti-glink-charger/typec_reset
+    wait /sys/class/power_supply/battery/device/force_charging_disable
+    write /sys/devices/platform/soc/soc:mmi,charger/state_sync 1
+
+on property:sys.boot_completed=1 && property:ro.vendor.build.motfactory=1
+    write /sys/class/power_supply/battery/device/factory_image_mode 1
+    chown system system /sys/class/power_supply/battery/device/force_charger_suspend
+
+on shutdown && property:ro.bootmode=mot-factory
+    write /sys/module/mmi_glink_charger/parameters/factory_kill_disable 1
+
+on property:vendor.sys.usb.udc_bind=*
+   write /config/usb_gadget/g1/UDC ${vendor.sys.usb.udc_bind}
+
+on property:ro.boot.console="" && property:init.svc.console=running
+    stop console
+
+on property:ro.build.type=userdebug
+    insmod /vendor/lib/modules/watchdogtest.ko
+
+service vendor.apanic_get_pmic_reg /vendor/bin/apanic_get_pmic_reg.sh
+    class late_start
+    group log
+    oneshot
+    disabled
+
+on post-fs-data && property:ro.product.is_production=false && property:ro.boot.bootreason=kernel_panic
+    start vendor.apanic_get_pmic_reg
+
+on early-init && property:ro.product.is_production=false
+    mount debugfs debugfs /sys/kernel/debug
+    chmod 0755 /sys/kernel/debug
+
+on property:sys.boot_completed=1 && property:ro.build.type=user && property:ro.product.is_production=false
+    umount /sys/kernel/debug
+
+#USB role swap ios workaround
+on property:sys.usb.power_swap.ios_wa.control=1
+    #reset typec with SRC only enabled.
+    write /sys/devices/platform/soc/soc:qcom,pmic_glink/soc:qcom,pmic_glink:mmi,qti-glink-charger/typec_reset 4
+    #Wait for 0.5 seconds
+    wait /sys/devices/platform/soc/soc:qcom,pmic_glink/soc:qcom,pmic_glink:mmi,qti-glink-charger/delay_0p5 0.5
+    #reset typec with Try.SNK enabled.
+    write /sys/devices/platform/soc/soc:qcom,pmic_glink/soc:qcom,pmic_glink:mmi,qti-glink-charger/typec_reset 0
+    setprop sys.usb.power_swap.ios_wa.control 0

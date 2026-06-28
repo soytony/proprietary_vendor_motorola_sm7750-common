@@ -1,0 +1,12 @@
+on property:ro.vendor.hw.uwb=qcom
+    start vendor.uwb-qti
+
+service vendor.uwb-qti /vendor/bin/hw/android.hardware.uwb@service-qti
+    class hal
+    user uwb
+    group uwb system net_bt wakelock oem_2912
+    capabilities BLOCK_SUSPEND
+    disabled
+
+on post-fs-data
+    mkdir /data/vendor/uwb 0770 uwb uwb

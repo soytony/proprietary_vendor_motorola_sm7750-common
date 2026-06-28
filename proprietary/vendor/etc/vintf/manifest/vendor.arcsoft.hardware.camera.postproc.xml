@@ -1,0 +1,11 @@
+<!--
+    Input:
+        vendor/qcom/proprietary/chi-cdk/core/libarcsoft_postprocservice/vendor.arcsoft.hardware.camera.postproc.xml
+-->
+<manifest version="8.0" type="device">
+    <hal format="aidl">
+        <name>vendor.arcsoft.hardware.camera.postproc</name>
+        <version>2</version>
+        <fqname>IPostProcService/default</fqname>
+    </hal>
+</manifest>

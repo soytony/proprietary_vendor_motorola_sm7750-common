@@ -1,0 +1,15 @@
+service vendor.secure_element /vendor/bin/hw/android.hardware.secure_element-service.qti
+    class hal
+    user system
+    group nfc system
+    disabled
+
+on boot && property:ro.vendor.hw.nfc=ese_st
+    start vendor.secure_element
+
+on boot && property:ro.vendor.hw.nfc=ese_nq
+    start vendor.secure_element
+
+# restart eSE related HALs as required by upper SecureElement service
+on property:sys.ese.hal.restart=1
+    setprop vendor.ese.client.restart 1

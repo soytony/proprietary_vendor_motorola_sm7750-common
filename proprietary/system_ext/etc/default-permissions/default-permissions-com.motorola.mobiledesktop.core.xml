@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<exceptions>
+    <exception package="com.motorola.mobiledesktop.core">
+        <permission name="android.permission.NEARBY_WIFI_DEVICES" fixed="false"/>
+        <permission name="android.permission.BLUETOOTH_CONNECT" fixed="false"/>
+    </exception>
+</exceptions>
