@@ -582,13 +582,10 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/sm7750-common/proprietary/vendor/etc/hal_uuid_map_ne.xml:$(TARGET_COPY_OUT_VENDOR)/etc/hal_uuid_map_ne.xml \
     vendor/motorola/sm7750-common/proprietary/vendor/etc/hal_uuid_map_nes.xml:$(TARGET_COPY_OUT_VENDOR)/etc/hal_uuid_map_nes.xml \
     vendor/motorola/sm7750-common/proprietary/vendor/etc/hdr_tm_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/hdr_tm_config.xml \
-    vendor/motorola/sm7750-common/proprietary/vendor/etc/hostapd/hostapd.accept:$(TARGET_COPY_OUT_VENDOR)/etc/hostapd/hostapd.accept \
-    vendor/motorola/sm7750-common/proprietary/vendor/etc/hostapd/hostapd.deny:$(TARGET_COPY_OUT_VENDOR)/etc/hostapd/hostapd.deny \
     vendor/motorola/sm7750-common/proprietary/vendor/etc/hostapd/hostapd_default.conf:$(TARGET_COPY_OUT_VENDOR)/etc/hostapd/hostapd_default.conf \
     vendor/motorola/sm7750-common/proprietary/vendor/etc/init.qti.fm.sh:$(TARGET_COPY_OUT_VENDOR)/etc/init.qti.fm.sh \
     vendor/motorola/sm7750-common/proprietary/vendor/etc/init/android.hardware.biometrics.face-service.face.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.biometrics.face-service.face.rc \
     vendor/motorola/sm7750-common/proprietary/vendor/etc/init/android.hardware.bluetooth@aidl-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.bluetooth@aidl-service-qti.rc \
-    vendor/motorola/sm7750-common/proprietary/vendor/etc/init/android.hardware.boot-service.qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.boot-service.qti.rc \
     vendor/motorola/sm7750-common/proprietary/vendor/etc/init/android.hardware.drm@1.1-service.wfdhdcp.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.drm@1.1-service.wfdhdcp.rc \
     vendor/motorola/sm7750-common/proprietary/vendor/etc/init/android.hardware.gatekeeper-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.gatekeeper-service-qti.rc \
     vendor/motorola/sm7750-common/proprietary/vendor/etc/init/android.hardware.gnss-aidl-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.gnss-aidl-service-qti.rc \
@@ -598,13 +595,9 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/sm7750-common/proprietary/vendor/etc/init/android.hardware.security.keymint-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.security.keymint-service-qti.rc \
     vendor/motorola/sm7750-common/proprietary/vendor/etc/init/android.hardware.security.keymint-service.strongbox-thales.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.security.keymint-service.strongbox-thales.rc \
     vendor/motorola/sm7750-common/proprietary/vendor/etc/init/android.hardware.sensors-service-multihal.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.sensors-service-multihal.rc \
-    vendor/motorola/sm7750-common/proprietary/vendor/etc/init/android.hardware.thermal-service.qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.thermal-service.qti.rc \
-    vendor/motorola/sm7750-common/proprietary/vendor/etc/init/android.hardware.usb-service.qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.usb-service.qti.rc \
     vendor/motorola/sm7750-common/proprietary/vendor/etc/init/android.hardware.uwbhal-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.uwbhal-qti.rc \
     vendor/motorola/sm7750-common/proprietary/vendor/etc/init/android.hardware.weaver-service.thales.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.weaver-service.thales.rc \
-    vendor/motorola/sm7750-common/proprietary/vendor/etc/init/android.hardware.wifi-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.wifi-service.rc \
     vendor/motorola/sm7750-common/proprietary/vendor/etc/init/android.hardware.wifi.supplicant-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.wifi.supplicant-service.rc \
-    vendor/motorola/sm7750-common/proprietary/vendor/etc/init/audiohalservice_qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/audiohalservice_qti.rc \
     vendor/motorola/sm7750-common/proprietary/vendor/etc/init/boringssl_self_test.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/boringssl_self_test.rc \
     vendor/motorola/sm7750-common/proprietary/vendor/etc/init/c2painternetservice.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/c2painternetservice.rc \
     vendor/motorola/sm7750-common/proprietary/vendor/etc/init/cnd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/cnd.rc \
@@ -641,7 +634,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/sm7750-common/proprietary/vendor/etc/init/init.embmssl_server.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.embmssl_server.rc \
     vendor/motorola/sm7750-common/proprietary/vendor/etc/init/init.qccvendor.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.qccvendor.rc \
     vendor/motorola/sm7750-common/proprietary/vendor/etc/init/init.qt-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.qt-service.rc \
-    vendor/motorola/sm7750-common/proprietary/vendor/etc/init/init.qti.display_boot.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.qti.display_boot.rc \
     vendor/motorola/sm7750-common/proprietary/vendor/etc/init/init.qti.fm.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.qti.fm.rc \
     vendor/motorola/sm7750-common/proprietary/vendor/etc/init/init.qti.media.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.qti.media.rc \
     vendor/motorola/sm7750-common/proprietary/vendor/etc/init/init.qti.qcv.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.qti.qcv.rc \
@@ -651,8 +643,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/sm7750-common/proprietary/vendor/etc/init/init.zuipoweroffalarm.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.zuipoweroffalarm.rc \
     vendor/motorola/sm7750-common/proprietary/vendor/etc/init/init_fan_service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init_fan_service.rc \
     vendor/motorola/sm7750-common/proprietary/vendor/etc/init/init_thermal-engine-v2.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init_thermal-engine-v2.rc \
-    vendor/motorola/sm7750-common/proprietary/vendor/etc/init/ipacm-diag.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/ipacm-diag.rc \
-    vendor/motorola/sm7750-common/proprietary/vendor/etc/init/ipacm.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/ipacm.rc \
     vendor/motorola/sm7750-common/proprietary/vendor/etc/init/loc-launcher.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/loc-launcher.rc \
     vendor/motorola/sm7750-common/proprietary/vendor/etc/init/memtrack_qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/memtrack_qti.rc \
     vendor/motorola/sm7750-common/proprietary/vendor/etc/init/motosxf.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/motosxf.rc \
@@ -692,10 +682,7 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/sm7750-common/proprietary/vendor/etc/init/vendor.qti.hardware.alarm-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.alarm-service.rc \
     vendor/motorola/sm7750-common/proprietary/vendor/etc/init/vendor.qti.hardware.c2pa-aidl-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.c2pa-aidl-service-qti.rc \
     vendor/motorola/sm7750-common/proprietary/vendor/etc/init/vendor.qti.hardware.capabilityconfigstore-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.capabilityconfigstore-service.rc \
-    vendor/motorola/sm7750-common/proprietary/vendor/etc/init/vendor.qti.hardware.display.allocator-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.display.allocator-service.rc \
     vendor/motorola/sm7750-common/proprietary/vendor/etc/init/vendor.qti.hardware.display.color-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.display.color-service.rc \
-    vendor/motorola/sm7750-common/proprietary/vendor/etc/init/vendor.qti.hardware.display.composer-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.display.composer-service.rc \
-    vendor/motorola/sm7750-common/proprietary/vendor/etc/init/vendor.qti.hardware.display.demura-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.display.demura-service.rc \
     vendor/motorola/sm7750-common/proprietary/vendor/etc/init/vendor.qti.hardware.dsp-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.dsp-service.rc \
     vendor/motorola/sm7750-common/proprietary/vendor/etc/init/vendor.qti.hardware.lights.service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.lights.service.rc \
     vendor/motorola/sm7750-common/proprietary/vendor/etc/init/vendor.qti.hardware.minkipcbinder@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.minkipcbinder@1.0-service.rc \
@@ -710,7 +697,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/sm7750-common/proprietary/vendor/etc/init/vendor.qti.media.c2@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.media.c2@1.0-service.rc \
     vendor/motorola/sm7750-common/proprietary/vendor/etc/init/vendor.qti.media.c2audio@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.media.c2audio@1.0-service.rc \
     vendor/motorola/sm7750-common/proprietary/vendor/etc/init/vendor.qti.psiclient@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.psiclient@1.0-service.rc \
-    vendor/motorola/sm7750-common/proprietary/vendor/etc/init/vendor.qti.qspa-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.qspa-service.rc \
     vendor/motorola/sm7750-common/proprietary/vendor/etc/init/vendor.qti.qspmhal-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.qspmhal-service.rc \
     vendor/motorola/sm7750-common/proprietary/vendor/etc/init/vendor.qti.rmt_storage.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.rmt_storage.rc \
     vendor/motorola/sm7750-common/proprietary/vendor/etc/init/vendor.qti.smp2p.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.smp2p.rc \
@@ -1031,7 +1017,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/sm7750-common/proprietary/vendor/etc/wifi/p2p_supplicant_overlay.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/p2p_supplicant_overlay.conf \
     vendor/motorola/sm7750-common/proprietary/vendor/etc/wifi/vendor_cmd.xml:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/vendor_cmd.xml \
     vendor/motorola/sm7750-common/proprietary/vendor/etc/wifi/wfdr2_regex.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/wfdr2_regex.conf \
-    vendor/motorola/sm7750-common/proprietary/vendor/etc/wifi/wpa_supplicant.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/wpa_supplicant.conf \
     vendor/motorola/sm7750-common/proprietary/vendor/etc/wifi/wpa_supplicant_overlay.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/wpa_supplicant_overlay.conf \
     vendor/motorola/sm7750-common/proprietary/vendor/etc/xtwifi.conf:$(TARGET_COPY_OUT_VENDOR)/etc/xtwifi.conf \
     vendor/motorola/sm7750-common/proprietary/vendor/firmware/CAMERA_ICP.b00:$(TARGET_COPY_OUT_VENDOR)/firmware/CAMERA_ICP.b00 \
@@ -1403,165 +1388,8 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_PACKAGES += \
     aidl_hdcp_interface-V1-ndk \
-    android.automotive.watchdog-V2-ndk \
-    android.frameworks.cameraservice.common-V1-ndk \
-    android.frameworks.cameraservice.device-V2-ndk \
-    android.frameworks.cameraservice.service-V2-ndk \
-    android.frameworks.location.altitude-V2-ndk \
-    android.frameworks.sensorservice-V1-ndk \
-    android.hardware.audio.common-V2-ndk \
-    android.hardware.audio.common-V3-ndk \
-    android.hardware.audio.common-util \
-    android.hardware.audio.common@2.0 \
-    android.hardware.audio.common@5.0 \
-    android.hardware.audio.common@7.0-enums \
-    android.hardware.audio.common@7.0-util \
-    android.hardware.audio.common@7.0 \
-    android.hardware.audio.core-V2-ndk \
-    android.hardware.audio.core.sounddose-V1-ndk \
-    android.hardware.audio.core.sounddose-V2-ndk \
-    android.hardware.audio.effect-V2-ndk \
-    android.hardware.audio.effect@7.0-util \
-    android.hardware.audio.effect@7.0 \
-    android.hardware.audio@7.0-util \
-    android.hardware.audio@7.0 \
-    android.hardware.authsecret@1.0 \
     android.hardware.automotive.vehicle@2.0-manager-lib \
-    android.hardware.automotive.vehicle@2.0 \
-    android.hardware.biometrics.common-V3-ndk \
-    android.hardware.biometrics.common-V4-ndk \
-    android.hardware.biometrics.common.thread \
-    android.hardware.biometrics.common.util \
-    android.hardware.biometrics.face-V4-ndk \
-    android.hardware.biometrics.fingerprint-V3-ndk \
-    android.hardware.bluetooth-V1-ndk \
-    android.hardware.bluetooth.audio-V3-ndk \
-    android.hardware.bluetooth.audio-V4-ndk \
     android.hardware.bluetooth.audio-impl \
-    android.hardware.bluetooth.audio@2.0 \
-    android.hardware.bluetooth.audio@2.1 \
-    android.hardware.bluetooth.finder-V1-ndk \
-    android.hardware.bluetooth.lmp_event-V1-ndk \
-    android.hardware.bluetooth@1.0 \
-    android.hardware.boot-V1-ndk \
-    android.hardware.boot@1.0 \
-    android.hardware.boot@1.1 \
-    android.hardware.camera.common-V1-ndk \
-    android.hardware.camera.device-V2-ndk \
-    android.hardware.camera.metadata-V2-ndk \
-    android.hardware.camera.provider-V2-ndk \
-    android.hardware.common-V2-ndk \
-    android.hardware.common.fmq-V1-ndk \
-    android.hardware.drm-V1-ndk \
-    android.hardware.gatekeeper-V1-ndk \
-    android.hardware.gatekeeper@1.0 \
-    android.hardware.gnss-V4-ndk \
-    android.hardware.graphics.allocator-V1-ndk \
-    android.hardware.graphics.allocator-V2-ndk \
-    android.hardware.graphics.allocator@2.0 \
-    android.hardware.graphics.allocator@3.0 \
-    android.hardware.graphics.allocator@4.0 \
-    android.hardware.graphics.bufferqueue@1.0 \
-    android.hardware.graphics.bufferqueue@2.0 \
-    android.hardware.graphics.common-V5-ndk \
-    android.hardware.graphics.common@1.0 \
-    android.hardware.graphics.common@1.1 \
-    android.hardware.graphics.common@1.2 \
-    android.hardware.graphics.composer3-V3-ndk \
-    android.hardware.graphics.composer@2.1 \
-    android.hardware.graphics.composer@2.2 \
-    android.hardware.graphics.composer@2.3 \
-    android.hardware.graphics.mapper@2.0 \
-    android.hardware.graphics.mapper@2.1 \
-    android.hardware.graphics.mapper@3.0 \
-    android.hardware.graphics.mapper@4.0 \
-    android.hardware.health-V1-ndk \
-    android.hardware.health-V3-ndk \
-    android.hardware.health@1.0 \
-    android.hardware.health@2.0 \
-    android.hardware.health@2.1 \
-    android.hardware.identity-V5-ndk \
-    android.hardware.keymaster-V3-ndk \
-    android.hardware.keymaster-V4-ndk \
-    android.hardware.keymaster@3.0 \
-    android.hardware.keymaster@4.0 \
-    android.hardware.keymaster@4.1 \
-    android.hardware.light-V2-ndk \
-    android.hardware.media.bufferpool2-V2-ndk \
-    android.hardware.media.bufferpool@2.0 \
-    android.hardware.media.c2-V1-ndk \
-    android.hardware.media.c2@1.0 \
-    android.hardware.media.c2@1.1 \
-    android.hardware.media.c2@1.2 \
-    android.hardware.media.omx@1.0 \
-    android.hardware.media@1.0 \
-    android.hardware.memtrack-V1-ndk \
-    android.hardware.nfc-V1-ndk \
-    android.hardware.nfc@1.0 \
-    android.hardware.nfc@1.1 \
-    android.hardware.nfc@1.2 \
-    android.hardware.power-V5-ndk \
-    android.hardware.power@1.0 \
-    android.hardware.power@1.1 \
-    android.hardware.power@1.2 \
-    android.hardware.radio-V3-ndk \
-    android.hardware.radio.config-V3-ndk \
-    android.hardware.radio.data-V3-ndk \
-    android.hardware.radio.messaging-V3-ndk \
-    android.hardware.radio.modem-V3-ndk \
-    android.hardware.radio.network-V3-ndk \
-    android.hardware.radio.sap-V1-ndk \
-    android.hardware.radio.sim-V3-ndk \
-    android.hardware.radio.voice-V3-ndk \
-    android.hardware.radio@1.0 \
-    android.hardware.radio@1.1 \
-    android.hardware.renderscript@1.0 \
-    android.hardware.secure_element-V1-ndk \
-    android.hardware.secure_element@1.0 \
-    android.hardware.security.keymint-V1-ndk \
-    android.hardware.security.keymint-V2-ndk \
-    android.hardware.security.keymint-V3-ndk \
-    android.hardware.security.rkp-V3-ndk \
-    android.hardware.security.secureclock-V1-ndk \
-    android.hardware.security.sharedsecret-V1-ndk \
-    android.hardware.sensors-V2-ndk \
-    android.hardware.sensors@1.0 \
-    android.hardware.sensors@2.0-ScopedWakelock \
-    android.hardware.sensors@2.0 \
-    android.hardware.sensors@2.1 \
-    android.hardware.soundtrigger3-V1-ndk \
-    android.hardware.soundtrigger@2.0-core \
-    android.hardware.soundtrigger@2.0 \
-    android.hardware.soundtrigger@2.1 \
-    android.hardware.soundtrigger@2.2 \
-    android.hardware.soundtrigger@2.3 \
-    android.hardware.tetheroffload-V1-ndk \
-    android.hardware.thermal-V1-ndk \
-    android.hardware.thermal-V2-ndk \
-    android.hardware.thermal@1.0 \
-    android.hardware.thermal@2.0 \
-    android.hardware.usb-V1-ndk \
-    android.hardware.uwb-V1-ndk \
-    android.hardware.vibrator-V2-ndk \
-    android.hardware.weaver-V2-ndk \
-    android.hardware.wifi-V2-ndk \
-    android.hardware.wifi.common-V1-ndk \
-    android.hardware.wifi.hostapd-V2-ndk \
-    android.hardware.wifi.supplicant-V3-ndk \
-    android.hidl.allocator@1.0 \
-    android.hidl.memory.token@1.0 \
-    android.hidl.memory@1.0 \
-    android.hidl.safe_union@1.0 \
-    android.hidl.token@1.0-utils \
-    android.hidl.token@1.0 \
-    android.media.audio.common.types-V2-ndk \
-    android.media.audio.common.types-V3-ndk \
-    android.media.soundtrigger.types-V1-ndk \
-    android.se.omapi-V1-ndk \
-    android.system.keystore2-V1-ndk \
-    android.system.net.netd-V1-ndk \
-    android.system.suspend-V1-ndk \
-    android.system.wifi.keystore@1.0 \
     btaudio_offload_if \
     com.bst.node.hdrdetect \
     com.bst.node.yuvhdr \
@@ -1663,7 +1491,6 @@ PRODUCT_PACKAGES += \
     libdepthmapwrapper_secure \
     camx.device-impl \
     camx.provider-impl \
-    com.dsi.ant@1.0 \
     com.qti.camx.chiiqutils \
     com.qti.chifeaturecompatibility \
     com.qti.chiusecaseselector \
@@ -1731,8 +1558,6 @@ PRODUCT_PACKAGES += \
     ese_weaver_thales \
     ftm_fm_lib \
     anc.hal \
-    android.hardware.audio.effect@7.0-impl \
-    android.hardware.audio@7.0-impl \
     android.hardware.bluetooth.audio-impl-qti \
     android.hardware.bluetooth.audio@2.0-impl \
     android.hardware.bluetooth.audio_sw \
@@ -1740,33 +1565,19 @@ PRODUCT_PACKAGES += \
     android.hardware.bluetooth@1.0-impl-qti \
     android.hardware.bluetooth@aidl-impl-qti \
     android.hardware.gnss-aidl-impl-qti \
-    android.hardware.graphics.mapper@4.0-impl-qti-display \
-    android.hardware.renderscript@1.0-impl \
     android.hardware.soundtrigger@2.3-impl \
     android.hardware.uwb@impl-qti \
-    audio.bluetooth.default \
     audio.bluetooth_qti.default \
-    audio.primary.default \
     audio.r_submix.default \
-    audio.usb.default \
     libQnnSystem \
     camera.qcom.sm8750 \
     camera.qcom \
     com.qti.chi.offline \
     com.qti.chi.override \
     displaypanel.default \
-    gralloc.default \
     libEseUtils \
-    libaudiocorehal.default \
-    libaudiocorehal.qti \
-    libaudioeffecthal.qti \
     libqtigatekeeper \
-    libsoundtriggerhal.qti \
-    local_time.default \
-    mapper.qti \
     mbedtls_qti \
-    power.default \
-    sensors.dynamic_sensor_hal \
     vendor.qti.hardware.alarm-impl \
     vendor.qti.hardware.bluetooth.finder-impl-qti \
     vendor.qti.hardware.bluetooth_audio@2.0-impl \
@@ -1778,7 +1589,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.qseecom@1.0-impl \
     vendor.qti.hardware.servicetrackeraidl-impl \
     vendor.qti.hardware.soter-impl \
-    vibrator.default \
     vulkan.adreno \
     lib-imscommon \
     lib-imsdcservice \
@@ -1815,16 +1625,12 @@ PRODUCT_PACKAGES += \
     libOmxCore \
     libOpenCL \
     libOpenCL_adreno \
-    libPeripheralStateUtils \
     libQSEEComAPI \
     libQcelp13SwCodec \
     libQnnHtp \
     libQnnHtpV73Stub \
     libQtiRilLoadable \
     libQtiSocket \
-    libRSCpuRef \
-    libRSDriver \
-    libRS_internal \
     libSNPE \
     libSensorsInterface \
     libSnpeHtpPrepare \
@@ -1832,14 +1638,9 @@ PRODUCT_PACKAGES += \
     libTxPwrJni \
     libVoiceSdk \
     libWlanServiceJni \
-    lib_android_keymaster_keymint_utils \
-    lib_bt_aptx \
-    lib_bt_ble \
-    lib_bt_bundle \
     lib_bt_lhdc \
     lib_ifaa_ca \
     lib_ifaa_product \
-    libaconfig_storage_read_api_cc \
     libadm \
     libadreno_app_profiles \
     libadreno_compiler_cl \
@@ -1848,53 +1649,23 @@ PRODUCT_PACKAGES += \
     libadsp_default_listener \
     libadspd \
     libadsprpc \
-    libagm \
-    libagm_compress_plugin \
-    libagm_mixer_plugin \
-    libagm_pcm_plugin \
-    libagmclient \
-    libagmipcservice \
-    libagmmixer \
     libaidenoiser \
     libaidenoiserv2 \
-    libalsautils \
-    libalsautilsv2 \
-    libandroid_runtime_lazy \
     libaodoptfeature \
     libapengine \
     libappclassifier \
-    libar-acdb \
-    libar-gpr \
-    libar-gsl \
-    libar-pal \
     libarc.ion \
     libarccamerapostproc_aidl \
     libarmemlog \
-    libasyncio \
-    libats \
     libaualgo_azp_component \
     libaualgo_azp_wrapper \
     libaualgo_foundation \
-    libaudio_aidl_conversion_common_ndk \
     libaudio_log_utils \
-    libaudioaidlcommon \
-    libaudiochargerlistener \
-    libaudioplatformconverter.qti \
-    libaudioroute \
-    libaudioserviceexampleimpl \
-    libaudioutils \
-    libavservices_minijail \
     libbacklight-calib \
     libbase64 \
     libbatching \
-    libbatterylistener \
-    libbcinfo \
-    libbinderdebug \
     libbitmlengine \
     libbitmlenginev2 \
-    libblas \
-    libbluetooth_audio_session \
-    libbluetooth_audio_session_aidl \
     libbluetooth_audio_session_aidl_qti \
     libbluetooth_audio_session_qti \
     libbluetooth_audio_session_qti_2_1 \
@@ -1903,7 +1674,6 @@ PRODUCT_PACKAGES += \
     libbtnv \
     libcacertclient \
     libcamera2ndk_vendor \
-    libcamera_metadata \
     libcamerapoweroptfeature \
     libcamxcommonutils \
     libcamxcoreutils \
@@ -1925,7 +1695,6 @@ PRODUCT_PACKAGES += \
     libcamxswprocessalgo \
     libcamxtintlessalgo \
     libcamxvppservicebase \
-    libcap \
     libcapiv2svacnnvendor \
     libcapiv2svarnnvendor \
     libcapiv2udk7vendor \
@@ -1939,9 +1708,7 @@ PRODUCT_PACKAGES += \
     libchilog \
     libchinodeevautils \
     libchinodehmeutils \
-    libchrome \
     libclang_rt.ubsan_standalone-aarch64-android \
-    libcld80211 \
     libclstc_algorithm_adapter \
     libclstc_gcp_adapter \
     libclstc_tm \
@@ -1949,28 +1716,14 @@ PRODUCT_PACKAGES += \
     libcneapiclient \
     libcneoplookup \
     libcneqmiutils \
-    libcodec2 \
-    libcodec2_aidl \
-    libcodec2_hal_common \
-    libcodec2_hidl@1.0 \
-    libcodec2_hidl@1.1 \
-    libcodec2_hidl@1.2 \
     libcodec2_hidl_plugin \
     libcodec2_soft_ac4dec \
-    libcodec2_soft_common \
     libcodec2_soft_ddpdec \
-    libcodec2_vndk \
     libcom.qti.chinodeutils \
     libcommonchiutils \
-    libcompiler_rt \
     libconfigdb \
     libcpion \
-    libcppbor \
-    libcppbor_external \
-    libcppcose_rkp \
     libcrypto_data \
-    libcurl \
-    libcustomva_intf \
     libcv_common \
     libdapparamstorage \
     libdataitems \
@@ -1981,50 +1734,36 @@ PRODUCT_PACKAGES += \
     libdiagjni \
     libdigital-dimming \
     libdisp-aba \
-    libdisplayconfig.qti \
-    libdisplaydebug \
     libdisplayqos \
     libdisplayskuutils \
     libdlbdsservice \
     libdlbpreg \
-    libdmabufheap \
     libdmap_consent_sdk \
     libdmshal \
     libdpp_manager \
     libdpps \
-    libdrm \
     libdrmfs \
     libdrmtime \
-    libdrmutils \
     libdsd2pcm \
     libdsi_netctrl \
     libdsutils \
     libeai_fixed \
     libeai_float \
     libeffects \
-    libeffectsconfig \
     libembmsservice \
     libengineplugin \
     libenginepostproc.moto \
     libesesbprovision \
     libeva \
     libeva_util \
-    libevent \
-    libexif \
-    libexpat \
     libext_tflite_c \
     libfastcrc \
     libfastcvdsp_stub \
     libfastcvopt \
     libfeutils \
-    libfilefinder \
-    libflatbuffers-cpp \
     libflatbuffers-cpp_vendor \
-    libfmpal \
-    libfmq \
     libgame_enhance \
     libgamepoweroptfeature \
-    libgatekeeper \
     libgdtap \
     libgeofencing \
     libgf_hal \
@@ -2032,15 +1771,8 @@ PRODUCT_PACKAGES += \
     libgnsspps \
     libgps.utils \
     libgpt \
-    libgpu_tonemapper \
     libgpudataproducer \
-    libgralloc.qti \
-    libgralloccore \
-    libgralloctypes \
-    libgrallocutils \
     libgsl \
-    libhardware \
-    libhardware_legacy \
     libhdcp1prov \
     libhdcp2p2prov \
     libhdcpsrm \
@@ -2051,23 +1783,14 @@ PRODUCT_PACKAGES += \
     libhdr_tm \
     libhdrdynamic \
     libhdrdynamicootf \
-    libhfp_pal \
-    libhidlbase \
-    libhidlmemory \
-    libhidltransport \
     libhidparser \
-    libhistogram \
     libhme \
-    libhotword_intf \
-    libhwbinder \
     libhwfenceclient \
     libhwliqinterface2 \
     libhwlispcffdump \
     libiccprofile \
     libidl \
     libintervmipc \
-    libion \
-    libipanat \
     libipebpsstriping \
     libipebpsstriping170 \
     libipebpsstriping480 \
@@ -2081,16 +1804,12 @@ PRODUCT_PACKAGES += \
     libjnihelper \
     libjpege \
     libjson \
-    libjsoncpp \
     libkcl \
     libkcl_a730 \
     libkernelmanager \
-    libkeymaster_messages \
-    libkeymaster_portable \
     libkeymasterdeviceutils \
     libkeymasterprovision \
     libkeymasterutils \
-    libkeymint \
     libkeystore-engine-wifi-hidl \
     libkeystore-wifi-hidl \
     liblbs_core \
@@ -2126,27 +1845,19 @@ PRODUCT_PACKAGES += \
     liblowi_common \
     liblowi_wifihal \
     liblqe \
-    liblx-ar_util \
-    liblx-osal \
-    liblzma \
     libmapdata_api \
-    libmapperutils \
     libmcs \
     libmctfengine_stub \
     libmdmcutback \
     libmdmdetect \
     libmdpfmgr \
     libmdsprpc \
-    libmedia_helper \
-    libmediautils_vendor \
     libmemperfd \
-    libmemunreachable \
     libmemutils \
     libmeters-ns \
     libmeters \
     libmfGhostDetection \
     libmfec \
-    libminijail \
     libminkdescriptor \
     libminkipcbinder_vendor \
     libminksocket_vendor \
@@ -2173,7 +1884,6 @@ PRODUCT_PACKAGES += \
     libnbaio_mono \
     libnetconfig_vendor \
     libnetfilter_conntrack \
-    libnetutils \
     libnfnetlink \
     libnicm \
     libnicm_dsi \
@@ -2184,7 +1894,6 @@ PRODUCT_PACKAGES += \
     libnicm_recovery \
     libnicm_utils \
     libnicm_vh \
-    libnl \
     libnspdependencyservice \
     libnspdescriptorhandlerservice \
     libnspdiagservice \
@@ -2204,7 +1913,6 @@ PRODUCT_PACKAGES += \
     liboemaids_vendor \
     liboemcrypto \
     libofestriping \
-    liboffloadhal \
     liboffscreenpoweroptfeature \
     libois_channel_stub \
     liboischannel \
@@ -2216,9 +1924,6 @@ PRODUCT_PACKAGES += \
     libops \
     libos \
     libpal_net_if \
-    libpalclient \
-    libpaleventnotifier \
-    libpalipcservice \
     libpasn \
     libpasrutils \
     libpdmapper \
@@ -2229,24 +1934,19 @@ PRODUCT_PACKAGES += \
     libperipheral_client \
     libpkip \
     libplatformconfig \
-    libpng \
     libpolygon \
     libportrait_repair_qnn \
     libpostprocclient.moto \
-    libpower \
     libpowercallback \
     libpowercore \
     libprefapps \
     libprekill \
-    libprocessgroup \
     libprocomp \
     libproj_qmot_tracker \
     libproj_sot \
     libprotobuf-cpp-full-21.12 \
     libprotobuf-cpp-lite-21.12 \
-    libpsi \
     libpsmoptfeature \
-    libpuresoftkeymasterdevice \
     libq-perflog \
     libqape_oem_ext \
     libqapesdk \
@@ -2293,14 +1993,12 @@ PRODUCT_PACKAGES += \
     libqcrildataaidl \
     libqcrildatactl \
     libqcrildataqos \
-    libqdMetaData \
     libqdcm-algo \
     libqdcm-json-mode-parser \
     libqdcm-mode-parser \
     libqdi \
     libqdp \
     libqdpr \
-    libqdutils \
     libqesdk2_0 \
     libqesdk_manager \
     libqesdoem_query_sys \
@@ -2329,10 +2027,8 @@ PRODUCT_PACKAGES += \
     libqms_sdf_sdk \
     libqrtr \
     libqrtrclient \
-    libqsap_sdk \
     libqseed3 \
     libqsegnet \
-    libqservice \
     libqsh \
     libqsh_ble_pb \
     libqsh_wifi_test \
@@ -2344,7 +2040,6 @@ PRODUCT_PACKAGES += \
     libqti-appclassifier \
     libqti-jankrescue \
     libqti-lllite \
-    libqti-perfd-client \
     libqti-perfd \
     libqti-perfextn-intf \
     libqti-qesdk-secure \
@@ -2353,8 +2048,6 @@ PRODUCT_PACKAGES += \
     libqti-sslite \
     libqti-util \
     libqti-utils \
-    libqti_vndfwk_detect \
-    libqti_vndfwk_detect_vendor \
     libqtigefar \
     libqtiidentitycredential \
     libqtikeymaster4 \
@@ -2379,7 +2072,6 @@ PRODUCT_PACKAGES += \
     libril \
     librilqmimiscservices \
     librilutils \
-    librmnetctl \
     librpmb \
     libruy_vendor \
     libsbprovision \
@@ -2388,24 +2080,16 @@ PRODUCT_PACKAGES += \
     libscveObjectSegmentation \
     libscveObjectTracker \
     libscveObjectTracker_stub \
-    libsdedrm \
     libsdm-brightnessaware-parser \
     libsdm-color \
     libsdm-colormgr-algo \
     libsdm-disp-vndapis \
-    libsdmclient \
-    libsdmcore \
-    libsdmdal \
     libsdmextension \
-    libsdmutils \
     libsdsprpc \
     libseclog \
     libsensorcal \
-    libsensorndkbridge \
     libsensorslog \
     libsfeShiftExtrapolation \
-    libsfplugin_ccodec_utils \
-    libsgutils2 \
     libshsc \
     libsi \
     libsilkyscrolls \
@@ -2418,7 +2102,6 @@ PRODUCT_PACKAGES += \
     libsn300u_fw \
     libsnapdragoncolor-manager \
     libsnapdragoncolor-qdcm \
-    libsndcardparser \
     libsns_device_mode_stub \
     libsns_direct_channel_stub \
     libsns_dynamic_loader_stub \
@@ -2430,21 +2113,13 @@ PRODUCT_PACKAGES += \
     libsnsutils \
     libsoc_helper \
     libsoc_helper_jni \
-    libsoft_attestation_cert \
     libsotertool \
-    libsparse \
     libspatializerparamstorage \
     libspcom \
-    libspeexresampler \
     libspl \
-    libsqlite \
     libsrc_jni_getPasrService \
     libssc_default_listener \
     libssd \
-    libstagefright_aidl_bufferpool2 \
-    libstagefright_bufferpool@2.0.1 \
-    libstagefright_bufferqueue_helper \
-    libstagefright_foundation \
     libstagefrighthw \
     libstandbyfeature \
     libstcMotoColor \
@@ -2454,18 +2129,15 @@ PRODUCT_PACKAGES += \
     libstreamparser \
     libstreamprocessor \
     libsubsystem_control \
-    libsuspend \
     libswregistrationalgo \
     libsynergy_loc_api \
     libsynx \
     libsys_info_cache \
     libsysmon_cdsp_skel \
     libsystem_health_mon2 \
-    libsysutils \
     libtaautoload \
     libtcmd_diag \
     libtensorflowlite \
-    libtensorflowlite_c \
     libtestutils \
     libtextclassifier_hash_vendor \
     libtfestriping \
@@ -2474,28 +2146,19 @@ PRODUCT_PACKAGES += \
     libthreadutils \
     libtiktapvibrator \
     libtime_genoff \
-    libtinyalsa \
-    libtinyalsav2 \
     libtinycompress \
-    libtinyxml2 \
     libtinyxml2_1 \
     libtpa \
     libtrustedapploader \
     libubifocus \
     libubwcp \
-    libunwindstack \
-    libutilscallstack \
     libuwb-aidlclient \
     libverdict \
-    libvibratorutils \
     libvideoml \
     libvideooptfeature \
     libvideotxr \
     libvideoutils \
     libvmfilexfer \
-    libvmmem \
-    libvndfwk_detect_jni.qti \
-    libvndfwk_detect_jni.qti_vendor \
     libvppclient \
     libvppcommon \
     libvpphcp \
@@ -2505,7 +2168,6 @@ PRODUCT_PACKAGES += \
     libvpptestutils \
     libvui_dmgr \
     libvui_dmgr_client \
-    libvui_intf \
     libwfdaac_vendor \
     libwfdcodecv4l2_proprietary \
     libwfdcommonutils_proprietary \
@@ -2527,17 +2189,11 @@ PRODUCT_PACKAGES += \
     libwfduibcsrc_vendor \
     libwfduibcsrcinterface_vendor \
     libwfdutils_proprietary \
-    libwifi-hal-ctrl \
-    libwifi-hal-qcom \
-    libwifi-hal \
-    libwifi-system-iface \
     libwifiobserver \
     libwms \
-    libwpa_client \
     libwqe \
     libxml \
     libxtadapter \
-    libclearkeycasplugin \
     libdrmclearkeyplugin \
     nfc_nci.nqx.default.hw \
     panel_als_comp_filter_roadstr \
@@ -2563,7 +2219,6 @@ PRODUCT_PACKAGES += \
     qcril_client \
     qcrild_libqcrilnr \
     qcrild_libqcrilnrutils \
-    qti-audio-types-aidl-V1-ndk \
     qti.video.utils.videobufferlayout \
     qtiPeripheralMgr \
     qtiril-utils \
@@ -2596,30 +2251,17 @@ PRODUCT_PACKAGES += \
     libworker_pool \
     sensors.moto \
     sensors.qsh \
-    server_configurable_flags \
-    libaudiopreprocessing \
-    libbundleaidl \
     libbundlewrapper \
     libdlbvolaidl \
     libdownmix \
-    libdownmixaidl \
-    libdynamicsprocessingaidl \
     libdynproc \
     libeffectproxy \
     libldnhncr \
-    libloudnessenhanceraidl \
-    libqcompostprocbundle \
-    libqcomvisualizer \
-    libqcomvoiceprocessing \
     libquasar \
-    libreverbaidl \
     libreverbwrapper \
     libswdapaidl \
     libswgamedapaidl \
     libswspatializeraidl \
-    libvisualizer \
-    libvisualizeraidl \
-    libvolumelistener \
     vendor.arcsoft.hardware.camera.postproc-V2-ndk \
     vendor.awinic.hardware.tiktap.vibrator-V1-ndk \
     vendor.display.color@1.0 \
@@ -2630,19 +2272,6 @@ PRODUCT_PACKAGES += \
     vendor.display.color@1.5 \
     vendor.display.color@1.6 \
     vendor.display.color@1.7 \
-    vendor.display.config@1.0 \
-    vendor.display.config@1.1 \
-    vendor.display.config@1.10 \
-    vendor.display.config@1.11 \
-    vendor.display.config@1.2 \
-    vendor.display.config@1.3 \
-    vendor.display.config@1.4 \
-    vendor.display.config@1.5 \
-    vendor.display.config@1.6 \
-    vendor.display.config@1.7 \
-    vendor.display.config@1.8 \
-    vendor.display.config@1.9 \
-    vendor.display.config@2.0 \
     vendor.display.postproc@1.0 \
     vendor.libdpmctmgr \
     vendor.libdpmfdmgr \
@@ -2650,8 +2279,6 @@ PRODUCT_PACKAGES += \
     vendor.libdpmtcm \
     vendor.libmwqemiptablemgr \
     vendor.nxp.hardware.nfc@2.0 \
-    vendor.nxp.nxpese@1.0 \
-    vendor.nxp.nxpnfc_aidl-V1-ndk \
     vendor.qti.ImsRtpService-V1-ndk \
     vendor.qti.ImsRtpService-aidl-Impl \
     vendor.qti.MemHal-V1-ndk \
@@ -2668,19 +2295,11 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.agm-V1-ndk \
     vendor.qti.hardware.alarm-V1-ndk \
     vendor.qti.hardware.automotive.vehicle@1.0 \
-    vendor.qti.hardware.bluetooth.audio-V1-ndk \
-    vendor.qti.hardware.bluetooth.audio-V2-ndk \
-    vendor.qti.hardware.bluetooth_audio@2.0 \
-    vendor.qti.hardware.bluetooth_audio@2.1 \
     vendor.qti.hardware.bluetooth_sar-V1-ndk \
     vendor.qti.hardware.bttpi-V3-ndk \
     vendor.qti.hardware.c2pa-V1-ndk \
     vendor.qti.hardware.cacertaidlservice-V1-ndk \
-    vendor.qti.hardware.camera.aon-V1-ndk \
-    vendor.qti.hardware.camera.aon-V2-ndk \
     vendor.qti.hardware.camera.aon-service-impl \
-    vendor.qti.hardware.camera.offlinecamera-V1-ndk \
-    vendor.qti.hardware.camera.offlinecamera-V2-ndk \
     vendor.qti.hardware.camera.offlinecamera-service-impl \
     vendor.qti.hardware.capabilityconfigstore-V1-ndk \
     vendor.qti.hardware.data.cneaidlservice.internal.api-V1-ndk \
@@ -2703,38 +2322,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.data.lce@1.0 \
     vendor.qti.hardware.data.lceaidlservice-V1-ndk \
     vendor.qti.hardware.data.qmiaidlservice-V1-ndk \
-    vendor.qti.hardware.display.aiqe-V2-ndk \
-    vendor.qti.hardware.display.allocator@1.0 \
-    vendor.qti.hardware.display.allocator@3.0 \
-    vendor.qti.hardware.display.allocator@4.0 \
-    vendor.qti.hardware.display.color-V1-ndk \
-    vendor.qti.hardware.display.composer3-V1-ndk \
-    vendor.qti.hardware.display.composer@1.0 \
-    vendor.qti.hardware.display.composer@2.0 \
-    vendor.qti.hardware.display.config-V1-ndk \
-    vendor.qti.hardware.display.config-V10-ndk \
-    vendor.qti.hardware.display.config-V11-ndk \
-    vendor.qti.hardware.display.config-V12-ndk \
-    vendor.qti.hardware.display.config-V2-ndk \
-    vendor.qti.hardware.display.config-V3-ndk \
-    vendor.qti.hardware.display.config-V4-ndk \
-    vendor.qti.hardware.display.config-V5-ndk \
-    vendor.qti.hardware.display.config-V6-ndk \
-    vendor.qti.hardware.display.config-V7-ndk \
-    vendor.qti.hardware.display.config-V8-ndk \
-    vendor.qti.hardware.display.config-V9-ndk \
-    vendor.qti.hardware.display.demura-V1-ndk \
-    vendor.qti.hardware.display.mapper@1.0 \
-    vendor.qti.hardware.display.mapper@1.1 \
-    vendor.qti.hardware.display.mapper@2.0 \
-    vendor.qti.hardware.display.mapper@3.0 \
-    vendor.qti.hardware.display.mapper@4.0 \
-    vendor.qti.hardware.display.mapperextensions@1.0 \
-    vendor.qti.hardware.display.mapperextensions@1.1 \
-    vendor.qti.hardware.display.mapperextensions@1.2 \
-    vendor.qti.hardware.display.mapperextensions@1.3 \
-    vendor.qti.hardware.display.postproc-V1-ndk \
-    vendor.qti.hardware.display.snapalloc-impl \
     vendor.qti.hardware.dpmaidlservice-V1-ndk \
     vendor.qti.hardware.dsp-V1-ndk \
     vendor.qti.hardware.embmsslaidl-V2-ndk \
@@ -2747,18 +2334,13 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.minkipcbinder-V1-ndk \
     vendor.qti.hardware.mwqemadapteraidlservice-V1-ndk \
     vendor.qti.hardware.pal-V1-ndk \
-    vendor.qti.hardware.paleventnotifier-V2-ndk \
     vendor.qti.hardware.perf2-V1-ndk \
-    vendor.qti.hardware.perf@2.0 \
-    vendor.qti.hardware.perf@2.1 \
-    vendor.qti.hardware.perf@2.2 \
     vendor.qti.hardware.power.powermodule-V1-ndk \
     vendor.qti.hardware.qasr-V2-ndk \
     vendor.qti.hardware.qconfig-V1-ndk \
     vendor.qti.hardware.qdutils_disp@1.0 \
     vendor.qti.hardware.qseecom-V1-ndk \
     vendor.qti.hardware.qseecom@1.0 \
-    vendor.qti.hardware.qspa-V1-ndk \
     vendor.qti.hardware.qteeconnector@1.0 \
     vendor.qti.hardware.radio.am-V1-ndk \
     vendor.qti.hardware.radio.am@1.0 \
@@ -2807,9 +2389,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.secureprocessor.config-V1-ndk \
     vendor.qti.hardware.secureprocessor.device-V1-ndk \
     vendor.qti.hardware.sensorscalibrate-V1-ndk \
-    vendor.qti.hardware.servicetracker@1.0 \
-    vendor.qti.hardware.servicetracker@1.1 \
-    vendor.qti.hardware.servicetrackeraidl-V1-ndk \
     vendor.qti.hardware.sigma_miracast_aidl-V1-ndk \
     vendor.qti.hardware.soter-V1-ndk \
     vendor.qti.hardware.vibrator.impl \
@@ -2820,7 +2399,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.vpp@1.1 \
     vendor.qti.hardware.vpp@1.2 \
     vendor.qti.hardware.vpp@1.3 \
-    vendor.qti.hardware.wifi.supplicant-V1-ndk \
     vendor.qti.hardware.wifi.wifilearner-V1-ndk \
     vendor.qti.hardware.wifidisplaysession_aidl-V1-ndk \
     vendor.qti.hardware.wifidisplaysessionl@1.0-halimpl \
@@ -2863,7 +2441,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.snapdragonServices.qape-V1-ndk \
     vendor.qti.syshealthmon-V1-ndk \
     vendor.zuialarm.hardware.alarm-V1-ndk \
-    wifi_legacy \
     vendor_lib_rfsa_adsp_capi_pvc_so \
     vendor_lib_rfsa_adsp_libCalculator_skel_so \
     vendor_lib_rfsa_adsp_libQnnHtpV73_so \
@@ -2878,8 +2455,6 @@ PRODUCT_PACKAGES += \
     vendor_lib_rfsa_adsp_libtfadsp_rx_so \
     vendor_lib_rfsa_adsp_libtfadsp_tx_so \
     vendor_lib_rfsa_adsp_nlc_so \
-    android.hardware.radio@1.5 \
-    android.hardware.radio@1.6 \
     android.hidl.base@1.0 \
     com.qualcomm.qti.ant@1.0 \
     com.qualcomm.qti.bluetooth_audio@1.0 \
@@ -2925,7 +2500,6 @@ PRODUCT_PACKAGES += \
     libdiag_system.qti \
     libdiag_system \
     libdiagatbparser_system \
-    libdisplayconfig.system.qti \
     libdolphin \
     libdpmctmgr \
     libdpmfdmgr \
@@ -2937,7 +2511,6 @@ PRODUCT_PACKAGES += \
     libephtest_shared \
     libephtest_shared_jni \
     libfm-hci \
-    libgralloc.system.qti \
     libhidltcmd \
     libhoaeffects.qti \
     libhoaeffects_csim \
@@ -2984,9 +2557,7 @@ PRODUCT_PACKAGES += \
     libqti-MemHal-client-system \
     libqti-at \
     libqti-iopd-client_system \
-    libqti-perfd-client_system \
     libqti_performance \
-    libqti_vndfwk_detect_system \
     libqti_workloadclassifiermodel \
     libqxrsplitauxservice.qti \
     librecpp_intf \
@@ -2998,7 +2569,6 @@ PRODUCT_PACKAGES += \
     libthermalclient.qti \
     libtrigger-handler \
     libupdateprof.qti \
-    libvndfwk_detect_jni.qti_system \
     libvr_amb_engine \
     libvr_object_engine \
     libwfdavenhancements \
@@ -3308,7 +2878,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.latencyaidlservice-V1-java \
     compatibility_matrix.xml \
     ImsRtpService-aidl.xml \
-    android.hardware.drm-service.clearkey.xml \
     android.hardware.drm-service.xml \
     android.hardware.gnss-aidl-service-qti.xml \
     android.hardware.health-service.qti.xml \
@@ -3323,18 +2892,13 @@ PRODUCT_PACKAGES += \
     android.hardware.secure_element.xml \
     android.hardware.security.keymint-service-qti.xml \
     android.hardware.sensors-multihal.xml \
-    android.hardware.thermal-service.qti.xml \
-    android.hardware.usb-service.qti.xml \
-    android.hardware.wifi-service.xml \
     android.hardware.wifi.hostapd.xml \
     android.hardware.wifi.supplicant.xml \
     atfwd-saidl.xml \
-    audioeffectservice_qti.xml \
     bluetooth-finder.xml \
     bluetooth_audio.xml \
     bluetooth_hci.xml \
     bluetooth_sar.xml \
-    boot-service.qti.xml \
     bt_lmp_event-saidl.xml \
     bttpi-saidl.xml \
     c2_manifest_vendor_audio.xml \
@@ -3349,10 +2913,8 @@ PRODUCT_PACKAGES += \
     imsdcservice-saidl.xml \
     manifest_IMoto_AIDL_Rpmb.xml \
     manifest_audio_qti_services.xml \
-    manifest_audiocorehal_default.xml \
     manifest_btaudiocoreservices_qti.xml \
     manifest_identity_credential.xml \
-    mapper.qti.xml \
     memtrack_qti.xml \
     mwqem-saidl.xml \
     power.xml \
@@ -3378,9 +2940,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.capabilityconfigstore-service.xml \
     vendor.qti.hardware.data.connectionaidl.xml \
     vendor.qti.hardware.data.iwlandata.xml \
-    vendor.qti.hardware.display.allocator-service.xml \
-    vendor.qti.hardware.display.composer-service3_v3.xml \
-    vendor.qti.hardware.display.demura-service.xml \
     vendor.qti.hardware.dsp-service.xml \
     vendor.qti.hardware.embmssl.xml \
     vendor.qti.hardware.hexlp-service.xml \
@@ -3410,7 +2969,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.ims.imscmaidlservice.xml \
     vendor.qti.ims.uceaidlservice.xml \
     vendor.qti.qccvndhal_aidl-service.xml \
-    vendor.qti.qspa-service.xml \
     vendor.qti.qspmhal-service.xml \
     vendor.qti.syshealthmon-service.xml \
     vendor.zuialarm.hardware.alarm.xml \
@@ -3435,7 +2993,6 @@ PRODUCT_PACKAGES += \
     KmValidateKeybox \
     STFlashTool \
     StoreKeybox \
-    [ \
     acpi \
     adpl \
     adsprpcd \
@@ -3451,8 +3008,6 @@ PRODUCT_PACKAGES += \
     apanic_save \
     aplogcat \
     aplogd \
-    audioadsprpcd \
-    awk \
     base64 \
     basename \
     batch \
@@ -3480,7 +3035,6 @@ PRODUCT_PACKAGES += \
     cnd \
     cnss-daemon \
     cnss_cli \
-    color_sampling_tool \
     com_fastbootd \
     comm \
     copy_qc_cert \
@@ -3502,7 +3056,6 @@ PRODUCT_PACKAGES += \
     dppdaemon \
     dspservice \
     du \
-    dumpsys \
     e_loop \
     echo \
     edgnss-daemon \
@@ -3554,10 +3107,8 @@ PRODUCT_PACKAGES += \
     head \
     hexlpservice \
     hlosminkdaemon \
-    hostapd_cli \
     hostname \
     android.hardware.bluetooth@aidl-service-qti \
-    android.hardware.boot-service.qti \
     android.hardware.gatekeeper-service-qti \
     android.hardware.gnss-aidl-service-qti \
     android.hardware.health-service.qti \
@@ -3568,12 +3119,7 @@ PRODUCT_PACKAGES += \
     android.hardware.secure_element-service.qti \
     android.hardware.security.keymint-service-qti \
     android.hardware.security.keymint-service.strongbox-thales \
-    android.hardware.thermal-service.qti \
-    android.hardware.usb-service.qti \
     android.hardware.uwb@service-qti \
-    android.hardware.wifi-service \
-    audiohalservice.qti \
-    hostapd \
     motosxf \
     qconfigservice \
     qcrilNrd \
@@ -3582,10 +3128,7 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.alarm-service \
     vendor.qti.hardware.c2pa-aidl-service-qti \
     vendor.qti.hardware.capabilityconfigstore-service \
-    vendor.qti.hardware.display.allocator-service \
     vendor.qti.hardware.display.color-service \
-    vendor.qti.hardware.display.composer-service \
-    vendor.qti.hardware.display.demura-service \
     vendor.qti.hardware.lights.service \
     vendor.qti.hardware.memtrack-service \
     vendor.qti.hardware.minkipcbinder@1.0-service \
@@ -3600,7 +3143,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.media.c2audio@1.0-service \
     vendor.qti.psiclient@1.0-service \
     vendor.zuialarm.hardware.alarm-service \
-    wpa_supplicant \
     hwclock \
     i2cdetect \
     i2cdump \
@@ -3656,7 +3198,6 @@ PRODUCT_PACKAGES += \
     init.qcom.sensors \
     init.qcom \
     init.qcrild \
-    init.qti.display_boot \
     init.qti.kernel.debug-kera \
     init.qti.kernel.debug-sun \
     init.qti.kernel.debug-tuna \
@@ -3675,7 +3216,6 @@ PRODUCT_PACKAGES += \
     install \
     ionice \
     iorenice \
-    ipacm \
     ipp_key_gen \
     irsc_util \
     kill \
@@ -3690,7 +3230,6 @@ PRODUCT_PACKAGES += \
     log \
     logger \
     logname \
-    logwrapper \
     losetup \
     lowi-server \
     ls \
@@ -3803,8 +3342,6 @@ PRODUCT_PACKAGES += \
     setfattr \
     setprop \
     setsid \
-    sg_write_buffer \
-    sh \
     sha1sum \
     sha224sum \
     sha256sum \
@@ -3847,7 +3384,6 @@ PRODUCT_PACKAGES += \
     time \
     time_daemon \
     timeout \
-    toolbox \
     top \
     touch \
     toybox_vendor \
@@ -3875,7 +3411,6 @@ PRODUCT_PACKAGES += \
     uuidgen \
     vendor.dpmd \
     vendor.qti.hardware.soter-provision \
-    vendor.qti.qspa-service \
     vendor.qti.qspmhal-service \
     vendor.qti.syshealthmon-service \
     vendor_cmd_tool \
@@ -3884,7 +3419,6 @@ PRODUCT_PACKAGES += \
     vi \
     vmmgr \
     vmstat \
-    vndservice \
     vndservicemanager \
     vppservice \
     watch \
@@ -3896,7 +3430,6 @@ PRODUCT_PACKAGES += \
     whoami \
     wifidisplayhalservice \
     wifilearner \
-    wpa_cli \
     xargs \
     xtra-daemon \
     xtwifi-client \
