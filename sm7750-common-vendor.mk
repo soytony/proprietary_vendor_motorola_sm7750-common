@@ -6,9 +6,6 @@ PRODUCT_SOONG_NAMESPACES += \
     vendor/motorola/sm7750-common
 
 PRODUCT_COPY_FILES += \
-    vendor/motorola/sm7750-common/proprietary/odm/etc/build.prop:$(TARGET_COPY_OUT_ODM)/etc/build.prop \
-    vendor/motorola/sm7750-common/proprietary/odm/etc/group:$(TARGET_COPY_OUT_ODM)/etc/group \
-    vendor/motorola/sm7750-common/proprietary/odm/etc/passwd:$(TARGET_COPY_OUT_ODM)/etc/passwd \
     vendor/motorola/sm7750-common/proprietary/odm/etc/permissions/sku_dn/unavail.com.android.se.xml:$(TARGET_COPY_OUT_ODM)/etc/permissions/sku_dn/unavail.com.android.se.xml \
     vendor/motorola/sm7750-common/proprietary/odm/etc/permissions/sku_dnes/android.hardware.nfc.ese.xml:$(TARGET_COPY_OUT_ODM)/etc/permissions/sku_dnes/android.hardware.nfc.ese.xml \
     vendor/motorola/sm7750-common/proprietary/odm/etc/permissions/sku_dnes/android.hardware.se.omapi.ese.xml:$(TARGET_COPY_OUT_ODM)/etc/permissions/sku_dnes/android.hardware.se.omapi.ese.xml \
@@ -22,13 +19,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/sm7750-common/proprietary/system_ext/etc/MotoDesktopAppConfig/com.motorola.launcher3.desktop-config.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/MotoDesktopAppConfig/com.motorola.launcher3.desktop-config.xml \
     vendor/motorola/sm7750-common/proprietary/system_ext/etc/MotoDesktopAppConfig/desktop-config-com.motorola.systemui.desk.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/MotoDesktopAppConfig/desktop-config-com.motorola.systemui.desk.xml \
     vendor/motorola/sm7750-common/proprietary/system_ext/etc/MotoDesktopAppConfig/personalize-desktop-config.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/MotoDesktopAppConfig/personalize-desktop-config.xml \
-    vendor/motorola/sm7750-common/proprietary/system_ext/etc/aconfig/flag.info:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/aconfig/flag.info \
-    vendor/motorola/sm7750-common/proprietary/system_ext/etc/aconfig/flag.map:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/aconfig/flag.map \
-    vendor/motorola/sm7750-common/proprietary/system_ext/etc/aconfig/flag.val:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/aconfig/flag.val \
-    vendor/motorola/sm7750-common/proprietary/system_ext/etc/aconfig/package.map:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/aconfig/package.map \
-    vendor/motorola/sm7750-common/proprietary/system_ext/etc/aconfig_flags.pb:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/aconfig_flags.pb \
-    vendor/motorola/sm7750-common/proprietary/system_ext/etc/build.prop:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/build.prop \
-    vendor/motorola/sm7750-common/proprietary/system_ext/etc/compatconfig/settings-platform-compat-config.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/compatconfig/settings-platform-compat-config.xml \
     vendor/motorola/sm7750-common/proprietary/system_ext/etc/default-permissions/default-permission-com.motorola.ccc.notification.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/default-permissions/default-permission-com.motorola.ccc.notification.xml \
     vendor/motorola/sm7750-common/proprietary/system_ext/etc/default-permissions/default-permission-com.motorola.ccc.ota.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/default-permissions/default-permission-com.motorola.ccc.ota.xml \
     vendor/motorola/sm7750-common/proprietary/system_ext/etc/default-permissions/default-permission-com.motorola.installer.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/default-permissions/default-permission-com.motorola.installer.xml \
@@ -56,7 +46,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/sm7750-common/proprietary/system_ext/etc/enable-disable-packages/enable-disable-com.motorola.systemui.desk.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/enable-disable-packages/enable-disable-com.motorola.systemui.desk.xml \
     vendor/motorola/sm7750-common/proprietary/system_ext/etc/filter-system-apps/filter-BatteryCare.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/filter-system-apps/filter-BatteryCare.xml \
     vendor/motorola/sm7750-common/proprietary/system_ext/etc/filter-system-apps/filter-MotoFreeForm.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/filter-system-apps/filter-MotoFreeForm.xml \
-    vendor/motorola/sm7750-common/proprietary/system_ext/etc/group:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/group \
     vendor/motorola/sm7750-common/proprietary/system_ext/etc/hdr_config/ans_off/ans_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/ans_off/ans_config.txt \
     vendor/motorola/sm7750-common/proprietary/system_ext/etc/hdr_config/ans_on/ans_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/ans_on/ans_config.txt \
     vendor/motorola/sm7750-common/proprietary/system_ext/etc/hdr_config/main_inv_ls/RPP_BiquadHPF_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/main_inv_ls/RPP_BiquadHPF_config.txt \
@@ -159,11 +148,9 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/sm7750-common/proprietary/system_ext/etc/hdr_config/wnr_off/wnr_params.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/wnr_off/wnr_params.txt \
     vendor/motorola/sm7750-common/proprietary/system_ext/etc/hdr_config/wnr_on/wnr_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/wnr_on/wnr_config.txt \
     vendor/motorola/sm7750-common/proprietary/system_ext/etc/hdr_config/wnr_on/wnr_params.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hdr_config/wnr_on/wnr_params.txt \
-    vendor/motorola/sm7750-common/proprietary/system_ext/etc/init/android.hidl.allocator@1.0-service.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/android.hidl.allocator@1.0-service.rc \
     vendor/motorola/sm7750-common/proprietary/system_ext/etc/init/com.qualcomm.qti.sigma_miracast@1.0-service.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/com.qualcomm.qti.sigma_miracast@1.0-service.rc \
     vendor/motorola/sm7750-common/proprietary/system_ext/etc/init/com.qualcomm.qti.sigma_miracast_aidl-service.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/com.qualcomm.qti.sigma_miracast_aidl-service.rc \
     vendor/motorola/sm7750-common/proprietary/system_ext/etc/init/dpmd.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/dpmd.rc \
-    vendor/motorola/sm7750-common/proprietary/system_ext/etc/init/hwservicemanager.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/hwservicemanager.rc \
     vendor/motorola/sm7750-common/proprietary/system_ext/etc/init/init.mmi.props.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/init.mmi.props.rc \
     vendor/motorola/sm7750-common/proprietary/system_ext/etc/init/init.mmi.system_ext.bootlog.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/init.mmi.system_ext.bootlog.rc \
     vendor/motorola/sm7750-common/proprietary/system_ext/etc/init/init.motodestktop.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/init.motodestktop.rc \
@@ -187,7 +174,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/sm7750-common/proprietary/system_ext/etc/nondisable/com.motorola.ccc.ota.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/nondisable/com.motorola.ccc.ota.xml \
     vendor/motorola/sm7750-common/proprietary/system_ext/etc/nondisable/com.motorola.installer.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/nondisable/com.motorola.installer.xml \
     vendor/motorola/sm7750-common/proprietary/system_ext/etc/nondisable/com.motorola.paks.notification.nondisable.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/nondisable/com.motorola.paks.notification.nondisable.xml \
-    vendor/motorola/sm7750-common/proprietary/system_ext/etc/passwd:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/passwd \
     vendor/motorola/sm7750-common/proprietary/system_ext/etc/perf/wlc_model.tflite:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/perf/wlc_model.tflite \
     vendor/motorola/sm7750-common/proprietary/system_ext/etc/permissions/afw-com.motorola.batterycare.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/afw-com.motorola.batterycare.xml \
     vendor/motorola/sm7750-common/proprietary/system_ext/etc/permissions/afw-com.motorola.freeform.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/afw-com.motorola.freeform.xml \
@@ -197,16 +183,8 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/sm7750-common/proprietary/system_ext/etc/permissions/android.hardware.telephony.gsm.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/android.hardware.telephony.gsm.xml \
     vendor/motorola/sm7750-common/proprietary/system_ext/etc/permissions/android.hardware.telephony.ims.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/android.hardware.telephony.ims.xml \
     vendor/motorola/sm7750-common/proprietary/system_ext/etc/permissions/android.software.verified_boot.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/android.software.verified_boot.xml \
-    vendor/motorola/sm7750-common/proprietary/system_ext/etc/permissions/androidx.window.extensions.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/androidx.window.extensions.xml \
-    vendor/motorola/sm7750-common/proprietary/system_ext/etc/permissions/androidx.window.sidecar.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/androidx.window.sidecar.xml \
-    vendor/motorola/sm7750-common/proprietary/system_ext/etc/permissions/appfunctions.extension.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/appfunctions.extension.xml \
     vendor/motorola/sm7750-common/proprietary/system_ext/etc/permissions/audiosphere.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/audiosphere.xml \
-    vendor/motorola/sm7750-common/proprietary/system_ext/etc/permissions/com.android.emergency.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.android.emergency.xml \
-    vendor/motorola/sm7750-common/proprietary/system_ext/etc/permissions/com.android.extensions.appfunctions.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.android.extensions.appfunctions.xml \
     vendor/motorola/sm7750-common/proprietary/system_ext/etc/permissions/com.android.hotwordenrollment.common.util.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.android.hotwordenrollment.common.util.xml \
-    vendor/motorola/sm7750-common/proprietary/system_ext/etc/permissions/com.android.settings.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.android.settings.xml \
-    vendor/motorola/sm7750-common/proprietary/system_ext/etc/permissions/com.android.storagemanager.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.android.storagemanager.xml \
-    vendor/motorola/sm7750-common/proprietary/system_ext/etc/permissions/com.android.systemui.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.android.systemui.xml \
     vendor/motorola/sm7750-common/proprietary/system_ext/etc/permissions/com.motorola.android.tcmd.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.motorola.android.tcmd.xml \
     vendor/motorola/sm7750-common/proprietary/system_ext/etc/permissions/com.motorola.camera.desktop.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.motorola.camera.desktop.xml \
     vendor/motorola/sm7750-common/proprietary/system_ext/etc/permissions/com.motorola.dciservice.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.motorola.dciservice.xml \
@@ -236,7 +214,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/sm7750-common/proprietary/system_ext/etc/permissions/datachannellib.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/datachannellib.xml \
     vendor/motorola/sm7750-common/proprietary/system_ext/etc/permissions/dpmapi.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/dpmapi.xml \
     vendor/motorola/sm7750-common/proprietary/system_ext/etc/permissions/embms-noship_product_privapp_permissions_qti.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/embms-noship_product_privapp_permissions_qti.xml \
-    vendor/motorola/sm7750-common/proprietary/system_ext/etc/permissions/extphonelib.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/extphonelib.xml \
     vendor/motorola/sm7750-common/proprietary/system_ext/etc/permissions/feature-com.motorola.actioncore.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/feature-com.motorola.actioncore.xml \
     vendor/motorola/sm7750-common/proprietary/system_ext/etc/permissions/feature-com.motorola.batterycare.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/feature-com.motorola.batterycare.xml \
     vendor/motorola/sm7750-common/proprietary/system_ext/etc/permissions/feature-com.motorola.magicwords.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/feature-com.motorola.magicwords.xml \
@@ -295,8 +272,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/sm7750-common/proprietary/system_ext/etc/permissions/qcrilhook.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/qcrilhook.xml \
     vendor/motorola/sm7750-common/proprietary/system_ext/etc/permissions/qti_libpermissions.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/qti_libpermissions.xml \
     vendor/motorola/sm7750-common/proprietary/system_ext/etc/permissions/qti_permissions.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/qti_permissions.xml \
-    vendor/motorola/sm7750-common/proprietary/system_ext/etc/permissions/qti_telephony_hidl_wrapper.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/qti_telephony_hidl_wrapper.xml \
-    vendor/motorola/sm7750-common/proprietary/system_ext/etc/permissions/qti_telephony_utils.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/qti_telephony_utils.xml \
     vendor/motorola/sm7750-common/proprietary/system_ext/etc/permissions/signature-permissions-com.motorola.bug2go.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/signature-permissions-com.motorola.bug2go.xml \
     vendor/motorola/sm7750-common/proprietary/system_ext/etc/permissions/telephony_system-ext_privapp-permissions-qti.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/telephony_system-ext_privapp-permissions-qti.xml \
     vendor/motorola/sm7750-common/proprietary/system_ext/etc/permissions/vendor.qti.hardware.c2pa-V1-java.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/vendor.qti.hardware.c2pa-V1-java.xml \
@@ -315,33 +290,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/sm7750-common/proprietary/system_ext/etc/seccomp_policy/tcmd.policy:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/seccomp_policy/tcmd.policy \
     vendor/motorola/sm7750-common/proprietary/system_ext/etc/seccomp_policy/wfdservice64.policy:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/seccomp_policy/wfdservice64.policy \
     vendor/motorola/sm7750-common/proprietary/system_ext/etc/security/fsverity/BuildManifestSystemExt.apk.idsig:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/security/fsverity/BuildManifestSystemExt.apk.idsig \
-    vendor/motorola/sm7750-common/proprietary/system_ext/etc/selinux/bug_map:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/selinux/bug_map \
-    vendor/motorola/sm7750-common/proprietary/system_ext/etc/selinux/mapping/202404.cil:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/selinux/mapping/202404.cil \
-    vendor/motorola/sm7750-common/proprietary/system_ext/etc/selinux/mapping/202404.compat.cil:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/selinux/mapping/202404.compat.cil \
-    vendor/motorola/sm7750-common/proprietary/system_ext/etc/selinux/mapping/202504.cil:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/selinux/mapping/202504.cil \
-    vendor/motorola/sm7750-common/proprietary/system_ext/etc/selinux/mapping/29.0.cil:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/selinux/mapping/29.0.cil \
-    vendor/motorola/sm7750-common/proprietary/system_ext/etc/selinux/mapping/29.0.compat.cil:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/selinux/mapping/29.0.compat.cil \
-    vendor/motorola/sm7750-common/proprietary/system_ext/etc/selinux/mapping/30.0.cil:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/selinux/mapping/30.0.cil \
-    vendor/motorola/sm7750-common/proprietary/system_ext/etc/selinux/mapping/30.0.compat.cil:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/selinux/mapping/30.0.compat.cil \
-    vendor/motorola/sm7750-common/proprietary/system_ext/etc/selinux/mapping/31.0.cil:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/selinux/mapping/31.0.cil \
-    vendor/motorola/sm7750-common/proprietary/system_ext/etc/selinux/mapping/31.0.compat.cil:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/selinux/mapping/31.0.compat.cil \
-    vendor/motorola/sm7750-common/proprietary/system_ext/etc/selinux/mapping/32.0.cil:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/selinux/mapping/32.0.cil \
-    vendor/motorola/sm7750-common/proprietary/system_ext/etc/selinux/mapping/32.0.compat.cil:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/selinux/mapping/32.0.compat.cil \
-    vendor/motorola/sm7750-common/proprietary/system_ext/etc/selinux/mapping/33.0.cil:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/selinux/mapping/33.0.cil \
-    vendor/motorola/sm7750-common/proprietary/system_ext/etc/selinux/mapping/33.0.compat.cil:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/selinux/mapping/33.0.compat.cil \
-    vendor/motorola/sm7750-common/proprietary/system_ext/etc/selinux/mapping/34.0.cil:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/selinux/mapping/34.0.cil \
-    vendor/motorola/sm7750-common/proprietary/system_ext/etc/selinux/mapping/34.0.compat.cil:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/selinux/mapping/34.0.compat.cil \
-    vendor/motorola/sm7750-common/proprietary/system_ext/etc/selinux/system_ext_file_contexts:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/selinux/system_ext_file_contexts \
-    vendor/motorola/sm7750-common/proprietary/system_ext/etc/selinux/system_ext_hwservice_contexts:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/selinux/system_ext_hwservice_contexts \
-    vendor/motorola/sm7750-common/proprietary/system_ext/etc/selinux/system_ext_keystore2_key_contexts:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/selinux/system_ext_keystore2_key_contexts \
-    vendor/motorola/sm7750-common/proprietary/system_ext/etc/selinux/system_ext_mac_permissions.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/selinux/system_ext_mac_permissions.xml \
-    vendor/motorola/sm7750-common/proprietary/system_ext/etc/selinux/system_ext_property_contexts:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/selinux/system_ext_property_contexts \
-    vendor/motorola/sm7750-common/proprietary/system_ext/etc/selinux/system_ext_seapp_contexts:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/selinux/system_ext_seapp_contexts \
-    vendor/motorola/sm7750-common/proprietary/system_ext/etc/selinux/system_ext_sepolicy.cil:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/selinux/system_ext_sepolicy.cil \
-    vendor/motorola/sm7750-common/proprietary/system_ext/etc/selinux/system_ext_sepolicy_and_mapping.sha256:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/selinux/system_ext_sepolicy_and_mapping.sha256 \
-    vendor/motorola/sm7750-common/proprietary/system_ext/etc/selinux/system_ext_service_contexts:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/selinux/system_ext_service_contexts \
-    vendor/motorola/sm7750-common/proprietary/system_ext/etc/selinux/system_ext_tee_service_contexts:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/selinux/system_ext_tee_service_contexts \
-    vendor/motorola/sm7750-common/proprietary/system_ext/etc/sysconfig/android.telephony.satellite.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/sysconfig/android.telephony.satellite.xml \
     vendor/motorola/sm7750-common/proprietary/system_ext/etc/sysconfig/com.motorola.bug2go.powersave.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/sysconfig/com.motorola.bug2go.powersave.xml \
     vendor/motorola/sm7750-common/proprietary/system_ext/etc/sysconfig/com.motorola.ccc.devicemanagement.powersave.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/sysconfig/com.motorola.ccc.devicemanagement.powersave.xml \
     vendor/motorola/sm7750-common/proprietary/system_ext/etc/sysconfig/com.motorola.ccc.notification.powersaveQ.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/sysconfig/com.motorola.ccc.notification.powersaveQ.xml \
@@ -387,20 +335,11 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/sm7750-common/proprietary/system_ext/etc/sysconfig/whitelist_com.qualcomm.qti.uceShimService.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/sysconfig/whitelist_com.qualcomm.qti.uceShimService.xml \
     vendor/motorola/sm7750-common/proprietary/system_ext/etc/wfdconfigsink.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/wfdconfigsink.xml \
     vendor/motorola/sm7750-common/proprietary/system_ext/etc/wmshell.protolog.json.gz:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/wmshell.protolog.json.gz \
-    vendor/motorola/sm7750-common/proprietary/system_ext/etc/wmshell.protolog.pb:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/wmshell.protolog.pb \
-    vendor/motorola/sm7750-common/proprietary/system_ext/overlay/MSimSettingsOverlay.apk:$(TARGET_COPY_OUT_SYSTEM_EXT)/overlay/MSimSettingsOverlay.apk \
-    vendor/motorola/sm7750-common/proprietary/vendor/build.prop:$(TARGET_COPY_OUT_VENDOR)/build.prop \
     vendor/motorola/sm7750-common/proprietary/vendor/etc/ASR_binary/Whisper/libQnnHtpV79Skel.so:$(TARGET_COPY_OUT_VENDOR)/etc/ASR_binary/Whisper/libQnnHtpV79Skel.so \
     vendor/motorola/sm7750-common/proprietary/vendor/etc/ASR_binary/Whisper/speech_float.eai:$(TARGET_COPY_OUT_VENDOR)/etc/ASR_binary/Whisper/speech_float.eai \
     vendor/motorola/sm7750-common/proprietary/vendor/etc/ArmHDCP_QTI_Android.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/ArmHDCP_QTI_Android.cfg \
-    vendor/motorola/sm7750-common/proprietary/vendor/etc/IPACM_Filter_cfg.xml:$(TARGET_COPY_OUT_VENDOR)/etc/IPACM_Filter_cfg.xml \
-    vendor/motorola/sm7750-common/proprietary/vendor/etc/IPACM_cfg.xml:$(TARGET_COPY_OUT_VENDOR)/etc/IPACM_cfg.xml \
     vendor/motorola/sm7750-common/proprietary/vendor/etc/a2dp_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/a2dp_audio_policy_configuration.xml \
-    vendor/motorola/sm7750-common/proprietary/vendor/etc/aconfig_flags.pb:$(TARGET_COPY_OUT_VENDOR)/etc/aconfig_flags.pb \
-    vendor/motorola/sm7750-common/proprietary/vendor/etc/aidl/hfp/hfp_codec_capabilities.xml:$(TARGET_COPY_OUT_VENDOR)/etc/aidl/hfp/hfp_codec_capabilities.xml \
-    vendor/motorola/sm7750-common/proprietary/vendor/etc/aidl/le_audio/aidl_audio_set_configurations.bfbs:$(TARGET_COPY_OUT_VENDOR)/etc/aidl/le_audio/aidl_audio_set_configurations.bfbs \
     vendor/motorola/sm7750-common/proprietary/vendor/etc/aidl/le_audio/aidl_audio_set_configurations.json:$(TARGET_COPY_OUT_VENDOR)/etc/aidl/le_audio/aidl_audio_set_configurations.json \
-    vendor/motorola/sm7750-common/proprietary/vendor/etc/aidl/le_audio/aidl_audio_set_scenarios.bfbs:$(TARGET_COPY_OUT_VENDOR)/etc/aidl/le_audio/aidl_audio_set_scenarios.bfbs \
     vendor/motorola/sm7750-common/proprietary/vendor/etc/aidl/le_audio/aidl_audio_set_scenarios.json:$(TARGET_COPY_OUT_VENDOR)/etc/aidl/le_audio/aidl_audio_set_scenarios.json \
     vendor/motorola/sm7750-common/proprietary/vendor/etc/ap_gain.bin:$(TARGET_COPY_OUT_VENDOR)/etc/ap_gain.bin \
     vendor/motorola/sm7750-common/proprietary/vendor/etc/ap_gain_mmul.bin:$(TARGET_COPY_OUT_VENDOR)/etc/ap_gain_mmul.bin \
@@ -435,10 +374,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/sm7750-common/proprietary/vendor/etc/backend_conf.xml:$(TARGET_COPY_OUT_VENDOR)/etc/backend_conf.xml \
     vendor/motorola/sm7750-common/proprietary/vendor/etc/bluetooth_qti_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/bluetooth_qti_audio_policy_configuration.xml \
     vendor/motorola/sm7750-common/proprietary/vendor/etc/bluetooth_qti_hearing_aid_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/bluetooth_qti_hearing_aid_audio_policy_configuration.xml \
-    vendor/motorola/sm7750-common/proprietary/vendor/etc/boringssl_self_test.no_zygote.rc:$(TARGET_COPY_OUT_VENDOR)/etc/boringssl_self_test.no_zygote.rc \
-    vendor/motorola/sm7750-common/proprietary/vendor/etc/boringssl_self_test.zygote32.rc:$(TARGET_COPY_OUT_VENDOR)/etc/boringssl_self_test.zygote32.rc \
-    vendor/motorola/sm7750-common/proprietary/vendor/etc/boringssl_self_test.zygote64.rc:$(TARGET_COPY_OUT_VENDOR)/etc/boringssl_self_test.zygote64.rc \
-    vendor/motorola/sm7750-common/proprietary/vendor/etc/boringssl_self_test.zygote64_32.rc:$(TARGET_COPY_OUT_VENDOR)/etc/boringssl_self_test.zygote64_32.rc \
     vendor/motorola/sm7750-common/proprietary/vendor/etc/bpf/qmsUidStats.o:$(TARGET_COPY_OUT_VENDOR)/etc/bpf/qmsUidStats.o \
     vendor/motorola/sm7750-common/proprietary/vendor/etc/bstconfig/bstai_hdr:$(TARGET_COPY_OUT_VENDOR)/etc/bstconfig/bstai_hdr \
     vendor/motorola/sm7750-common/proprietary/vendor/etc/bstconfig/hdrcfg.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/bstconfig/hdrcfg.cfg \
@@ -569,13 +504,8 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/sm7750-common/proprietary/vendor/etc/eva/facelandmark/weight_3_2.dat:$(TARGET_COPY_OUT_VENDOR)/etc/eva/facelandmark/weight_3_2.dat \
     vendor/motorola/sm7750-common/proprietary/vendor/etc/eva/itof/tuning_params_sensor_type_1.json:$(TARGET_COPY_OUT_VENDOR)/etc/eva/itof/tuning_params_sensor_type_1.json \
     vendor/motorola/sm7750-common/proprietary/vendor/etc/excluded-input-devices.xml:$(TARGET_COPY_OUT_VENDOR)/etc/excluded-input-devices.xml \
-    vendor/motorola/sm7750-common/proprietary/vendor/etc/fstab.qcom:$(TARGET_COPY_OUT_VENDOR)/etc/fstab.qcom \
-    vendor/motorola/sm7750-common/proprietary/vendor/etc/fstab.qcom.zram:$(TARGET_COPY_OUT_VENDOR)/etc/fstab.qcom.zram \
     vendor/motorola/sm7750-common/proprietary/vendor/etc/fstab.qcom.zramwb:$(TARGET_COPY_OUT_VENDOR)/etc/fstab.qcom.zramwb \
-    vendor/motorola/sm7750-common/proprietary/vendor/etc/gnss_antenna_info.conf:$(TARGET_COPY_OUT_VENDOR)/etc/gnss_antenna_info.conf \
     vendor/motorola/sm7750-common/proprietary/vendor/etc/gpfspath_oem_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/gpfspath_oem_config.xml \
-    vendor/motorola/sm7750-common/proprietary/vendor/etc/gps.conf:$(TARGET_COPY_OUT_VENDOR)/etc/gps.conf \
-    vendor/motorola/sm7750-common/proprietary/vendor/etc/group:$(TARGET_COPY_OUT_VENDOR)/etc/group \
     vendor/motorola/sm7750-common/proprietary/vendor/etc/hal_uuid_map_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/hal_uuid_map_config.xml \
     vendor/motorola/sm7750-common/proprietary/vendor/etc/hal_uuid_map_dne.xml:$(TARGET_COPY_OUT_VENDOR)/etc/hal_uuid_map_dne.xml \
     vendor/motorola/sm7750-common/proprietary/vendor/etc/hal_uuid_map_dnes.xml:$(TARGET_COPY_OUT_VENDOR)/etc/hal_uuid_map_dnes.xml \
@@ -589,16 +519,12 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/sm7750-common/proprietary/vendor/etc/init/android.hardware.drm@1.1-service.wfdhdcp.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.drm@1.1-service.wfdhdcp.rc \
     vendor/motorola/sm7750-common/proprietary/vendor/etc/init/android.hardware.gatekeeper-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.gatekeeper-service-qti.rc \
     vendor/motorola/sm7750-common/proprietary/vendor/etc/init/android.hardware.gnss-aidl-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.gnss-aidl-service-qti.rc \
-    vendor/motorola/sm7750-common/proprietary/vendor/etc/init/android.hardware.health-service.qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.health-service.qti.rc \
     vendor/motorola/sm7750-common/proprietary/vendor/etc/init/android.hardware.identity-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.identity-service-qti.rc \
     vendor/motorola/sm7750-common/proprietary/vendor/etc/init/android.hardware.secure_element-service.qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.secure_element-service.qti.rc \
     vendor/motorola/sm7750-common/proprietary/vendor/etc/init/android.hardware.security.keymint-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.security.keymint-service-qti.rc \
     vendor/motorola/sm7750-common/proprietary/vendor/etc/init/android.hardware.security.keymint-service.strongbox-thales.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.security.keymint-service.strongbox-thales.rc \
-    vendor/motorola/sm7750-common/proprietary/vendor/etc/init/android.hardware.sensors-service-multihal.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.sensors-service-multihal.rc \
     vendor/motorola/sm7750-common/proprietary/vendor/etc/init/android.hardware.uwbhal-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.uwbhal-qti.rc \
     vendor/motorola/sm7750-common/proprietary/vendor/etc/init/android.hardware.weaver-service.thales.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.weaver-service.thales.rc \
-    vendor/motorola/sm7750-common/proprietary/vendor/etc/init/android.hardware.wifi.supplicant-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.wifi.supplicant-service.rc \
-    vendor/motorola/sm7750-common/proprietary/vendor/etc/init/boringssl_self_test.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/boringssl_self_test.rc \
     vendor/motorola/sm7750-common/proprietary/vendor/etc/init/c2painternetservice.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/c2painternetservice.rc \
     vendor/motorola/sm7750-common/proprietary/vendor/etc/init/cnd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/cnd.rc \
     vendor/motorola/sm7750-common/proprietary/vendor/etc/init/com.qualcomm.qti.wifidisplayhal@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/com.qualcomm.qti.wifidisplayhal@1.0-service.rc \
@@ -610,24 +536,15 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/sm7750-common/proprietary/vendor/etc/init/feature_enabler_client.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/feature_enabler_client.rc \
     vendor/motorola/sm7750-common/proprietary/vendor/etc/init/hexlpservice.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hexlpservice.rc \
     vendor/motorola/sm7750-common/proprietary/vendor/etc/init/hlosminkdaemon.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hlosminkdaemon.rc \
-    vendor/motorola/sm7750-common/proprietary/vendor/etc/init/hostapd.android.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hostapd.android.rc \
-    vendor/motorola/sm7750-common/proprietary/vendor/etc/init/hw/init.mmi.charge_only.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/init.mmi.charge_only.rc \
-    vendor/motorola/sm7750-common/proprietary/vendor/etc/init/hw/init.mmi.chipset.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/init.mmi.chipset.rc \
     vendor/motorola/sm7750-common/proprietary/vendor/etc/init/hw/init.mmi.debug.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/init.mmi.debug.rc \
     vendor/motorola/sm7750-common/proprietary/vendor/etc/init/hw/init.mmi.diag.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/init.mmi.diag.rc \
     vendor/motorola/sm7750-common/proprietary/vendor/etc/init/hw/init.mmi.diag_mdlog.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/init.mmi.diag_mdlog.rc \
     vendor/motorola/sm7750-common/proprietary/vendor/etc/init/hw/init.mmi.overlay.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/init.mmi.overlay.rc \
-    vendor/motorola/sm7750-common/proprietary/vendor/etc/init/hw/init.mmi.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/init.mmi.rc \
     vendor/motorola/sm7750-common/proprietary/vendor/etc/init/hw/init.mmi.services.override.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/init.mmi.services.override.rc \
     vendor/motorola/sm7750-common/proprietary/vendor/etc/init/hw/init.mmi.tcmd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/init.mmi.tcmd.rc \
     vendor/motorola/sm7750-common/proprietary/vendor/etc/init/hw/init.mmi.usb.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/init.mmi.usb.rc \
     vendor/motorola/sm7750-common/proprietary/vendor/etc/init/hw/init.mmi.wlan.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/init.mmi.wlan.rc \
     vendor/motorola/sm7750-common/proprietary/vendor/etc/init/hw/init.qcom.factory.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/init.qcom.factory.rc \
-    vendor/motorola/sm7750-common/proprietary/vendor/etc/init/hw/init.qcom.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/init.qcom.rc \
-    vendor/motorola/sm7750-common/proprietary/vendor/etc/init/hw/init.qti.kernel.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/init.qti.kernel.rc \
-    vendor/motorola/sm7750-common/proprietary/vendor/etc/init/hw/init.qti.kernel.target.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/init.qti.kernel.target.rc \
-    vendor/motorola/sm7750-common/proprietary/vendor/etc/init/hw/init.qti.ufs.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/init.qti.ufs.rc \
-    vendor/motorola/sm7750-common/proprietary/vendor/etc/init/hw/init.target.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/init.target.rc \
     vendor/motorola/sm7750-common/proprietary/vendor/etc/init/ims-dataservice-daemon.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/ims-dataservice-daemon.rc \
     vendor/motorola/sm7750-common/proprietary/vendor/etc/init/ims_rtp_daemon.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/ims_rtp_daemon.rc \
     vendor/motorola/sm7750-common/proprietary/vendor/etc/init/imsdaemon.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/imsdaemon.rc \
@@ -644,9 +561,7 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/sm7750-common/proprietary/vendor/etc/init/init_fan_service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init_fan_service.rc \
     vendor/motorola/sm7750-common/proprietary/vendor/etc/init/init_thermal-engine-v2.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init_thermal-engine-v2.rc \
     vendor/motorola/sm7750-common/proprietary/vendor/etc/init/loc-launcher.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/loc-launcher.rc \
-    vendor/motorola/sm7750-common/proprietary/vendor/etc/init/memtrack_qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/memtrack_qti.rc \
     vendor/motorola/sm7750-common/proprietary/vendor/etc/init/motosxf.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/motosxf.rc \
-    vendor/motorola/sm7750-common/proprietary/vendor/etc/init/nfc-service-nxp.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/nfc-service-nxp.rc \
     vendor/motorola/sm7750-common/proprietary/vendor/etc/init/nfc-service-st.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/nfc-service-st.rc \
     vendor/motorola/sm7750-common/proprietary/vendor/etc/init/nicmd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/nicmd.rc \
     vendor/motorola/sm7750-common/proprietary/vendor/etc/init/port-bridge.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/port-bridge.rc \
@@ -661,7 +576,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/sm7750-common/proprietary/vendor/etc/init/qmipriod.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/qmipriod.rc \
     vendor/motorola/sm7750-common/proprietary/vendor/etc/init/qms.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/qms.rc \
     vendor/motorola/sm7750-common/proprietary/vendor/etc/init/qseecomd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/qseecomd.rc \
-    vendor/motorola/sm7750-common/proprietary/vendor/etc/init/qspa_vendor.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/qspa_vendor.rc \
     vendor/motorola/sm7750-common/proprietary/vendor/etc/init/qttestservice.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/qttestservice.rc \
     vendor/motorola/sm7750-common/proprietary/vendor/etc/init/qwesd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/qwesd.rc \
     vendor/motorola/sm7750-common/proprietary/vendor/etc/init/shsusrd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/shsusrd.rc \
@@ -675,7 +589,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/sm7750-common/proprietary/vendor/etc/init/vendor.qsap.sensors.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qsap.sensors.rc \
     vendor/motorola/sm7750-common/proprietary/vendor/etc/init/vendor.qti.MemHal-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.MemHal-service.rc \
     vendor/motorola/sm7750-common/proprietary/vendor/etc/init/vendor.qti.adsprpc-guestos-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.adsprpc-guestos-service.rc \
-    vendor/motorola/sm7750-common/proprietary/vendor/etc/init/vendor.qti.audio-adsprpc-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.audio-adsprpc-service.rc \
     vendor/motorola/sm7750-common/proprietary/vendor/etc/init/vendor.qti.camera.provider-service_64.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.camera.provider-service_64.rc \
     vendor/motorola/sm7750-common/proprietary/vendor/etc/init/vendor.qti.cdsprpc-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.cdsprpc-service.rc \
     vendor/motorola/sm7750-common/proprietary/vendor/etc/init/vendor.qti.diag_userdebug.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.diag_userdebug.rc \
@@ -692,7 +605,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/sm7750-common/proprietary/vendor/etc/init/vendor.qti.hardware.sensorscalibrate-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.sensorscalibrate-service.rc \
     vendor/motorola/sm7750-common/proprietary/vendor/etc/init/vendor.qti.hardware.servicetrackeraidl-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.servicetrackeraidl-service.rc \
     vendor/motorola/sm7750-common/proprietary/vendor/etc/init/vendor.qti.hardware.soter-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.soter-service.rc \
-    vendor/motorola/sm7750-common/proprietary/vendor/etc/init/vendor.qti.hardware.vibrator.service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.vibrator.service.rc \
     vendor/motorola/sm7750-common/proprietary/vendor/etc/init/vendor.qti.hardware.wifi.wifilearner-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.wifi.wifilearner-service.rc \
     vendor/motorola/sm7750-common/proprietary/vendor/etc/init/vendor.qti.media.c2@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.media.c2@1.0-service.rc \
     vendor/motorola/sm7750-common/proprietary/vendor/etc/init/vendor.qti.media.c2audio@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.media.c2audio@1.0-service.rc \
@@ -707,13 +619,10 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/sm7750-common/proprietary/vendor/etc/init/vendor.tsa.hdcp-IHDCPInterface.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.tsa.hdcp-IHDCPInterface.rc \
     vendor/motorola/sm7750-common/proprietary/vendor/etc/init/vendor.zuialarm.hardware.alarm-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.zuialarm.hardware.alarm-service.rc \
     vendor/motorola/sm7750-common/proprietary/vendor/etc/init/vmmgr.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vmmgr.rc \
-    vendor/motorola/sm7750-common/proprietary/vendor/etc/init/vndservicemanager.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vndservicemanager.rc \
     vendor/motorola/sm7750-common/proprietary/vendor/etc/init/vppservice.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vppservice.rc \
     vendor/motorola/sm7750-common/proprietary/vendor/etc/init/wfdvndservice.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/wfdvndservice.rc \
-    vendor/motorola/sm7750-common/proprietary/vendor/etc/izat.conf:$(TARGET_COPY_OUT_VENDOR)/etc/izat.conf \
     vendor/motorola/sm7750-common/proprietary/vendor/etc/libnfc-nci.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nci.conf \
     vendor/motorola/sm7750-common/proprietary/vendor/etc/libse-gto-hal.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libse-gto-hal.conf \
-    vendor/motorola/sm7750-common/proprietary/vendor/etc/linker.config.pb:$(TARGET_COPY_OUT_VENDOR)/etc/linker.config.pb \
     vendor/motorola/sm7750-common/proprietary/vendor/etc/lm/AppClassifierFeature.xml:$(TARGET_COPY_OUT_VENDOR)/etc/lm/AppClassifierFeature.xml \
     vendor/motorola/sm7750-common/proprietary/vendor/etc/lm/LightningLaunchesFeature.xml:$(TARGET_COPY_OUT_VENDOR)/etc/lm/LightningLaunchesFeature.xml \
     vendor/motorola/sm7750-common/proprietary/vendor/etc/lm/PreKillFeature.xml:$(TARGET_COPY_OUT_VENDOR)/etc/lm/PreKillFeature.xml \
@@ -726,7 +635,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/sm7750-common/proprietary/vendor/etc/lm/prekill/prekill_2GB.data:$(TARGET_COPY_OUT_VENDOR)/etc/lm/prekill/prekill_2GB.data \
     vendor/motorola/sm7750-common/proprietary/vendor/etc/lm/prekill/prekill_4GB.data:$(TARGET_COPY_OUT_VENDOR)/etc/lm/prekill/prekill_4GB.data \
     vendor/motorola/sm7750-common/proprietary/vendor/etc/lm/prekill/prekill_6GB.data:$(TARGET_COPY_OUT_VENDOR)/etc/lm/prekill/prekill_6GB.data \
-    vendor/motorola/sm7750-common/proprietary/vendor/etc/lowi.conf:$(TARGET_COPY_OUT_VENDOR)/etc/lowi.conf \
     vendor/motorola/sm7750-common/proprietary/vendor/etc/mdpf.json:$(TARGET_COPY_OUT_VENDOR)/etc/mdpf.json \
     vendor/motorola/sm7750-common/proprietary/vendor/etc/media_codecs.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs.xml \
     vendor/motorola/sm7750-common/proprietary/vendor/etc/media_codecs_c2_audio.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_c2_audio.xml \
@@ -764,7 +672,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/sm7750-common/proprietary/vendor/etc/media_tuna_v1/video_system_specs.json:$(TARGET_COPY_OUT_VENDOR)/etc/media_tuna_v1/video_system_specs.json \
     vendor/motorola/sm7750-common/proprietary/vendor/etc/mem_logger_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mem_logger_config.xml \
     vendor/motorola/sm7750-common/proprietary/vendor/etc/microphone_characteristics.xml:$(TARGET_COPY_OUT_VENDOR)/etc/microphone_characteristics.xml \
-    vendor/motorola/sm7750-common/proprietary/vendor/etc/mkshrc:$(TARGET_COPY_OUT_VENDOR)/etc/mkshrc \
     vendor/motorola/sm7750-common/proprietary/vendor/etc/mmi_wdog.conf:$(TARGET_COPY_OUT_VENDOR)/etc/mmi_wdog.conf \
     vendor/motorola/sm7750-common/proprietary/vendor/etc/models/acd/environment.eai:$(TARGET_COPY_OUT_VENDOR)/etc/models/acd/environment.eai \
     vendor/motorola/sm7750-common/proprietary/vendor/etc/models/acd/event.eai:$(TARGET_COPY_OUT_VENDOR)/etc/models/acd/event.eai \
@@ -790,7 +697,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/sm7750-common/proprietary/vendor/etc/motorola/tcmd/cid_template.unlocked:$(TARGET_COPY_OUT_VENDOR)/etc/motorola/tcmd/cid_template.unlocked \
     vendor/motorola/sm7750-common/proprietary/vendor/etc/motosxf_conf_profile:$(TARGET_COPY_OUT_VENDOR)/etc/motosxf_conf_profile \
     vendor/motorola/sm7750-common/proprietary/vendor/etc/night_config:$(TARGET_COPY_OUT_VENDOR)/etc/night_config \
-    vendor/motorola/sm7750-common/proprietary/vendor/etc/passwd:$(TARGET_COPY_OUT_VENDOR)/etc/passwd \
     vendor/motorola/sm7750-common/proprietary/vendor/etc/perf/avcsysnodesconfigs.xml:$(TARGET_COPY_OUT_VENDOR)/etc/perf/avcsysnodesconfigs.xml \
     vendor/motorola/sm7750-common/proprietary/vendor/etc/perf/commonresourceconfigs.xml:$(TARGET_COPY_OUT_VENDOR)/etc/perf/commonresourceconfigs.xml \
     vendor/motorola/sm7750-common/proprietary/vendor/etc/perf/commonsysnodesconfigs.xml:$(TARGET_COPY_OUT_VENDOR)/etc/perf/commonsysnodesconfigs.xml \
@@ -816,7 +722,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/sm7750-common/proprietary/vendor/etc/permissions/android.hardware.camera.full.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.camera.full.xml \
     vendor/motorola/sm7750-common/proprietary/vendor/etc/permissions/android.hardware.camera.raw.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.camera.raw.xml \
     vendor/motorola/sm7750-common/proprietary/vendor/etc/permissions/android.hardware.fingerprint.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.fingerprint.xml \
-    vendor/motorola/sm7750-common/proprietary/vendor/etc/permissions/android.hardware.hardware_keystore.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.hardware_keystore.xml \
     vendor/motorola/sm7750-common/proprietary/vendor/etc/permissions/android.hardware.keystore.app_attest_key.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.keystore.app_attest_key.xml \
     vendor/motorola/sm7750-common/proprietary/vendor/etc/permissions/android.hardware.location.gps.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.location.gps.xml \
     vendor/motorola/sm7750-common/proprietary/vendor/etc/permissions/android.hardware.nfc.ese.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.nfc.ese.xml \
@@ -851,7 +756,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/sm7750-common/proprietary/vendor/etc/permissions/com.android.se.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/com.android.se.xml \
     vendor/motorola/sm7750-common/proprietary/vendor/etc/permissions/com.motorola.camera.extensions.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/com.motorola.camera.extensions.xml \
     vendor/motorola/sm7750-common/proprietary/vendor/etc/permissions/com.nxp.mifare.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/com.nxp.mifare.xml \
-    vendor/motorola/sm7750-common/proprietary/vendor/etc/permissions/features_com.android.virt.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/features_com.android.virt.xml \
     vendor/motorola/sm7750-common/proprietary/vendor/etc/permissions/handheld_core_hardware.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/handheld_core_hardware.xml \
     vendor/motorola/sm7750-common/proprietary/vendor/etc/permissions/noRil/apq_excluded_telephony_features.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/noRil/apq_excluded_telephony_features.xml \
     vendor/motorola/sm7750-common/proprietary/vendor/etc/permissions/privapp-permissions-qti-vendor.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/privapp-permissions-qti-vendor.xml \
@@ -935,9 +839,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/sm7750-common/proprietary/vendor/etc/qvaconfig_v4.xml:$(TARGET_COPY_OUT_VENDOR)/etc/qvaconfig_v4.xml \
     vendor/motorola/sm7750-common/proprietary/vendor/etc/qvirtmgr-vndr.json:$(TARGET_COPY_OUT_VENDOR)/etc/qvirtmgr-vndr.json \
     vendor/motorola/sm7750-common/proprietary/vendor/etc/r_submix_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/r_submix_audio_policy_configuration.xml \
-    vendor/motorola/sm7750-common/proprietary/vendor/etc/res/images/default/charger/battery_fail.png:$(TARGET_COPY_OUT_VENDOR)/etc/res/images/default/charger/battery_fail.png \
-    vendor/motorola/sm7750-common/proprietary/vendor/etc/res/images/default/charger/battery_scale.png:$(TARGET_COPY_OUT_VENDOR)/etc/res/images/default/charger/battery_scale.png \
-    vendor/motorola/sm7750-common/proprietary/vendor/etc/sap.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sap.conf \
     vendor/motorola/sm7750-common/proprietary/vendor/etc/sec_config:$(TARGET_COPY_OUT_VENDOR)/etc/sec_config \
     vendor/motorola/sm7750-common/proprietary/vendor/etc/seccomp_policy/atfwd@2.0.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/atfwd@2.0.policy \
     vendor/motorola/sm7750-common/proprietary/vendor/etc/seccomp_policy/c2audio.vendor.base-arm.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/c2audio.vendor.base-arm.policy \
@@ -947,10 +848,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/sm7750-common/proprietary/vendor/etc/seccomp_policy/c2pa_network.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/c2pa_network.policy \
     vendor/motorola/sm7750-common/proprietary/vendor/etc/seccomp_policy/codec2.vendor.base-arm64.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/codec2.vendor.base-arm64.policy \
     vendor/motorola/sm7750-common/proprietary/vendor/etc/seccomp_policy/codec2.vendor.ext-arm64.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/codec2.vendor.ext-arm64.policy \
-    vendor/motorola/sm7750-common/proprietary/vendor/etc/seccomp_policy/gnss@2.0-base.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/gnss@2.0-base.policy \
-    vendor/motorola/sm7750-common/proprietary/vendor/etc/seccomp_policy/gnss@2.0-edgnss-daemon.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/gnss@2.0-edgnss-daemon.policy \
-    vendor/motorola/sm7750-common/proprietary/vendor/etc/seccomp_policy/gnss@2.0-qsap-location.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/gnss@2.0-qsap-location.policy \
-    vendor/motorola/sm7750-common/proprietary/vendor/etc/seccomp_policy/gnss@2.0-xtra-daemon.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/gnss@2.0-xtra-daemon.policy \
     vendor/motorola/sm7750-common/proprietary/vendor/etc/seccomp_policy/gnss@2.0-xtwifi-client.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/gnss@2.0-xtwifi-client.policy \
     vendor/motorola/sm7750-common/proprietary/vendor/etc/seccomp_policy/imsrtp.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/imsrtp.policy \
     vendor/motorola/sm7750-common/proprietary/vendor/etc/seccomp_policy/qcrilnr@2.0.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/qcrilnr@2.0.policy \
@@ -969,22 +866,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/sm7750-common/proprietary/vendor/etc/seccomp_policy/wfdhdcphalservice.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/wfdhdcphalservice.policy \
     vendor/motorola/sm7750-common/proprietary/vendor/etc/seccomp_policy/wfdvndservice.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/wfdvndservice.policy \
     vendor/motorola/sm7750-common/proprietary/vendor/etc/seccomp_policy/wifidisplayhalservice.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/wifidisplayhalservice.policy \
-    vendor/motorola/sm7750-common/proprietary/vendor/etc/selinux/plat_pub_versioned.cil:$(TARGET_COPY_OUT_VENDOR)/etc/selinux/plat_pub_versioned.cil \
-    vendor/motorola/sm7750-common/proprietary/vendor/etc/selinux/plat_sepolicy_vers.txt:$(TARGET_COPY_OUT_VENDOR)/etc/selinux/plat_sepolicy_vers.txt \
-    vendor/motorola/sm7750-common/proprietary/vendor/etc/selinux/precompiled_sepolicy:$(TARGET_COPY_OUT_VENDOR)/etc/selinux/precompiled_sepolicy \
-    vendor/motorola/sm7750-common/proprietary/vendor/etc/selinux/precompiled_sepolicy.plat_sepolicy_and_mapping.sha256:$(TARGET_COPY_OUT_VENDOR)/etc/selinux/precompiled_sepolicy.plat_sepolicy_and_mapping.sha256 \
-    vendor/motorola/sm7750-common/proprietary/vendor/etc/selinux/precompiled_sepolicy.product_sepolicy_and_mapping.sha256:$(TARGET_COPY_OUT_VENDOR)/etc/selinux/precompiled_sepolicy.product_sepolicy_and_mapping.sha256 \
-    vendor/motorola/sm7750-common/proprietary/vendor/etc/selinux/precompiled_sepolicy.system_ext_sepolicy_and_mapping.sha256:$(TARGET_COPY_OUT_VENDOR)/etc/selinux/precompiled_sepolicy.system_ext_sepolicy_and_mapping.sha256 \
-    vendor/motorola/sm7750-common/proprietary/vendor/etc/selinux/selinux_denial_metadata:$(TARGET_COPY_OUT_VENDOR)/etc/selinux/selinux_denial_metadata \
-    vendor/motorola/sm7750-common/proprietary/vendor/etc/selinux/vendor_file_contexts:$(TARGET_COPY_OUT_VENDOR)/etc/selinux/vendor_file_contexts \
-    vendor/motorola/sm7750-common/proprietary/vendor/etc/selinux/vendor_hwservice_contexts:$(TARGET_COPY_OUT_VENDOR)/etc/selinux/vendor_hwservice_contexts \
-    vendor/motorola/sm7750-common/proprietary/vendor/etc/selinux/vendor_keystore2_key_contexts:$(TARGET_COPY_OUT_VENDOR)/etc/selinux/vendor_keystore2_key_contexts \
-    vendor/motorola/sm7750-common/proprietary/vendor/etc/selinux/vendor_mac_permissions.xml:$(TARGET_COPY_OUT_VENDOR)/etc/selinux/vendor_mac_permissions.xml \
-    vendor/motorola/sm7750-common/proprietary/vendor/etc/selinux/vendor_property_contexts:$(TARGET_COPY_OUT_VENDOR)/etc/selinux/vendor_property_contexts \
-    vendor/motorola/sm7750-common/proprietary/vendor/etc/selinux/vendor_seapp_contexts:$(TARGET_COPY_OUT_VENDOR)/etc/selinux/vendor_seapp_contexts \
-    vendor/motorola/sm7750-common/proprietary/vendor/etc/selinux/vendor_sepolicy.cil:$(TARGET_COPY_OUT_VENDOR)/etc/selinux/vendor_sepolicy.cil \
-    vendor/motorola/sm7750-common/proprietary/vendor/etc/selinux/vendor_service_contexts:$(TARGET_COPY_OUT_VENDOR)/etc/selinux/vendor_service_contexts \
-    vendor/motorola/sm7750-common/proprietary/vendor/etc/selinux/vndservice_contexts:$(TARGET_COPY_OUT_VENDOR)/etc/selinux/vndservice_contexts \
     vendor/motorola/sm7750-common/proprietary/vendor/etc/sensors/als_comp_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/als_comp_config.xml \
     vendor/motorola/sm7750-common/proprietary/vendor/etc/sensors/als_comp_tf_boe_dc0.config:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/als_comp_tf_boe_dc0.config \
     vendor/motorola/sm7750-common/proprietary/vendor/etc/sensors/als_comp_tf_boe_dc1.config:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/als_comp_tf_boe_dc1.config \
@@ -1008,7 +889,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/sm7750-common/proprietary/vendor/etc/telephony_packages.xml:$(TARGET_COPY_OUT_VENDOR)/etc/telephony_packages.xml \
     vendor/motorola/sm7750-common/proprietary/vendor/etc/tetras/portrait_repair_composite_hd.model:$(TARGET_COPY_OUT_VENDOR)/etc/tetras/portrait_repair_composite_hd.model \
     vendor/motorola/sm7750-common/proprietary/vendor/etc/thermal-engine.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine.conf \
-    vendor/motorola/sm7750-common/proprietary/vendor/etc/ueventd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/ueventd.rc \
     vendor/motorola/sm7750-common/proprietary/vendor/etc/usb_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/usb_audio_policy_configuration.xml \
     vendor/motorola/sm7750-common/proprietary/vendor/etc/usecaseKvManager.xml:$(TARGET_COPY_OUT_VENDOR)/etc/usecaseKvManager.xml \
     vendor/motorola/sm7750-common/proprietary/vendor/etc/vhw.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vhw.xml \
@@ -1370,26 +1250,795 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/sm7750-common/proprietary/vendor/lib64/qsn1rtlp43270.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/qsn1rtlp43270.bin \
     vendor/motorola/sm7750-common/proprietary/vendor/lib64/qsn2all.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/qsn2all.bin \
     vendor/motorola/sm7750-common/proprietary/vendor/lib64/qsn3all.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/qsn3all.bin \
-    vendor/motorola/sm7750-common/proprietary/vendor/odm_dlkm/etc/build.prop:$(TARGET_COPY_OUT_VENDOR)/odm_dlkm/etc/build.prop \
-    vendor/motorola/sm7750-common/proprietary/vendor/overlay/MotoFrameworkResOverlayHWDualSim.apk:$(TARGET_COPY_OUT_VENDOR)/overlay/MotoFrameworkResOverlayHWDualSim.apk \
-    vendor/motorola/sm7750-common/proprietary/vendor/overlay/MotoFrameworkResOverlayVendorCommon.apk:$(TARGET_COPY_OUT_VENDOR)/overlay/MotoFrameworkResOverlayVendorCommon.apk \
-    vendor/motorola/sm7750-common/proprietary/vendor/overlay/MotoFrameworkResOverlayWFD.apk:$(TARGET_COPY_OUT_VENDOR)/overlay/MotoFrameworkResOverlayWFD.apk \
-    vendor/motorola/sm7750-common/proprietary/vendor/overlay/MotoFrameworkResOverlayWlc.apk:$(TARGET_COPY_OUT_VENDOR)/overlay/MotoFrameworkResOverlayWlc.apk \
-    vendor/motorola/sm7750-common/proprietary/vendor/overlay/SecureElementResTarget_Vendor.apk:$(TARGET_COPY_OUT_VENDOR)/overlay/SecureElementResTarget_Vendor.apk \
-    vendor/motorola/sm7750-common/proprietary/vendor/overlay/SettingsProvider__roadstr__auto_generated_rro_vendor.apk:$(TARGET_COPY_OUT_VENDOR)/overlay/SettingsProvider__roadstr__auto_generated_rro_vendor.apk \
-    vendor/motorola/sm7750-common/proprietary/vendor/overlay/StSecureElementWithouteSEResOverlay.apk:$(TARGET_COPY_OUT_VENDOR)/overlay/StSecureElementWithouteSEResOverlay.apk \
-    vendor/motorola/sm7750-common/proprietary/vendor/overlay/SystemUI__roadstr__auto_generated_rro_vendor.apk:$(TARGET_COPY_OUT_VENDOR)/overlay/SystemUI__roadstr__auto_generated_rro_vendor.apk \
-    vendor/motorola/sm7750-common/proprietary/vendor/overlay/WifiRes6GhzEnable.apk:$(TARGET_COPY_OUT_VENDOR)/overlay/WifiRes6GhzEnable.apk \
-    vendor/motorola/sm7750-common/proprietary/vendor/overlay/WifiResDualStaEnablePRC.apk:$(TARGET_COPY_OUT_VENDOR)/overlay/WifiResDualStaEnablePRC.apk \
-    vendor/motorola/sm7750-common/proprietary/vendor/overlay/WifiResDualStaEnableROW.apk:$(TARGET_COPY_OUT_VENDOR)/overlay/WifiResDualStaEnableROW.apk \
-    vendor/motorola/sm7750-common/proprietary/vendor/overlay/framework-res__roadstr__auto_generated_rro_vendor.apk:$(TARGET_COPY_OUT_VENDOR)/overlay/framework-res__roadstr__auto_generated_rro_vendor.apk \
     vendor/motorola/sm7750-common/proprietary/vendor/rfs/rfs_symlinks:$(TARGET_COPY_OUT_VENDOR)/rfs/rfs_symlinks \
-    vendor/motorola/sm7750-common/proprietary/vendor/usr/keylayout/fts_ts.kl:$(TARGET_COPY_OUT_VENDOR)/usr/keylayout/fts_ts.kl
+    vendor/motorola/sm7750-common/proprietary/vendor/usr/keylayout/fts_ts.kl:$(TARGET_COPY_OUT_VENDOR)/usr/keylayout/fts_ts.kl \
+    vendor/motorola/sm7750-common/proprietary/system_ext/bin/MemHalTest-system:$(TARGET_COPY_OUT_SYSTEM_EXT)/bin/MemHalTest-system \
+    vendor/motorola/sm7750-common/proprietary/system_ext/bin/diag_callback_sample_system:$(TARGET_COPY_OUT_SYSTEM_EXT)/bin/diag_callback_sample_system \
+    vendor/motorola/sm7750-common/proprietary/system_ext/bin/diag_dci_sample_system:$(TARGET_COPY_OUT_SYSTEM_EXT)/bin/diag_dci_sample_system \
+    vendor/motorola/sm7750-common/proprietary/system_ext/bin/diag_mdlog_system:$(TARGET_COPY_OUT_SYSTEM_EXT)/bin/diag_mdlog_system \
+    vendor/motorola/sm7750-common/proprietary/system_ext/bin/dpmd:$(TARGET_COPY_OUT_SYSTEM_EXT)/bin/dpmd \
+    vendor/motorola/sm7750-common/proprietary/system_ext/bin/dun-server:$(TARGET_COPY_OUT_SYSTEM_EXT)/bin/dun-server \
+    vendor/motorola/sm7750-common/proprietary/system_ext/bin/perfservice:$(TARGET_COPY_OUT_SYSTEM_EXT)/bin/perfservice \
+    vendor/motorola/sm7750-common/proprietary/system_ext/bin/qccsyshal@1.2-service:$(TARGET_COPY_OUT_SYSTEM_EXT)/bin/qccsyshal@1.2-service \
+    vendor/motorola/sm7750-common/proprietary/system_ext/bin/qccsyshal_aidl-service:$(TARGET_COPY_OUT_SYSTEM_EXT)/bin/qccsyshal_aidl-service \
+    vendor/motorola/sm7750-common/proprietary/system_ext/bin/qcrosvm:$(TARGET_COPY_OUT_SYSTEM_EXT)/bin/qcrosvm \
+    vendor/motorola/sm7750-common/proprietary/system_ext/bin/qsguard:$(TARGET_COPY_OUT_SYSTEM_EXT)/bin/qsguard \
+    vendor/motorola/sm7750-common/proprietary/system_ext/bin/qspmsvc:$(TARGET_COPY_OUT_SYSTEM_EXT)/bin/qspmsvc \
+    vendor/motorola/sm7750-common/proprietary/system_ext/bin/qxrsplitauxservice:$(TARGET_COPY_OUT_SYSTEM_EXT)/bin/qxrsplitauxservice \
+    vendor/motorola/sm7750-common/proprietary/system_ext/bin/sigma_miracasthalservice64:$(TARGET_COPY_OUT_SYSTEM_EXT)/bin/sigma_miracasthalservice64 \
+    vendor/motorola/sm7750-common/proprietary/system_ext/bin/sigma_miracasthalservice_aidl:$(TARGET_COPY_OUT_SYSTEM_EXT)/bin/sigma_miracasthalservice_aidl \
+    vendor/motorola/sm7750-common/proprietary/system_ext/bin/tcmd_system:$(TARGET_COPY_OUT_SYSTEM_EXT)/bin/tcmd_system \
+    vendor/motorola/sm7750-common/proprietary/system_ext/bin/test_diag_system:$(TARGET_COPY_OUT_SYSTEM_EXT)/bin/test_diag_system \
+    vendor/motorola/sm7750-common/proprietary/system_ext/bin/wfdservice64:$(TARGET_COPY_OUT_SYSTEM_EXT)/bin/wfdservice64 \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/C2PAInternetService:$(TARGET_COPY_OUT_VENDOR)/bin/C2PAInternetService \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/KmInstallKeybox:$(TARGET_COPY_OUT_VENDOR)/bin/KmInstallKeybox \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/KmValidateKeybox:$(TARGET_COPY_OUT_VENDOR)/bin/KmValidateKeybox \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/STFlashTool:$(TARGET_COPY_OUT_VENDOR)/bin/STFlashTool \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/StoreKeybox:$(TARGET_COPY_OUT_VENDOR)/bin/StoreKeybox \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/adpl:$(TARGET_COPY_OUT_VENDOR)/bin/adpl \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/adsprpcd:$(TARGET_COPY_OUT_VENDOR)/bin/adsprpcd \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/aecxsimulator:$(TARGET_COPY_OUT_VENDOR)/bin/aecxsimulator \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/agmcap:$(TARGET_COPY_OUT_VENDOR)/bin/agmcap \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/agmcompresscap:$(TARGET_COPY_OUT_VENDOR)/bin/agmcompresscap \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/agmcompressplay:$(TARGET_COPY_OUT_VENDOR)/bin/agmcompressplay \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/agmhostless:$(TARGET_COPY_OUT_VENDOR)/bin/agmhostless \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/agmplay:$(TARGET_COPY_OUT_VENDOR)/bin/agmplay \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/agmvoiceui:$(TARGET_COPY_OUT_VENDOR)/bin/agmvoiceui \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/aplogcat:$(TARGET_COPY_OUT_VENDOR)/bin/aplogcat \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/aplogd:$(TARGET_COPY_OUT_VENDOR)/bin/aplogd \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/batch:$(TARGET_COPY_OUT_VENDOR)/bin/batch \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/batt_health:$(TARGET_COPY_OUT_VENDOR)/bin/batt_health \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/bootloaderlog:$(TARGET_COPY_OUT_VENDOR)/bin/bootloaderlog \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/capsense_reset:$(TARGET_COPY_OUT_VENDOR)/bin/capsense_reset \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/ccid_daemon_nr:$(TARGET_COPY_OUT_VENDOR)/bin/ccid_daemon_nr \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/cdsprpcd:$(TARGET_COPY_OUT_VENDOR)/bin/cdsprpcd \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/charge_only_mode:$(TARGET_COPY_OUT_VENDOR)/bin/charge_only_mode \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/cnd:$(TARGET_COPY_OUT_VENDOR)/bin/cnd \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/cnss-daemon:$(TARGET_COPY_OUT_VENDOR)/bin/cnss-daemon \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/cnss_cli:$(TARGET_COPY_OUT_VENDOR)/bin/cnss_cli \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/com_fastbootd:$(TARGET_COPY_OUT_VENDOR)/bin/com_fastbootd \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/ctlogger:$(TARGET_COPY_OUT_VENDOR)/bin/ctlogger \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/dppdaemon:$(TARGET_COPY_OUT_VENDOR)/bin/dppdaemon \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/dspservice:$(TARGET_COPY_OUT_VENDOR)/bin/dspservice \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/e_loop:$(TARGET_COPY_OUT_VENDOR)/bin/e_loop \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/edgnss-daemon:$(TARGET_COPY_OUT_VENDOR)/bin/edgnss-daemon \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/embmsslServer:$(TARGET_COPY_OUT_VENDOR)/bin/embmsslServer \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/engine-service:$(TARGET_COPY_OUT_VENDOR)/bin/engine-service \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/ese_provision_app:$(TARGET_COPY_OUT_VENDOR)/bin/ese_provision_app \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/expat:$(TARGET_COPY_OUT_VENDOR)/bin/expat \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/fan_service:$(TARGET_COPY_OUT_VENDOR)/bin/fan_service \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/fdrcontrol:$(TARGET_COPY_OUT_VENDOR)/bin/fdrcontrol \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/fm_qsoc_patches:$(TARGET_COPY_OUT_VENDOR)/bin/fm_qsoc_patches \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/fmconfig:$(TARGET_COPY_OUT_VENDOR)/bin/fmconfig \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/fotacontrol:$(TARGET_COPY_OUT_VENDOR)/bin/fotacontrol \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/ftmdaemon:$(TARGET_COPY_OUT_VENDOR)/bin/ftmdaemon \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/ftmipcd:$(TARGET_COPY_OUT_VENDOR)/bin/ftmipcd \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/ftmmodemdebug:$(TARGET_COPY_OUT_VENDOR)/bin/ftmmodemdebug \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/getconfig:$(TARGET_COPY_OUT_VENDOR)/bin/getconfig \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/hal_proxy_daemon:$(TARGET_COPY_OUT_VENDOR)/bin/hal_proxy_daemon \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/hdcp1prov:$(TARGET_COPY_OUT_VENDOR)/bin/hdcp1prov \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/hdcp2p2prov:$(TARGET_COPY_OUT_VENDOR)/bin/hdcp2p2prov \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/hexlpservice:$(TARGET_COPY_OUT_VENDOR)/bin/hexlpservice \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/hlosminkdaemon:$(TARGET_COPY_OUT_VENDOR)/bin/hlosminkdaemon \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/hw/android.hardware.bluetooth@aidl-service-qti:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.bluetooth@aidl-service-qti \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/hw/android.hardware.gatekeeper-service-qti:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.gatekeeper-service-qti \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/hw/android.hardware.gnss-aidl-service-qti:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.gnss-aidl-service-qti \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/hw/android.hardware.identity-service-qti:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.identity-service-qti \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/hw/android.hardware.keymaster@4.0-service-qti:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.keymaster@4.0-service-qti \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/hw/android.hardware.nfc-service-st:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.nfc-service-st \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/hw/android.hardware.nqnfc-service.nxp:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.nqnfc-service.nxp \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/hw/android.hardware.secure_element-service.qti:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.secure_element-service.qti \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/hw/android.hardware.security.keymint-service-qti:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.security.keymint-service-qti \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/hw/android.hardware.security.keymint-service.strongbox-thales:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.security.keymint-service.strongbox-thales \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/hw/android.hardware.uwb@service-qti:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.uwb@service-qti \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/hw/motosxf:$(TARGET_COPY_OUT_VENDOR)/bin/hw/motosxf \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/hw/qconfigservice:$(TARGET_COPY_OUT_VENDOR)/bin/hw/qconfigservice \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/hw/qcrilNrd:$(TARGET_COPY_OUT_VENDOR)/bin/hw/qcrilNrd \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/hw/vendor.qti.MemHal-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.MemHal-service \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/hw/vendor.qti.camera.provider-service_64:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.camera.provider-service_64 \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/hw/vendor.qti.hardware.alarm-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.hardware.alarm-service \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/hw/vendor.qti.hardware.c2pa-aidl-service-qti:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.hardware.c2pa-aidl-service-qti \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/hw/vendor.qti.hardware.capabilityconfigstore-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.hardware.capabilityconfigstore-service \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/hw/vendor.qti.hardware.display.color-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.hardware.display.color-service \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/hw/vendor.qti.hardware.lights.service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.hardware.lights.service \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/hw/vendor.qti.hardware.minkipcbinder@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.hardware.minkipcbinder@1.0-service \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/hw/vendor.qti.hardware.perf2-hal-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.hardware.perf2-hal-service \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/hw/vendor.qti.hardware.qseecom@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.hardware.qseecom@1.0-service \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/hw/vendor.qti.hardware.secureprocessor:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.hardware.secureprocessor \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/hw/vendor.qti.hardware.sensorscalibrate-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.hardware.sensorscalibrate-service \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/hw/vendor.qti.hardware.servicetrackeraidl-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.hardware.servicetrackeraidl-service \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/hw/vendor.qti.hardware.soter-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.hardware.soter-service \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/hw/vendor.qti.media.c2@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.media.c2@1.0-service \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/hw/vendor.qti.media.c2audio@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.media.c2audio@1.0-service \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/hw/vendor.qti.psiclient@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.psiclient@1.0-service \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/hw/vendor.zuialarm.hardware.alarm-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.zuialarm.hardware.alarm-service \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/ims-dataservice-daemon:$(TARGET_COPY_OUT_VENDOR)/bin/ims-dataservice-daemon \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/ims_rtp_daemon:$(TARGET_COPY_OUT_VENDOR)/bin/ims_rtp_daemon \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/imsdaemon:$(TARGET_COPY_OUT_VENDOR)/bin/imsdaemon \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/ipp_key_gen:$(TARGET_COPY_OUT_VENDOR)/bin/ipp_key_gen \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/irsc_util:$(TARGET_COPY_OUT_VENDOR)/bin/irsc_util \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/kpgather:$(TARGET_COPY_OUT_VENDOR)/bin/kpgather \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/kpreadwrite:$(TARGET_COPY_OUT_VENDOR)/bin/kpreadwrite \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/ks:$(TARGET_COPY_OUT_VENDOR)/bin/ks \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/loadalgo:$(TARGET_COPY_OUT_VENDOR)/bin/loadalgo \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/loc_launcher:$(TARGET_COPY_OUT_VENDOR)/bin/loc_launcher \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/lowi-server:$(TARGET_COPY_OUT_VENDOR)/bin/lowi-server \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/masterclear:$(TARGET_COPY_OUT_VENDOR)/bin/masterclear \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/mbm_spy:$(TARGET_COPY_OUT_VENDOR)/bin/mbm_spy \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/mlid:$(TARGET_COPY_OUT_VENDOR)/bin/mlid \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/mot_tcmd:$(TARGET_COPY_OUT_VENDOR)/bin/mot_tcmd \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/moto_eSE_tool:$(TARGET_COPY_OUT_VENDOR)/bin/moto_eSE_tool \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/motobox:$(TARGET_COPY_OUT_VENDOR)/bin/motobox \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/myftm:$(TARGET_COPY_OUT_VENDOR)/bin/myftm \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/nicmd:$(TARGET_COPY_OUT_VENDOR)/bin/nicmd \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/pd-mapper:$(TARGET_COPY_OUT_VENDOR)/bin/pd-mapper \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/pktlogconf:$(TARGET_COPY_OUT_VENDOR)/bin/pktlogconf \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/pm-proxy:$(TARGET_COPY_OUT_VENDOR)/bin/pm-proxy \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/pm-service:$(TARGET_COPY_OUT_VENDOR)/bin/pm-service \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/pm_ioctl_app:$(TARGET_COPY_OUT_VENDOR)/bin/pm_ioctl_app \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/pmic_key_reset:$(TARGET_COPY_OUT_VENDOR)/bin/pmic_key_reset \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/port-bridge:$(TARGET_COPY_OUT_VENDOR)/bin/port-bridge \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/power_off_alarm:$(TARGET_COPY_OUT_VENDOR)/bin/power_off_alarm \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/poweroffcontrol:$(TARGET_COPY_OUT_VENDOR)/bin/poweroffcontrol \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/poweropt-service:$(TARGET_COPY_OUT_VENDOR)/bin/poweropt-service \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/ppd:$(TARGET_COPY_OUT_VENDOR)/bin/ppd \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/ptf:$(TARGET_COPY_OUT_VENDOR)/bin/ptf \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/qcc-vendor:$(TARGET_COPY_OUT_VENDOR)/bin/qcc-vendor \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/qdcmss:$(TARGET_COPY_OUT_VENDOR)/bin/qdcmss \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/qesdk-manager:$(TARGET_COPY_OUT_VENDOR)/bin/qesdk-manager \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/qesdk-secmanager:$(TARGET_COPY_OUT_VENDOR)/bin/qesdk-secmanager \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/qguard:$(TARGET_COPY_OUT_VENDOR)/bin/qguard \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/qmi_motext_hook:$(TARGET_COPY_OUT_VENDOR)/bin/qmi_motext_hook \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/qmipriod:$(TARGET_COPY_OUT_VENDOR)/bin/qmipriod \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/qms:$(TARGET_COPY_OUT_VENDOR)/bin/qms \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/qrtr-cfg:$(TARGET_COPY_OUT_VENDOR)/bin/qrtr-cfg \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/qrtr-lookup:$(TARGET_COPY_OUT_VENDOR)/bin/qrtr-lookup \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/qrtr-ns:$(TARGET_COPY_OUT_VENDOR)/bin/qrtr-ns \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/qsap_dcfd:$(TARGET_COPY_OUT_VENDOR)/bin/qsap_dcfd \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/qsap_location:$(TARGET_COPY_OUT_VENDOR)/bin/qsap_location \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/qsap_qapeservice:$(TARGET_COPY_OUT_VENDOR)/bin/qsap_qapeservice \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/qsap_sensors:$(TARGET_COPY_OUT_VENDOR)/bin/qsap_sensors \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/qsap_voiceui:$(TARGET_COPY_OUT_VENDOR)/bin/qsap_voiceui \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/qseecomd:$(TARGET_COPY_OUT_VENDOR)/bin/qseecomd \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/qt-service:$(TARGET_COPY_OUT_VENDOR)/bin/qt-service \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/qti:$(TARGET_COPY_OUT_VENDOR)/bin/qti \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/qwes_cli:$(TARGET_COPY_OUT_VENDOR)/bin/qwes_cli \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/qwesd:$(TARGET_COPY_OUT_VENDOR)/bin/qwesd \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/ramdump_dumper:$(TARGET_COPY_OUT_VENDOR)/bin/ramdump_dumper \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/rmt_storage:$(TARGET_COPY_OUT_VENDOR)/bin/rmt_storage \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/rpmbClient:$(TARGET_COPY_OUT_VENDOR)/bin/rpmbClient \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/sec_log_enabler:$(TARGET_COPY_OUT_VENDOR)/bin/sec_log_enabler \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/sensors.qti:$(TARGET_COPY_OUT_VENDOR)/bin/sensors.qti \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/setconfig:$(TARGET_COPY_OUT_VENDOR)/bin/setconfig \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/shsusrd:$(TARGET_COPY_OUT_VENDOR)/bin/shsusrd \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/sigma_dut:$(TARGET_COPY_OUT_VENDOR)/bin/sigma_dut \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/smcinvoke_example:$(TARGET_COPY_OUT_VENDOR)/bin/smcinvoke_example \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/smcinvoke_skeleton:$(TARGET_COPY_OUT_VENDOR)/bin/smcinvoke_skeleton \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/smcinvoke_skeleton_cpp:$(TARGET_COPY_OUT_VENDOR)/bin/smcinvoke_skeleton_cpp \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/snapdragon_services:$(TARGET_COPY_OUT_VENDOR)/bin/snapdragon_services \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/sns_mot_client:$(TARGET_COPY_OUT_VENDOR)/bin/sns_mot_client \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/spectraltool:$(TARGET_COPY_OUT_VENDOR)/bin/spectraltool \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/sscrpcd:$(TARGET_COPY_OUT_VENDOR)/bin/sscrpcd \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/ssgtzd:$(TARGET_COPY_OUT_VENDOR)/bin/ssgtzd \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/ssr_setup:$(TARGET_COPY_OUT_VENDOR)/bin/ssr_setup \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/stfactorydemo-vendor:$(TARGET_COPY_OUT_VENDOR)/bin/stfactorydemo-vendor \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/subsystem_ramdump:$(TARGET_COPY_OUT_VENDOR)/bin/subsystem_ramdump \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/tcmdhelp:$(TARGET_COPY_OUT_VENDOR)/bin/tcmdhelp \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/tftp_server:$(TARGET_COPY_OUT_VENDOR)/bin/tftp_server \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/thermal-engine-v2:$(TARGET_COPY_OUT_VENDOR)/bin/thermal-engine-v2 \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/time_daemon:$(TARGET_COPY_OUT_VENDOR)/bin/time_daemon \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/tsa_hdcp_service:$(TARGET_COPY_OUT_VENDOR)/bin/tsa_hdcp_service \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/tzlogd:$(TARGET_COPY_OUT_VENDOR)/bin/tzlogd \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/ubwcconvert:$(TARGET_COPY_OUT_VENDOR)/bin/ubwcconvert \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/ufsgetsn:$(TARGET_COPY_OUT_VENDOR)/bin/ufsgetsn \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/utag_spy:$(TARGET_COPY_OUT_VENDOR)/bin/utag_spy \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/vendor.dpmd:$(TARGET_COPY_OUT_VENDOR)/bin/vendor.dpmd \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/vendor.qti.hardware.soter-provision:$(TARGET_COPY_OUT_VENDOR)/bin/vendor.qti.hardware.soter-provision \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/vendor.qti.qspmhal-service:$(TARGET_COPY_OUT_VENDOR)/bin/vendor.qti.qspmhal-service \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/vendor.qti.syshealthmon-service:$(TARGET_COPY_OUT_VENDOR)/bin/vendor.qti.syshealthmon-service \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/vendor_cmd_tool:$(TARGET_COPY_OUT_VENDOR)/bin/vendor_cmd_tool \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/vendor_netconfig:$(TARGET_COPY_OUT_VENDOR)/bin/vendor_netconfig \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/vmmgr:$(TARGET_COPY_OUT_VENDOR)/bin/vmmgr \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/vppservice:$(TARGET_COPY_OUT_VENDOR)/bin/vppservice \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/wdsdaemon:$(TARGET_COPY_OUT_VENDOR)/bin/wdsdaemon \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/wfdhdcphalservice:$(TARGET_COPY_OUT_VENDOR)/bin/wfdhdcphalservice \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/wfdvndservice:$(TARGET_COPY_OUT_VENDOR)/bin/wfdvndservice \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/wifidisplayhalservice:$(TARGET_COPY_OUT_VENDOR)/bin/wifidisplayhalservice \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/wifilearner:$(TARGET_COPY_OUT_VENDOR)/bin/wifilearner \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/xtra-daemon:$(TARGET_COPY_OUT_VENDOR)/bin/xtra-daemon \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/xtwifi-client:$(TARGET_COPY_OUT_VENDOR)/bin/xtwifi-client \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/zui_power_off_alarm:$(TARGET_COPY_OUT_VENDOR)/bin/zui_power_off_alarm \
+    vendor/motorola/sm7750-common/proprietary/system_ext/bin/MemHalTest-system:$(TARGET_COPY_OUT_SYSTEM_EXT)/bin/MemHalTest-system \
+    vendor/motorola/sm7750-common/proprietary/system_ext/bin/diag_callback_sample_system:$(TARGET_COPY_OUT_SYSTEM_EXT)/bin/diag_callback_sample_system \
+    vendor/motorola/sm7750-common/proprietary/system_ext/bin/diag_dci_sample_system:$(TARGET_COPY_OUT_SYSTEM_EXT)/bin/diag_dci_sample_system \
+    vendor/motorola/sm7750-common/proprietary/system_ext/bin/diag_mdlog_system:$(TARGET_COPY_OUT_SYSTEM_EXT)/bin/diag_mdlog_system \
+    vendor/motorola/sm7750-common/proprietary/system_ext/bin/dpmd:$(TARGET_COPY_OUT_SYSTEM_EXT)/bin/dpmd \
+    vendor/motorola/sm7750-common/proprietary/system_ext/bin/dun-server:$(TARGET_COPY_OUT_SYSTEM_EXT)/bin/dun-server \
+    vendor/motorola/sm7750-common/proprietary/system_ext/bin/perfservice:$(TARGET_COPY_OUT_SYSTEM_EXT)/bin/perfservice \
+    vendor/motorola/sm7750-common/proprietary/system_ext/bin/qccsyshal@1.2-service:$(TARGET_COPY_OUT_SYSTEM_EXT)/bin/qccsyshal@1.2-service \
+    vendor/motorola/sm7750-common/proprietary/system_ext/bin/qccsyshal_aidl-service:$(TARGET_COPY_OUT_SYSTEM_EXT)/bin/qccsyshal_aidl-service \
+    vendor/motorola/sm7750-common/proprietary/system_ext/bin/qcrosvm:$(TARGET_COPY_OUT_SYSTEM_EXT)/bin/qcrosvm \
+    vendor/motorola/sm7750-common/proprietary/system_ext/bin/qsguard:$(TARGET_COPY_OUT_SYSTEM_EXT)/bin/qsguard \
+    vendor/motorola/sm7750-common/proprietary/system_ext/bin/qspmsvc:$(TARGET_COPY_OUT_SYSTEM_EXT)/bin/qspmsvc \
+    vendor/motorola/sm7750-common/proprietary/system_ext/bin/qxrsplitauxservice:$(TARGET_COPY_OUT_SYSTEM_EXT)/bin/qxrsplitauxservice \
+    vendor/motorola/sm7750-common/proprietary/system_ext/bin/sigma_miracasthalservice64:$(TARGET_COPY_OUT_SYSTEM_EXT)/bin/sigma_miracasthalservice64 \
+    vendor/motorola/sm7750-common/proprietary/system_ext/bin/sigma_miracasthalservice_aidl:$(TARGET_COPY_OUT_SYSTEM_EXT)/bin/sigma_miracasthalservice_aidl \
+    vendor/motorola/sm7750-common/proprietary/system_ext/bin/tcmd_system:$(TARGET_COPY_OUT_SYSTEM_EXT)/bin/tcmd_system \
+    vendor/motorola/sm7750-common/proprietary/system_ext/bin/test_diag_system:$(TARGET_COPY_OUT_SYSTEM_EXT)/bin/test_diag_system \
+    vendor/motorola/sm7750-common/proprietary/system_ext/bin/wfdservice64:$(TARGET_COPY_OUT_SYSTEM_EXT)/bin/wfdservice64 \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/C2PAInternetService:$(TARGET_COPY_OUT_VENDOR)/bin/C2PAInternetService \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/KmInstallKeybox:$(TARGET_COPY_OUT_VENDOR)/bin/KmInstallKeybox \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/KmValidateKeybox:$(TARGET_COPY_OUT_VENDOR)/bin/KmValidateKeybox \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/STFlashTool:$(TARGET_COPY_OUT_VENDOR)/bin/STFlashTool \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/StoreKeybox:$(TARGET_COPY_OUT_VENDOR)/bin/StoreKeybox \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/adpl:$(TARGET_COPY_OUT_VENDOR)/bin/adpl \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/adsprpcd:$(TARGET_COPY_OUT_VENDOR)/bin/adsprpcd \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/aecxsimulator:$(TARGET_COPY_OUT_VENDOR)/bin/aecxsimulator \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/agmcap:$(TARGET_COPY_OUT_VENDOR)/bin/agmcap \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/agmcompresscap:$(TARGET_COPY_OUT_VENDOR)/bin/agmcompresscap \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/agmcompressplay:$(TARGET_COPY_OUT_VENDOR)/bin/agmcompressplay \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/agmhostless:$(TARGET_COPY_OUT_VENDOR)/bin/agmhostless \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/agmplay:$(TARGET_COPY_OUT_VENDOR)/bin/agmplay \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/agmvoiceui:$(TARGET_COPY_OUT_VENDOR)/bin/agmvoiceui \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/aplogcat:$(TARGET_COPY_OUT_VENDOR)/bin/aplogcat \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/aplogd:$(TARGET_COPY_OUT_VENDOR)/bin/aplogd \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/batch:$(TARGET_COPY_OUT_VENDOR)/bin/batch \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/batt_health:$(TARGET_COPY_OUT_VENDOR)/bin/batt_health \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/bootloaderlog:$(TARGET_COPY_OUT_VENDOR)/bin/bootloaderlog \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/capsense_reset:$(TARGET_COPY_OUT_VENDOR)/bin/capsense_reset \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/ccid_daemon_nr:$(TARGET_COPY_OUT_VENDOR)/bin/ccid_daemon_nr \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/cdsprpcd:$(TARGET_COPY_OUT_VENDOR)/bin/cdsprpcd \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/charge_only_mode:$(TARGET_COPY_OUT_VENDOR)/bin/charge_only_mode \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/cnd:$(TARGET_COPY_OUT_VENDOR)/bin/cnd \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/cnss-daemon:$(TARGET_COPY_OUT_VENDOR)/bin/cnss-daemon \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/cnss_cli:$(TARGET_COPY_OUT_VENDOR)/bin/cnss_cli \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/com_fastbootd:$(TARGET_COPY_OUT_VENDOR)/bin/com_fastbootd \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/ctlogger:$(TARGET_COPY_OUT_VENDOR)/bin/ctlogger \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/dppdaemon:$(TARGET_COPY_OUT_VENDOR)/bin/dppdaemon \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/dspservice:$(TARGET_COPY_OUT_VENDOR)/bin/dspservice \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/e_loop:$(TARGET_COPY_OUT_VENDOR)/bin/e_loop \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/edgnss-daemon:$(TARGET_COPY_OUT_VENDOR)/bin/edgnss-daemon \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/embmsslServer:$(TARGET_COPY_OUT_VENDOR)/bin/embmsslServer \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/engine-service:$(TARGET_COPY_OUT_VENDOR)/bin/engine-service \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/ese_provision_app:$(TARGET_COPY_OUT_VENDOR)/bin/ese_provision_app \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/expat:$(TARGET_COPY_OUT_VENDOR)/bin/expat \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/fan_service:$(TARGET_COPY_OUT_VENDOR)/bin/fan_service \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/fdrcontrol:$(TARGET_COPY_OUT_VENDOR)/bin/fdrcontrol \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/fm_qsoc_patches:$(TARGET_COPY_OUT_VENDOR)/bin/fm_qsoc_patches \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/fmconfig:$(TARGET_COPY_OUT_VENDOR)/bin/fmconfig \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/fotacontrol:$(TARGET_COPY_OUT_VENDOR)/bin/fotacontrol \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/ftmdaemon:$(TARGET_COPY_OUT_VENDOR)/bin/ftmdaemon \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/ftmipcd:$(TARGET_COPY_OUT_VENDOR)/bin/ftmipcd \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/ftmmodemdebug:$(TARGET_COPY_OUT_VENDOR)/bin/ftmmodemdebug \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/getconfig:$(TARGET_COPY_OUT_VENDOR)/bin/getconfig \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/hal_proxy_daemon:$(TARGET_COPY_OUT_VENDOR)/bin/hal_proxy_daemon \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/hdcp1prov:$(TARGET_COPY_OUT_VENDOR)/bin/hdcp1prov \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/hdcp2p2prov:$(TARGET_COPY_OUT_VENDOR)/bin/hdcp2p2prov \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/hexlpservice:$(TARGET_COPY_OUT_VENDOR)/bin/hexlpservice \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/hlosminkdaemon:$(TARGET_COPY_OUT_VENDOR)/bin/hlosminkdaemon \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/hw/android.hardware.bluetooth@aidl-service-qti:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.bluetooth@aidl-service-qti \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/hw/android.hardware.gatekeeper-service-qti:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.gatekeeper-service-qti \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/hw/android.hardware.gnss-aidl-service-qti:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.gnss-aidl-service-qti \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/hw/android.hardware.identity-service-qti:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.identity-service-qti \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/hw/android.hardware.keymaster@4.0-service-qti:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.keymaster@4.0-service-qti \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/hw/android.hardware.nfc-service-st:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.nfc-service-st \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/hw/android.hardware.nqnfc-service.nxp:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.nqnfc-service.nxp \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/hw/android.hardware.secure_element-service.qti:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.secure_element-service.qti \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/hw/android.hardware.security.keymint-service-qti:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.security.keymint-service-qti \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/hw/android.hardware.security.keymint-service.strongbox-thales:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.security.keymint-service.strongbox-thales \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/hw/android.hardware.uwb@service-qti:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.uwb@service-qti \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/hw/motosxf:$(TARGET_COPY_OUT_VENDOR)/bin/hw/motosxf \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/hw/qconfigservice:$(TARGET_COPY_OUT_VENDOR)/bin/hw/qconfigservice \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/hw/qcrilNrd:$(TARGET_COPY_OUT_VENDOR)/bin/hw/qcrilNrd \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/hw/vendor.qti.MemHal-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.MemHal-service \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/hw/vendor.qti.camera.provider-service_64:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.camera.provider-service_64 \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/hw/vendor.qti.hardware.alarm-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.hardware.alarm-service \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/hw/vendor.qti.hardware.c2pa-aidl-service-qti:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.hardware.c2pa-aidl-service-qti \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/hw/vendor.qti.hardware.capabilityconfigstore-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.hardware.capabilityconfigstore-service \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/hw/vendor.qti.hardware.display.color-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.hardware.display.color-service \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/hw/vendor.qti.hardware.lights.service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.hardware.lights.service \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/hw/vendor.qti.hardware.minkipcbinder@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.hardware.minkipcbinder@1.0-service \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/hw/vendor.qti.hardware.perf2-hal-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.hardware.perf2-hal-service \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/hw/vendor.qti.hardware.qseecom@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.hardware.qseecom@1.0-service \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/hw/vendor.qti.hardware.secureprocessor:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.hardware.secureprocessor \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/hw/vendor.qti.hardware.sensorscalibrate-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.hardware.sensorscalibrate-service \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/hw/vendor.qti.hardware.servicetrackeraidl-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.hardware.servicetrackeraidl-service \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/hw/vendor.qti.hardware.soter-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.hardware.soter-service \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/hw/vendor.qti.media.c2@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.media.c2@1.0-service \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/hw/vendor.qti.media.c2audio@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.media.c2audio@1.0-service \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/hw/vendor.qti.psiclient@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.psiclient@1.0-service \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/hw/vendor.zuialarm.hardware.alarm-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.zuialarm.hardware.alarm-service \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/ims-dataservice-daemon:$(TARGET_COPY_OUT_VENDOR)/bin/ims-dataservice-daemon \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/ims_rtp_daemon:$(TARGET_COPY_OUT_VENDOR)/bin/ims_rtp_daemon \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/imsdaemon:$(TARGET_COPY_OUT_VENDOR)/bin/imsdaemon \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/ipp_key_gen:$(TARGET_COPY_OUT_VENDOR)/bin/ipp_key_gen \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/irsc_util:$(TARGET_COPY_OUT_VENDOR)/bin/irsc_util \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/kpgather:$(TARGET_COPY_OUT_VENDOR)/bin/kpgather \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/kpreadwrite:$(TARGET_COPY_OUT_VENDOR)/bin/kpreadwrite \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/ks:$(TARGET_COPY_OUT_VENDOR)/bin/ks \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/loadalgo:$(TARGET_COPY_OUT_VENDOR)/bin/loadalgo \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/loc_launcher:$(TARGET_COPY_OUT_VENDOR)/bin/loc_launcher \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/lowi-server:$(TARGET_COPY_OUT_VENDOR)/bin/lowi-server \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/masterclear:$(TARGET_COPY_OUT_VENDOR)/bin/masterclear \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/mbm_spy:$(TARGET_COPY_OUT_VENDOR)/bin/mbm_spy \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/mlid:$(TARGET_COPY_OUT_VENDOR)/bin/mlid \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/mot_tcmd:$(TARGET_COPY_OUT_VENDOR)/bin/mot_tcmd \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/moto_eSE_tool:$(TARGET_COPY_OUT_VENDOR)/bin/moto_eSE_tool \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/motobox:$(TARGET_COPY_OUT_VENDOR)/bin/motobox \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/myftm:$(TARGET_COPY_OUT_VENDOR)/bin/myftm \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/nicmd:$(TARGET_COPY_OUT_VENDOR)/bin/nicmd \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/pd-mapper:$(TARGET_COPY_OUT_VENDOR)/bin/pd-mapper \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/pktlogconf:$(TARGET_COPY_OUT_VENDOR)/bin/pktlogconf \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/pm-proxy:$(TARGET_COPY_OUT_VENDOR)/bin/pm-proxy \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/pm-service:$(TARGET_COPY_OUT_VENDOR)/bin/pm-service \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/pm_ioctl_app:$(TARGET_COPY_OUT_VENDOR)/bin/pm_ioctl_app \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/pmic_key_reset:$(TARGET_COPY_OUT_VENDOR)/bin/pmic_key_reset \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/port-bridge:$(TARGET_COPY_OUT_VENDOR)/bin/port-bridge \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/power_off_alarm:$(TARGET_COPY_OUT_VENDOR)/bin/power_off_alarm \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/poweroffcontrol:$(TARGET_COPY_OUT_VENDOR)/bin/poweroffcontrol \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/poweropt-service:$(TARGET_COPY_OUT_VENDOR)/bin/poweropt-service \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/ppd:$(TARGET_COPY_OUT_VENDOR)/bin/ppd \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/ptf:$(TARGET_COPY_OUT_VENDOR)/bin/ptf \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/qcc-vendor:$(TARGET_COPY_OUT_VENDOR)/bin/qcc-vendor \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/qdcmss:$(TARGET_COPY_OUT_VENDOR)/bin/qdcmss \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/qesdk-manager:$(TARGET_COPY_OUT_VENDOR)/bin/qesdk-manager \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/qesdk-secmanager:$(TARGET_COPY_OUT_VENDOR)/bin/qesdk-secmanager \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/qguard:$(TARGET_COPY_OUT_VENDOR)/bin/qguard \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/qmi_motext_hook:$(TARGET_COPY_OUT_VENDOR)/bin/qmi_motext_hook \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/qmipriod:$(TARGET_COPY_OUT_VENDOR)/bin/qmipriod \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/qms:$(TARGET_COPY_OUT_VENDOR)/bin/qms \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/qrtr-cfg:$(TARGET_COPY_OUT_VENDOR)/bin/qrtr-cfg \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/qrtr-lookup:$(TARGET_COPY_OUT_VENDOR)/bin/qrtr-lookup \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/qrtr-ns:$(TARGET_COPY_OUT_VENDOR)/bin/qrtr-ns \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/qsap_dcfd:$(TARGET_COPY_OUT_VENDOR)/bin/qsap_dcfd \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/qsap_location:$(TARGET_COPY_OUT_VENDOR)/bin/qsap_location \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/qsap_qapeservice:$(TARGET_COPY_OUT_VENDOR)/bin/qsap_qapeservice \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/qsap_sensors:$(TARGET_COPY_OUT_VENDOR)/bin/qsap_sensors \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/qsap_voiceui:$(TARGET_COPY_OUT_VENDOR)/bin/qsap_voiceui \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/qseecomd:$(TARGET_COPY_OUT_VENDOR)/bin/qseecomd \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/qt-service:$(TARGET_COPY_OUT_VENDOR)/bin/qt-service \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/qti:$(TARGET_COPY_OUT_VENDOR)/bin/qti \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/qwes_cli:$(TARGET_COPY_OUT_VENDOR)/bin/qwes_cli \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/qwesd:$(TARGET_COPY_OUT_VENDOR)/bin/qwesd \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/ramdump_dumper:$(TARGET_COPY_OUT_VENDOR)/bin/ramdump_dumper \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/rmt_storage:$(TARGET_COPY_OUT_VENDOR)/bin/rmt_storage \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/rpmbClient:$(TARGET_COPY_OUT_VENDOR)/bin/rpmbClient \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/sec_log_enabler:$(TARGET_COPY_OUT_VENDOR)/bin/sec_log_enabler \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/sensors.qti:$(TARGET_COPY_OUT_VENDOR)/bin/sensors.qti \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/setconfig:$(TARGET_COPY_OUT_VENDOR)/bin/setconfig \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/shsusrd:$(TARGET_COPY_OUT_VENDOR)/bin/shsusrd \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/sigma_dut:$(TARGET_COPY_OUT_VENDOR)/bin/sigma_dut \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/smcinvoke_example:$(TARGET_COPY_OUT_VENDOR)/bin/smcinvoke_example \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/smcinvoke_skeleton:$(TARGET_COPY_OUT_VENDOR)/bin/smcinvoke_skeleton \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/smcinvoke_skeleton_cpp:$(TARGET_COPY_OUT_VENDOR)/bin/smcinvoke_skeleton_cpp \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/snapdragon_services:$(TARGET_COPY_OUT_VENDOR)/bin/snapdragon_services \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/sns_mot_client:$(TARGET_COPY_OUT_VENDOR)/bin/sns_mot_client \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/spectraltool:$(TARGET_COPY_OUT_VENDOR)/bin/spectraltool \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/sscrpcd:$(TARGET_COPY_OUT_VENDOR)/bin/sscrpcd \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/ssgtzd:$(TARGET_COPY_OUT_VENDOR)/bin/ssgtzd \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/ssr_setup:$(TARGET_COPY_OUT_VENDOR)/bin/ssr_setup \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/stfactorydemo-vendor:$(TARGET_COPY_OUT_VENDOR)/bin/stfactorydemo-vendor \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/subsystem_ramdump:$(TARGET_COPY_OUT_VENDOR)/bin/subsystem_ramdump \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/tcmdhelp:$(TARGET_COPY_OUT_VENDOR)/bin/tcmdhelp \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/tftp_server:$(TARGET_COPY_OUT_VENDOR)/bin/tftp_server \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/thermal-engine-v2:$(TARGET_COPY_OUT_VENDOR)/bin/thermal-engine-v2 \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/time_daemon:$(TARGET_COPY_OUT_VENDOR)/bin/time_daemon \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/tsa_hdcp_service:$(TARGET_COPY_OUT_VENDOR)/bin/tsa_hdcp_service \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/tzlogd:$(TARGET_COPY_OUT_VENDOR)/bin/tzlogd \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/ubwcconvert:$(TARGET_COPY_OUT_VENDOR)/bin/ubwcconvert \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/ufsgetsn:$(TARGET_COPY_OUT_VENDOR)/bin/ufsgetsn \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/utag_spy:$(TARGET_COPY_OUT_VENDOR)/bin/utag_spy \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/vendor.dpmd:$(TARGET_COPY_OUT_VENDOR)/bin/vendor.dpmd \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/vendor.qti.hardware.soter-provision:$(TARGET_COPY_OUT_VENDOR)/bin/vendor.qti.hardware.soter-provision \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/vendor.qti.qspmhal-service:$(TARGET_COPY_OUT_VENDOR)/bin/vendor.qti.qspmhal-service \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/vendor.qti.syshealthmon-service:$(TARGET_COPY_OUT_VENDOR)/bin/vendor.qti.syshealthmon-service \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/vendor_cmd_tool:$(TARGET_COPY_OUT_VENDOR)/bin/vendor_cmd_tool \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/vendor_netconfig:$(TARGET_COPY_OUT_VENDOR)/bin/vendor_netconfig \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/vmmgr:$(TARGET_COPY_OUT_VENDOR)/bin/vmmgr \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/vppservice:$(TARGET_COPY_OUT_VENDOR)/bin/vppservice \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/wdsdaemon:$(TARGET_COPY_OUT_VENDOR)/bin/wdsdaemon \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/wfdhdcphalservice:$(TARGET_COPY_OUT_VENDOR)/bin/wfdhdcphalservice \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/wfdvndservice:$(TARGET_COPY_OUT_VENDOR)/bin/wfdvndservice \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/wifidisplayhalservice:$(TARGET_COPY_OUT_VENDOR)/bin/wifidisplayhalservice \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/wifilearner:$(TARGET_COPY_OUT_VENDOR)/bin/wifilearner \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/xtra-daemon:$(TARGET_COPY_OUT_VENDOR)/bin/xtra-daemon \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/xtwifi-client:$(TARGET_COPY_OUT_VENDOR)/bin/xtwifi-client \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/zui_power_off_alarm:$(TARGET_COPY_OUT_VENDOR)/bin/zui_power_off_alarm \
+    vendor/motorola/sm7750-common/proprietary/system_ext/bin/MemHalTest-system:$(TARGET_COPY_OUT_SYSTEM_EXT)/bin/MemHalTest-system \
+    vendor/motorola/sm7750-common/proprietary/system_ext/bin/diag_callback_sample_system:$(TARGET_COPY_OUT_SYSTEM_EXT)/bin/diag_callback_sample_system \
+    vendor/motorola/sm7750-common/proprietary/system_ext/bin/diag_dci_sample_system:$(TARGET_COPY_OUT_SYSTEM_EXT)/bin/diag_dci_sample_system \
+    vendor/motorola/sm7750-common/proprietary/system_ext/bin/diag_mdlog_system:$(TARGET_COPY_OUT_SYSTEM_EXT)/bin/diag_mdlog_system \
+    vendor/motorola/sm7750-common/proprietary/system_ext/bin/dpmd:$(TARGET_COPY_OUT_SYSTEM_EXT)/bin/dpmd \
+    vendor/motorola/sm7750-common/proprietary/system_ext/bin/dun-server:$(TARGET_COPY_OUT_SYSTEM_EXT)/bin/dun-server \
+    vendor/motorola/sm7750-common/proprietary/system_ext/bin/perfservice:$(TARGET_COPY_OUT_SYSTEM_EXT)/bin/perfservice \
+    vendor/motorola/sm7750-common/proprietary/system_ext/bin/qccsyshal@1.2-service:$(TARGET_COPY_OUT_SYSTEM_EXT)/bin/qccsyshal@1.2-service \
+    vendor/motorola/sm7750-common/proprietary/system_ext/bin/qccsyshal_aidl-service:$(TARGET_COPY_OUT_SYSTEM_EXT)/bin/qccsyshal_aidl-service \
+    vendor/motorola/sm7750-common/proprietary/system_ext/bin/qcrosvm:$(TARGET_COPY_OUT_SYSTEM_EXT)/bin/qcrosvm \
+    vendor/motorola/sm7750-common/proprietary/system_ext/bin/qsguard:$(TARGET_COPY_OUT_SYSTEM_EXT)/bin/qsguard \
+    vendor/motorola/sm7750-common/proprietary/system_ext/bin/qspmsvc:$(TARGET_COPY_OUT_SYSTEM_EXT)/bin/qspmsvc \
+    vendor/motorola/sm7750-common/proprietary/system_ext/bin/qxrsplitauxservice:$(TARGET_COPY_OUT_SYSTEM_EXT)/bin/qxrsplitauxservice \
+    vendor/motorola/sm7750-common/proprietary/system_ext/bin/sigma_miracasthalservice64:$(TARGET_COPY_OUT_SYSTEM_EXT)/bin/sigma_miracasthalservice64 \
+    vendor/motorola/sm7750-common/proprietary/system_ext/bin/sigma_miracasthalservice_aidl:$(TARGET_COPY_OUT_SYSTEM_EXT)/bin/sigma_miracasthalservice_aidl \
+    vendor/motorola/sm7750-common/proprietary/system_ext/bin/tcmd_system:$(TARGET_COPY_OUT_SYSTEM_EXT)/bin/tcmd_system \
+    vendor/motorola/sm7750-common/proprietary/system_ext/bin/test_diag_system:$(TARGET_COPY_OUT_SYSTEM_EXT)/bin/test_diag_system \
+    vendor/motorola/sm7750-common/proprietary/system_ext/bin/wfdservice64:$(TARGET_COPY_OUT_SYSTEM_EXT)/bin/wfdservice64 \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/C2PAInternetService:$(TARGET_COPY_OUT_VENDOR)/bin/C2PAInternetService \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/KmInstallKeybox:$(TARGET_COPY_OUT_VENDOR)/bin/KmInstallKeybox \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/KmValidateKeybox:$(TARGET_COPY_OUT_VENDOR)/bin/KmValidateKeybox \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/STFlashTool:$(TARGET_COPY_OUT_VENDOR)/bin/STFlashTool \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/StoreKeybox:$(TARGET_COPY_OUT_VENDOR)/bin/StoreKeybox \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/adpl:$(TARGET_COPY_OUT_VENDOR)/bin/adpl \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/adsprpcd:$(TARGET_COPY_OUT_VENDOR)/bin/adsprpcd \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/aecxsimulator:$(TARGET_COPY_OUT_VENDOR)/bin/aecxsimulator \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/agmcap:$(TARGET_COPY_OUT_VENDOR)/bin/agmcap \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/agmcompresscap:$(TARGET_COPY_OUT_VENDOR)/bin/agmcompresscap \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/agmcompressplay:$(TARGET_COPY_OUT_VENDOR)/bin/agmcompressplay \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/agmhostless:$(TARGET_COPY_OUT_VENDOR)/bin/agmhostless \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/agmplay:$(TARGET_COPY_OUT_VENDOR)/bin/agmplay \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/agmvoiceui:$(TARGET_COPY_OUT_VENDOR)/bin/agmvoiceui \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/aplogcat:$(TARGET_COPY_OUT_VENDOR)/bin/aplogcat \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/aplogd:$(TARGET_COPY_OUT_VENDOR)/bin/aplogd \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/batch:$(TARGET_COPY_OUT_VENDOR)/bin/batch \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/batt_health:$(TARGET_COPY_OUT_VENDOR)/bin/batt_health \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/bootloaderlog:$(TARGET_COPY_OUT_VENDOR)/bin/bootloaderlog \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/capsense_reset:$(TARGET_COPY_OUT_VENDOR)/bin/capsense_reset \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/ccid_daemon_nr:$(TARGET_COPY_OUT_VENDOR)/bin/ccid_daemon_nr \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/cdsprpcd:$(TARGET_COPY_OUT_VENDOR)/bin/cdsprpcd \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/charge_only_mode:$(TARGET_COPY_OUT_VENDOR)/bin/charge_only_mode \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/cnd:$(TARGET_COPY_OUT_VENDOR)/bin/cnd \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/cnss-daemon:$(TARGET_COPY_OUT_VENDOR)/bin/cnss-daemon \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/cnss_cli:$(TARGET_COPY_OUT_VENDOR)/bin/cnss_cli \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/com_fastbootd:$(TARGET_COPY_OUT_VENDOR)/bin/com_fastbootd \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/ctlogger:$(TARGET_COPY_OUT_VENDOR)/bin/ctlogger \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/dppdaemon:$(TARGET_COPY_OUT_VENDOR)/bin/dppdaemon \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/dspservice:$(TARGET_COPY_OUT_VENDOR)/bin/dspservice \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/e_loop:$(TARGET_COPY_OUT_VENDOR)/bin/e_loop \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/edgnss-daemon:$(TARGET_COPY_OUT_VENDOR)/bin/edgnss-daemon \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/embmsslServer:$(TARGET_COPY_OUT_VENDOR)/bin/embmsslServer \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/engine-service:$(TARGET_COPY_OUT_VENDOR)/bin/engine-service \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/ese_provision_app:$(TARGET_COPY_OUT_VENDOR)/bin/ese_provision_app \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/expat:$(TARGET_COPY_OUT_VENDOR)/bin/expat \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/fan_service:$(TARGET_COPY_OUT_VENDOR)/bin/fan_service \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/fdrcontrol:$(TARGET_COPY_OUT_VENDOR)/bin/fdrcontrol \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/fm_qsoc_patches:$(TARGET_COPY_OUT_VENDOR)/bin/fm_qsoc_patches \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/fmconfig:$(TARGET_COPY_OUT_VENDOR)/bin/fmconfig \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/fotacontrol:$(TARGET_COPY_OUT_VENDOR)/bin/fotacontrol \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/ftmdaemon:$(TARGET_COPY_OUT_VENDOR)/bin/ftmdaemon \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/ftmipcd:$(TARGET_COPY_OUT_VENDOR)/bin/ftmipcd \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/ftmmodemdebug:$(TARGET_COPY_OUT_VENDOR)/bin/ftmmodemdebug \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/getconfig:$(TARGET_COPY_OUT_VENDOR)/bin/getconfig \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/hal_proxy_daemon:$(TARGET_COPY_OUT_VENDOR)/bin/hal_proxy_daemon \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/hdcp1prov:$(TARGET_COPY_OUT_VENDOR)/bin/hdcp1prov \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/hdcp2p2prov:$(TARGET_COPY_OUT_VENDOR)/bin/hdcp2p2prov \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/hexlpservice:$(TARGET_COPY_OUT_VENDOR)/bin/hexlpservice \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/hlosminkdaemon:$(TARGET_COPY_OUT_VENDOR)/bin/hlosminkdaemon \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/hw/android.hardware.bluetooth@aidl-service-qti:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.bluetooth@aidl-service-qti \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/hw/android.hardware.gatekeeper-service-qti:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.gatekeeper-service-qti \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/hw/android.hardware.gnss-aidl-service-qti:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.gnss-aidl-service-qti \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/hw/android.hardware.identity-service-qti:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.identity-service-qti \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/hw/android.hardware.keymaster@4.0-service-qti:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.keymaster@4.0-service-qti \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/hw/android.hardware.nfc-service-st:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.nfc-service-st \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/hw/android.hardware.nqnfc-service.nxp:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.nqnfc-service.nxp \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/hw/android.hardware.secure_element-service.qti:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.secure_element-service.qti \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/hw/android.hardware.security.keymint-service-qti:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.security.keymint-service-qti \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/hw/android.hardware.security.keymint-service.strongbox-thales:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.security.keymint-service.strongbox-thales \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/hw/android.hardware.uwb@service-qti:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.uwb@service-qti \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/hw/motosxf:$(TARGET_COPY_OUT_VENDOR)/bin/hw/motosxf \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/hw/qconfigservice:$(TARGET_COPY_OUT_VENDOR)/bin/hw/qconfigservice \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/hw/qcrilNrd:$(TARGET_COPY_OUT_VENDOR)/bin/hw/qcrilNrd \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/hw/vendor.qti.MemHal-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.MemHal-service \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/hw/vendor.qti.camera.provider-service_64:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.camera.provider-service_64 \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/hw/vendor.qti.hardware.alarm-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.hardware.alarm-service \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/hw/vendor.qti.hardware.c2pa-aidl-service-qti:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.hardware.c2pa-aidl-service-qti \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/hw/vendor.qti.hardware.capabilityconfigstore-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.hardware.capabilityconfigstore-service \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/hw/vendor.qti.hardware.display.color-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.hardware.display.color-service \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/hw/vendor.qti.hardware.lights.service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.hardware.lights.service \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/hw/vendor.qti.hardware.minkipcbinder@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.hardware.minkipcbinder@1.0-service \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/hw/vendor.qti.hardware.perf2-hal-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.hardware.perf2-hal-service \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/hw/vendor.qti.hardware.qseecom@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.hardware.qseecom@1.0-service \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/hw/vendor.qti.hardware.secureprocessor:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.hardware.secureprocessor \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/hw/vendor.qti.hardware.sensorscalibrate-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.hardware.sensorscalibrate-service \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/hw/vendor.qti.hardware.servicetrackeraidl-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.hardware.servicetrackeraidl-service \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/hw/vendor.qti.hardware.soter-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.hardware.soter-service \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/hw/vendor.qti.media.c2@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.media.c2@1.0-service \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/hw/vendor.qti.media.c2audio@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.media.c2audio@1.0-service \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/hw/vendor.qti.psiclient@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.psiclient@1.0-service \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/hw/vendor.zuialarm.hardware.alarm-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.zuialarm.hardware.alarm-service \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/ims-dataservice-daemon:$(TARGET_COPY_OUT_VENDOR)/bin/ims-dataservice-daemon \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/ims_rtp_daemon:$(TARGET_COPY_OUT_VENDOR)/bin/ims_rtp_daemon \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/imsdaemon:$(TARGET_COPY_OUT_VENDOR)/bin/imsdaemon \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/ipp_key_gen:$(TARGET_COPY_OUT_VENDOR)/bin/ipp_key_gen \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/irsc_util:$(TARGET_COPY_OUT_VENDOR)/bin/irsc_util \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/kpgather:$(TARGET_COPY_OUT_VENDOR)/bin/kpgather \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/kpreadwrite:$(TARGET_COPY_OUT_VENDOR)/bin/kpreadwrite \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/ks:$(TARGET_COPY_OUT_VENDOR)/bin/ks \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/loadalgo:$(TARGET_COPY_OUT_VENDOR)/bin/loadalgo \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/loc_launcher:$(TARGET_COPY_OUT_VENDOR)/bin/loc_launcher \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/lowi-server:$(TARGET_COPY_OUT_VENDOR)/bin/lowi-server \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/masterclear:$(TARGET_COPY_OUT_VENDOR)/bin/masterclear \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/mbm_spy:$(TARGET_COPY_OUT_VENDOR)/bin/mbm_spy \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/mlid:$(TARGET_COPY_OUT_VENDOR)/bin/mlid \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/mot_tcmd:$(TARGET_COPY_OUT_VENDOR)/bin/mot_tcmd \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/moto_eSE_tool:$(TARGET_COPY_OUT_VENDOR)/bin/moto_eSE_tool \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/motobox:$(TARGET_COPY_OUT_VENDOR)/bin/motobox \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/myftm:$(TARGET_COPY_OUT_VENDOR)/bin/myftm \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/nicmd:$(TARGET_COPY_OUT_VENDOR)/bin/nicmd \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/pd-mapper:$(TARGET_COPY_OUT_VENDOR)/bin/pd-mapper \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/pktlogconf:$(TARGET_COPY_OUT_VENDOR)/bin/pktlogconf \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/pm-proxy:$(TARGET_COPY_OUT_VENDOR)/bin/pm-proxy \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/pm-service:$(TARGET_COPY_OUT_VENDOR)/bin/pm-service \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/pm_ioctl_app:$(TARGET_COPY_OUT_VENDOR)/bin/pm_ioctl_app \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/pmic_key_reset:$(TARGET_COPY_OUT_VENDOR)/bin/pmic_key_reset \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/port-bridge:$(TARGET_COPY_OUT_VENDOR)/bin/port-bridge \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/power_off_alarm:$(TARGET_COPY_OUT_VENDOR)/bin/power_off_alarm \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/poweroffcontrol:$(TARGET_COPY_OUT_VENDOR)/bin/poweroffcontrol \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/poweropt-service:$(TARGET_COPY_OUT_VENDOR)/bin/poweropt-service \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/ppd:$(TARGET_COPY_OUT_VENDOR)/bin/ppd \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/ptf:$(TARGET_COPY_OUT_VENDOR)/bin/ptf \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/qcc-vendor:$(TARGET_COPY_OUT_VENDOR)/bin/qcc-vendor \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/qdcmss:$(TARGET_COPY_OUT_VENDOR)/bin/qdcmss \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/qesdk-manager:$(TARGET_COPY_OUT_VENDOR)/bin/qesdk-manager \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/qesdk-secmanager:$(TARGET_COPY_OUT_VENDOR)/bin/qesdk-secmanager \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/qguard:$(TARGET_COPY_OUT_VENDOR)/bin/qguard \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/qmi_motext_hook:$(TARGET_COPY_OUT_VENDOR)/bin/qmi_motext_hook \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/qmipriod:$(TARGET_COPY_OUT_VENDOR)/bin/qmipriod \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/qms:$(TARGET_COPY_OUT_VENDOR)/bin/qms \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/qrtr-cfg:$(TARGET_COPY_OUT_VENDOR)/bin/qrtr-cfg \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/qrtr-lookup:$(TARGET_COPY_OUT_VENDOR)/bin/qrtr-lookup \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/qrtr-ns:$(TARGET_COPY_OUT_VENDOR)/bin/qrtr-ns \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/qsap_dcfd:$(TARGET_COPY_OUT_VENDOR)/bin/qsap_dcfd \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/qsap_location:$(TARGET_COPY_OUT_VENDOR)/bin/qsap_location \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/qsap_qapeservice:$(TARGET_COPY_OUT_VENDOR)/bin/qsap_qapeservice \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/qsap_sensors:$(TARGET_COPY_OUT_VENDOR)/bin/qsap_sensors \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/qsap_voiceui:$(TARGET_COPY_OUT_VENDOR)/bin/qsap_voiceui \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/qseecomd:$(TARGET_COPY_OUT_VENDOR)/bin/qseecomd \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/qt-service:$(TARGET_COPY_OUT_VENDOR)/bin/qt-service \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/qti:$(TARGET_COPY_OUT_VENDOR)/bin/qti \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/qwes_cli:$(TARGET_COPY_OUT_VENDOR)/bin/qwes_cli \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/qwesd:$(TARGET_COPY_OUT_VENDOR)/bin/qwesd \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/ramdump_dumper:$(TARGET_COPY_OUT_VENDOR)/bin/ramdump_dumper \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/rmt_storage:$(TARGET_COPY_OUT_VENDOR)/bin/rmt_storage \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/rpmbClient:$(TARGET_COPY_OUT_VENDOR)/bin/rpmbClient \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/sec_log_enabler:$(TARGET_COPY_OUT_VENDOR)/bin/sec_log_enabler \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/sensors.qti:$(TARGET_COPY_OUT_VENDOR)/bin/sensors.qti \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/setconfig:$(TARGET_COPY_OUT_VENDOR)/bin/setconfig \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/shsusrd:$(TARGET_COPY_OUT_VENDOR)/bin/shsusrd \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/sigma_dut:$(TARGET_COPY_OUT_VENDOR)/bin/sigma_dut \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/smcinvoke_example:$(TARGET_COPY_OUT_VENDOR)/bin/smcinvoke_example \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/smcinvoke_skeleton:$(TARGET_COPY_OUT_VENDOR)/bin/smcinvoke_skeleton \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/smcinvoke_skeleton_cpp:$(TARGET_COPY_OUT_VENDOR)/bin/smcinvoke_skeleton_cpp \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/snapdragon_services:$(TARGET_COPY_OUT_VENDOR)/bin/snapdragon_services \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/sns_mot_client:$(TARGET_COPY_OUT_VENDOR)/bin/sns_mot_client \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/spectraltool:$(TARGET_COPY_OUT_VENDOR)/bin/spectraltool \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/sscrpcd:$(TARGET_COPY_OUT_VENDOR)/bin/sscrpcd \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/ssgtzd:$(TARGET_COPY_OUT_VENDOR)/bin/ssgtzd \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/ssr_setup:$(TARGET_COPY_OUT_VENDOR)/bin/ssr_setup \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/stfactorydemo-vendor:$(TARGET_COPY_OUT_VENDOR)/bin/stfactorydemo-vendor \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/subsystem_ramdump:$(TARGET_COPY_OUT_VENDOR)/bin/subsystem_ramdump \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/tcmdhelp:$(TARGET_COPY_OUT_VENDOR)/bin/tcmdhelp \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/tftp_server:$(TARGET_COPY_OUT_VENDOR)/bin/tftp_server \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/thermal-engine-v2:$(TARGET_COPY_OUT_VENDOR)/bin/thermal-engine-v2 \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/time_daemon:$(TARGET_COPY_OUT_VENDOR)/bin/time_daemon \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/tsa_hdcp_service:$(TARGET_COPY_OUT_VENDOR)/bin/tsa_hdcp_service \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/tzlogd:$(TARGET_COPY_OUT_VENDOR)/bin/tzlogd \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/ubwcconvert:$(TARGET_COPY_OUT_VENDOR)/bin/ubwcconvert \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/ufsgetsn:$(TARGET_COPY_OUT_VENDOR)/bin/ufsgetsn \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/utag_spy:$(TARGET_COPY_OUT_VENDOR)/bin/utag_spy \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/vendor.dpmd:$(TARGET_COPY_OUT_VENDOR)/bin/vendor.dpmd \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/vendor.qti.hardware.soter-provision:$(TARGET_COPY_OUT_VENDOR)/bin/vendor.qti.hardware.soter-provision \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/vendor.qti.qspmhal-service:$(TARGET_COPY_OUT_VENDOR)/bin/vendor.qti.qspmhal-service \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/vendor.qti.syshealthmon-service:$(TARGET_COPY_OUT_VENDOR)/bin/vendor.qti.syshealthmon-service \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/vendor_cmd_tool:$(TARGET_COPY_OUT_VENDOR)/bin/vendor_cmd_tool \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/vendor_netconfig:$(TARGET_COPY_OUT_VENDOR)/bin/vendor_netconfig \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/vmmgr:$(TARGET_COPY_OUT_VENDOR)/bin/vmmgr \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/vppservice:$(TARGET_COPY_OUT_VENDOR)/bin/vppservice \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/wdsdaemon:$(TARGET_COPY_OUT_VENDOR)/bin/wdsdaemon \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/wfdhdcphalservice:$(TARGET_COPY_OUT_VENDOR)/bin/wfdhdcphalservice \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/wfdvndservice:$(TARGET_COPY_OUT_VENDOR)/bin/wfdvndservice \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/wifidisplayhalservice:$(TARGET_COPY_OUT_VENDOR)/bin/wifidisplayhalservice \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/wifilearner:$(TARGET_COPY_OUT_VENDOR)/bin/wifilearner \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/xtra-daemon:$(TARGET_COPY_OUT_VENDOR)/bin/xtra-daemon \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/xtwifi-client:$(TARGET_COPY_OUT_VENDOR)/bin/xtwifi-client \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/zui_power_off_alarm:$(TARGET_COPY_OUT_VENDOR)/bin/zui_power_off_alarm \
+    vendor/motorola/sm7750-common/proprietary/system_ext/bin/MemHalTest-system:$(TARGET_COPY_OUT_SYSTEM_EXT)/bin/MemHalTest-system \
+    vendor/motorola/sm7750-common/proprietary/system_ext/bin/diag_callback_sample_system:$(TARGET_COPY_OUT_SYSTEM_EXT)/bin/diag_callback_sample_system \
+    vendor/motorola/sm7750-common/proprietary/system_ext/bin/diag_dci_sample_system:$(TARGET_COPY_OUT_SYSTEM_EXT)/bin/diag_dci_sample_system \
+    vendor/motorola/sm7750-common/proprietary/system_ext/bin/diag_mdlog_system:$(TARGET_COPY_OUT_SYSTEM_EXT)/bin/diag_mdlog_system \
+    vendor/motorola/sm7750-common/proprietary/system_ext/bin/dpmd:$(TARGET_COPY_OUT_SYSTEM_EXT)/bin/dpmd \
+    vendor/motorola/sm7750-common/proprietary/system_ext/bin/dun-server:$(TARGET_COPY_OUT_SYSTEM_EXT)/bin/dun-server \
+    vendor/motorola/sm7750-common/proprietary/system_ext/bin/perfservice:$(TARGET_COPY_OUT_SYSTEM_EXT)/bin/perfservice \
+    vendor/motorola/sm7750-common/proprietary/system_ext/bin/qccsyshal@1.2-service:$(TARGET_COPY_OUT_SYSTEM_EXT)/bin/qccsyshal@1.2-service \
+    vendor/motorola/sm7750-common/proprietary/system_ext/bin/qccsyshal_aidl-service:$(TARGET_COPY_OUT_SYSTEM_EXT)/bin/qccsyshal_aidl-service \
+    vendor/motorola/sm7750-common/proprietary/system_ext/bin/qcrosvm:$(TARGET_COPY_OUT_SYSTEM_EXT)/bin/qcrosvm \
+    vendor/motorola/sm7750-common/proprietary/system_ext/bin/qsguard:$(TARGET_COPY_OUT_SYSTEM_EXT)/bin/qsguard \
+    vendor/motorola/sm7750-common/proprietary/system_ext/bin/qspmsvc:$(TARGET_COPY_OUT_SYSTEM_EXT)/bin/qspmsvc \
+    vendor/motorola/sm7750-common/proprietary/system_ext/bin/qxrsplitauxservice:$(TARGET_COPY_OUT_SYSTEM_EXT)/bin/qxrsplitauxservice \
+    vendor/motorola/sm7750-common/proprietary/system_ext/bin/sigma_miracasthalservice64:$(TARGET_COPY_OUT_SYSTEM_EXT)/bin/sigma_miracasthalservice64 \
+    vendor/motorola/sm7750-common/proprietary/system_ext/bin/sigma_miracasthalservice_aidl:$(TARGET_COPY_OUT_SYSTEM_EXT)/bin/sigma_miracasthalservice_aidl \
+    vendor/motorola/sm7750-common/proprietary/system_ext/bin/tcmd_system:$(TARGET_COPY_OUT_SYSTEM_EXT)/bin/tcmd_system \
+    vendor/motorola/sm7750-common/proprietary/system_ext/bin/test_diag_system:$(TARGET_COPY_OUT_SYSTEM_EXT)/bin/test_diag_system \
+    vendor/motorola/sm7750-common/proprietary/system_ext/bin/wfdservice64:$(TARGET_COPY_OUT_SYSTEM_EXT)/bin/wfdservice64 \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/C2PAInternetService:$(TARGET_COPY_OUT_VENDOR)/bin/C2PAInternetService \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/KmInstallKeybox:$(TARGET_COPY_OUT_VENDOR)/bin/KmInstallKeybox \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/KmValidateKeybox:$(TARGET_COPY_OUT_VENDOR)/bin/KmValidateKeybox \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/STFlashTool:$(TARGET_COPY_OUT_VENDOR)/bin/STFlashTool \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/StoreKeybox:$(TARGET_COPY_OUT_VENDOR)/bin/StoreKeybox \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/adpl:$(TARGET_COPY_OUT_VENDOR)/bin/adpl \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/adsprpcd:$(TARGET_COPY_OUT_VENDOR)/bin/adsprpcd \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/aecxsimulator:$(TARGET_COPY_OUT_VENDOR)/bin/aecxsimulator \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/agmcap:$(TARGET_COPY_OUT_VENDOR)/bin/agmcap \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/agmcompresscap:$(TARGET_COPY_OUT_VENDOR)/bin/agmcompresscap \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/agmcompressplay:$(TARGET_COPY_OUT_VENDOR)/bin/agmcompressplay \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/agmhostless:$(TARGET_COPY_OUT_VENDOR)/bin/agmhostless \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/agmplay:$(TARGET_COPY_OUT_VENDOR)/bin/agmplay \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/agmvoiceui:$(TARGET_COPY_OUT_VENDOR)/bin/agmvoiceui \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/aplogcat:$(TARGET_COPY_OUT_VENDOR)/bin/aplogcat \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/aplogd:$(TARGET_COPY_OUT_VENDOR)/bin/aplogd \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/batch:$(TARGET_COPY_OUT_VENDOR)/bin/batch \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/batt_health:$(TARGET_COPY_OUT_VENDOR)/bin/batt_health \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/bootloaderlog:$(TARGET_COPY_OUT_VENDOR)/bin/bootloaderlog \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/capsense_reset:$(TARGET_COPY_OUT_VENDOR)/bin/capsense_reset \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/ccid_daemon_nr:$(TARGET_COPY_OUT_VENDOR)/bin/ccid_daemon_nr \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/cdsprpcd:$(TARGET_COPY_OUT_VENDOR)/bin/cdsprpcd \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/charge_only_mode:$(TARGET_COPY_OUT_VENDOR)/bin/charge_only_mode \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/cnd:$(TARGET_COPY_OUT_VENDOR)/bin/cnd \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/cnss-daemon:$(TARGET_COPY_OUT_VENDOR)/bin/cnss-daemon \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/cnss_cli:$(TARGET_COPY_OUT_VENDOR)/bin/cnss_cli \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/com_fastbootd:$(TARGET_COPY_OUT_VENDOR)/bin/com_fastbootd \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/ctlogger:$(TARGET_COPY_OUT_VENDOR)/bin/ctlogger \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/dppdaemon:$(TARGET_COPY_OUT_VENDOR)/bin/dppdaemon \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/dspservice:$(TARGET_COPY_OUT_VENDOR)/bin/dspservice \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/e_loop:$(TARGET_COPY_OUT_VENDOR)/bin/e_loop \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/edgnss-daemon:$(TARGET_COPY_OUT_VENDOR)/bin/edgnss-daemon \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/embmsslServer:$(TARGET_COPY_OUT_VENDOR)/bin/embmsslServer \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/engine-service:$(TARGET_COPY_OUT_VENDOR)/bin/engine-service \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/ese_provision_app:$(TARGET_COPY_OUT_VENDOR)/bin/ese_provision_app \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/expat:$(TARGET_COPY_OUT_VENDOR)/bin/expat \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/fan_service:$(TARGET_COPY_OUT_VENDOR)/bin/fan_service \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/fdrcontrol:$(TARGET_COPY_OUT_VENDOR)/bin/fdrcontrol \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/fm_qsoc_patches:$(TARGET_COPY_OUT_VENDOR)/bin/fm_qsoc_patches \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/fmconfig:$(TARGET_COPY_OUT_VENDOR)/bin/fmconfig \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/fotacontrol:$(TARGET_COPY_OUT_VENDOR)/bin/fotacontrol \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/ftmdaemon:$(TARGET_COPY_OUT_VENDOR)/bin/ftmdaemon \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/ftmipcd:$(TARGET_COPY_OUT_VENDOR)/bin/ftmipcd \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/ftmmodemdebug:$(TARGET_COPY_OUT_VENDOR)/bin/ftmmodemdebug \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/getconfig:$(TARGET_COPY_OUT_VENDOR)/bin/getconfig \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/hal_proxy_daemon:$(TARGET_COPY_OUT_VENDOR)/bin/hal_proxy_daemon \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/hdcp1prov:$(TARGET_COPY_OUT_VENDOR)/bin/hdcp1prov \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/hdcp2p2prov:$(TARGET_COPY_OUT_VENDOR)/bin/hdcp2p2prov \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/hexlpservice:$(TARGET_COPY_OUT_VENDOR)/bin/hexlpservice \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/hlosminkdaemon:$(TARGET_COPY_OUT_VENDOR)/bin/hlosminkdaemon \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/hw/android.hardware.bluetooth@aidl-service-qti:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.bluetooth@aidl-service-qti \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/hw/android.hardware.gatekeeper-service-qti:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.gatekeeper-service-qti \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/hw/android.hardware.gnss-aidl-service-qti:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.gnss-aidl-service-qti \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/hw/android.hardware.identity-service-qti:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.identity-service-qti \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/hw/android.hardware.keymaster@4.0-service-qti:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.keymaster@4.0-service-qti \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/hw/android.hardware.nfc-service-st:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.nfc-service-st \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/hw/android.hardware.nqnfc-service.nxp:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.nqnfc-service.nxp \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/hw/android.hardware.secure_element-service.qti:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.secure_element-service.qti \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/hw/android.hardware.security.keymint-service-qti:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.security.keymint-service-qti \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/hw/android.hardware.security.keymint-service.strongbox-thales:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.security.keymint-service.strongbox-thales \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/hw/android.hardware.uwb@service-qti:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.uwb@service-qti \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/hw/motosxf:$(TARGET_COPY_OUT_VENDOR)/bin/hw/motosxf \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/hw/qconfigservice:$(TARGET_COPY_OUT_VENDOR)/bin/hw/qconfigservice \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/hw/qcrilNrd:$(TARGET_COPY_OUT_VENDOR)/bin/hw/qcrilNrd \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/hw/vendor.qti.MemHal-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.MemHal-service \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/hw/vendor.qti.camera.provider-service_64:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.camera.provider-service_64 \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/hw/vendor.qti.hardware.alarm-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.hardware.alarm-service \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/hw/vendor.qti.hardware.c2pa-aidl-service-qti:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.hardware.c2pa-aidl-service-qti \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/hw/vendor.qti.hardware.capabilityconfigstore-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.hardware.capabilityconfigstore-service \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/hw/vendor.qti.hardware.display.color-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.hardware.display.color-service \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/hw/vendor.qti.hardware.lights.service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.hardware.lights.service \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/hw/vendor.qti.hardware.minkipcbinder@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.hardware.minkipcbinder@1.0-service \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/hw/vendor.qti.hardware.perf2-hal-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.hardware.perf2-hal-service \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/hw/vendor.qti.hardware.qseecom@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.hardware.qseecom@1.0-service \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/hw/vendor.qti.hardware.secureprocessor:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.hardware.secureprocessor \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/hw/vendor.qti.hardware.sensorscalibrate-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.hardware.sensorscalibrate-service \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/hw/vendor.qti.hardware.servicetrackeraidl-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.hardware.servicetrackeraidl-service \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/hw/vendor.qti.hardware.soter-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.hardware.soter-service \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/hw/vendor.qti.media.c2@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.media.c2@1.0-service \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/hw/vendor.qti.media.c2audio@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.media.c2audio@1.0-service \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/hw/vendor.qti.psiclient@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.psiclient@1.0-service \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/hw/vendor.zuialarm.hardware.alarm-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.zuialarm.hardware.alarm-service \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/ims-dataservice-daemon:$(TARGET_COPY_OUT_VENDOR)/bin/ims-dataservice-daemon \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/ims_rtp_daemon:$(TARGET_COPY_OUT_VENDOR)/bin/ims_rtp_daemon \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/imsdaemon:$(TARGET_COPY_OUT_VENDOR)/bin/imsdaemon \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/ipp_key_gen:$(TARGET_COPY_OUT_VENDOR)/bin/ipp_key_gen \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/irsc_util:$(TARGET_COPY_OUT_VENDOR)/bin/irsc_util \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/kpgather:$(TARGET_COPY_OUT_VENDOR)/bin/kpgather \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/kpreadwrite:$(TARGET_COPY_OUT_VENDOR)/bin/kpreadwrite \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/ks:$(TARGET_COPY_OUT_VENDOR)/bin/ks \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/loadalgo:$(TARGET_COPY_OUT_VENDOR)/bin/loadalgo \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/loc_launcher:$(TARGET_COPY_OUT_VENDOR)/bin/loc_launcher \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/lowi-server:$(TARGET_COPY_OUT_VENDOR)/bin/lowi-server \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/masterclear:$(TARGET_COPY_OUT_VENDOR)/bin/masterclear \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/mbm_spy:$(TARGET_COPY_OUT_VENDOR)/bin/mbm_spy \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/mlid:$(TARGET_COPY_OUT_VENDOR)/bin/mlid \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/mot_tcmd:$(TARGET_COPY_OUT_VENDOR)/bin/mot_tcmd \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/moto_eSE_tool:$(TARGET_COPY_OUT_VENDOR)/bin/moto_eSE_tool \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/motobox:$(TARGET_COPY_OUT_VENDOR)/bin/motobox \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/myftm:$(TARGET_COPY_OUT_VENDOR)/bin/myftm \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/nicmd:$(TARGET_COPY_OUT_VENDOR)/bin/nicmd \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/pd-mapper:$(TARGET_COPY_OUT_VENDOR)/bin/pd-mapper \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/pktlogconf:$(TARGET_COPY_OUT_VENDOR)/bin/pktlogconf \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/pm-proxy:$(TARGET_COPY_OUT_VENDOR)/bin/pm-proxy \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/pm-service:$(TARGET_COPY_OUT_VENDOR)/bin/pm-service \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/pm_ioctl_app:$(TARGET_COPY_OUT_VENDOR)/bin/pm_ioctl_app \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/pmic_key_reset:$(TARGET_COPY_OUT_VENDOR)/bin/pmic_key_reset \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/port-bridge:$(TARGET_COPY_OUT_VENDOR)/bin/port-bridge \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/power_off_alarm:$(TARGET_COPY_OUT_VENDOR)/bin/power_off_alarm \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/poweroffcontrol:$(TARGET_COPY_OUT_VENDOR)/bin/poweroffcontrol \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/poweropt-service:$(TARGET_COPY_OUT_VENDOR)/bin/poweropt-service \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/ppd:$(TARGET_COPY_OUT_VENDOR)/bin/ppd \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/ptf:$(TARGET_COPY_OUT_VENDOR)/bin/ptf \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/qcc-vendor:$(TARGET_COPY_OUT_VENDOR)/bin/qcc-vendor \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/qdcmss:$(TARGET_COPY_OUT_VENDOR)/bin/qdcmss \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/qesdk-manager:$(TARGET_COPY_OUT_VENDOR)/bin/qesdk-manager \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/qesdk-secmanager:$(TARGET_COPY_OUT_VENDOR)/bin/qesdk-secmanager \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/qguard:$(TARGET_COPY_OUT_VENDOR)/bin/qguard \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/qmi_motext_hook:$(TARGET_COPY_OUT_VENDOR)/bin/qmi_motext_hook \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/qmipriod:$(TARGET_COPY_OUT_VENDOR)/bin/qmipriod \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/qms:$(TARGET_COPY_OUT_VENDOR)/bin/qms \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/qrtr-cfg:$(TARGET_COPY_OUT_VENDOR)/bin/qrtr-cfg \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/qrtr-lookup:$(TARGET_COPY_OUT_VENDOR)/bin/qrtr-lookup \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/qrtr-ns:$(TARGET_COPY_OUT_VENDOR)/bin/qrtr-ns \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/qsap_dcfd:$(TARGET_COPY_OUT_VENDOR)/bin/qsap_dcfd \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/qsap_location:$(TARGET_COPY_OUT_VENDOR)/bin/qsap_location \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/qsap_qapeservice:$(TARGET_COPY_OUT_VENDOR)/bin/qsap_qapeservice \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/qsap_sensors:$(TARGET_COPY_OUT_VENDOR)/bin/qsap_sensors \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/qsap_voiceui:$(TARGET_COPY_OUT_VENDOR)/bin/qsap_voiceui \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/qseecomd:$(TARGET_COPY_OUT_VENDOR)/bin/qseecomd \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/qt-service:$(TARGET_COPY_OUT_VENDOR)/bin/qt-service \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/qti:$(TARGET_COPY_OUT_VENDOR)/bin/qti \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/qwes_cli:$(TARGET_COPY_OUT_VENDOR)/bin/qwes_cli \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/qwesd:$(TARGET_COPY_OUT_VENDOR)/bin/qwesd \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/ramdump_dumper:$(TARGET_COPY_OUT_VENDOR)/bin/ramdump_dumper \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/rmt_storage:$(TARGET_COPY_OUT_VENDOR)/bin/rmt_storage \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/rpmbClient:$(TARGET_COPY_OUT_VENDOR)/bin/rpmbClient \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/sec_log_enabler:$(TARGET_COPY_OUT_VENDOR)/bin/sec_log_enabler \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/sensors.qti:$(TARGET_COPY_OUT_VENDOR)/bin/sensors.qti \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/setconfig:$(TARGET_COPY_OUT_VENDOR)/bin/setconfig \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/shsusrd:$(TARGET_COPY_OUT_VENDOR)/bin/shsusrd \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/sigma_dut:$(TARGET_COPY_OUT_VENDOR)/bin/sigma_dut \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/smcinvoke_example:$(TARGET_COPY_OUT_VENDOR)/bin/smcinvoke_example \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/smcinvoke_skeleton:$(TARGET_COPY_OUT_VENDOR)/bin/smcinvoke_skeleton \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/smcinvoke_skeleton_cpp:$(TARGET_COPY_OUT_VENDOR)/bin/smcinvoke_skeleton_cpp \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/snapdragon_services:$(TARGET_COPY_OUT_VENDOR)/bin/snapdragon_services \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/sns_mot_client:$(TARGET_COPY_OUT_VENDOR)/bin/sns_mot_client \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/spectraltool:$(TARGET_COPY_OUT_VENDOR)/bin/spectraltool \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/sscrpcd:$(TARGET_COPY_OUT_VENDOR)/bin/sscrpcd \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/ssgtzd:$(TARGET_COPY_OUT_VENDOR)/bin/ssgtzd \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/ssr_setup:$(TARGET_COPY_OUT_VENDOR)/bin/ssr_setup \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/stfactorydemo-vendor:$(TARGET_COPY_OUT_VENDOR)/bin/stfactorydemo-vendor \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/subsystem_ramdump:$(TARGET_COPY_OUT_VENDOR)/bin/subsystem_ramdump \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/tcmdhelp:$(TARGET_COPY_OUT_VENDOR)/bin/tcmdhelp \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/tftp_server:$(TARGET_COPY_OUT_VENDOR)/bin/tftp_server \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/thermal-engine-v2:$(TARGET_COPY_OUT_VENDOR)/bin/thermal-engine-v2 \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/time_daemon:$(TARGET_COPY_OUT_VENDOR)/bin/time_daemon \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/tsa_hdcp_service:$(TARGET_COPY_OUT_VENDOR)/bin/tsa_hdcp_service \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/tzlogd:$(TARGET_COPY_OUT_VENDOR)/bin/tzlogd \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/ubwcconvert:$(TARGET_COPY_OUT_VENDOR)/bin/ubwcconvert \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/ufsgetsn:$(TARGET_COPY_OUT_VENDOR)/bin/ufsgetsn \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/utag_spy:$(TARGET_COPY_OUT_VENDOR)/bin/utag_spy \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/vendor.dpmd:$(TARGET_COPY_OUT_VENDOR)/bin/vendor.dpmd \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/vendor.qti.hardware.soter-provision:$(TARGET_COPY_OUT_VENDOR)/bin/vendor.qti.hardware.soter-provision \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/vendor.qti.qspmhal-service:$(TARGET_COPY_OUT_VENDOR)/bin/vendor.qti.qspmhal-service \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/vendor.qti.syshealthmon-service:$(TARGET_COPY_OUT_VENDOR)/bin/vendor.qti.syshealthmon-service \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/vendor_cmd_tool:$(TARGET_COPY_OUT_VENDOR)/bin/vendor_cmd_tool \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/vendor_netconfig:$(TARGET_COPY_OUT_VENDOR)/bin/vendor_netconfig \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/vmmgr:$(TARGET_COPY_OUT_VENDOR)/bin/vmmgr \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/vppservice:$(TARGET_COPY_OUT_VENDOR)/bin/vppservice \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/wdsdaemon:$(TARGET_COPY_OUT_VENDOR)/bin/wdsdaemon \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/wfdhdcphalservice:$(TARGET_COPY_OUT_VENDOR)/bin/wfdhdcphalservice \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/wfdvndservice:$(TARGET_COPY_OUT_VENDOR)/bin/wfdvndservice \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/wifidisplayhalservice:$(TARGET_COPY_OUT_VENDOR)/bin/wifidisplayhalservice \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/wifilearner:$(TARGET_COPY_OUT_VENDOR)/bin/wifilearner \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/xtra-daemon:$(TARGET_COPY_OUT_VENDOR)/bin/xtra-daemon \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/xtwifi-client:$(TARGET_COPY_OUT_VENDOR)/bin/xtwifi-client \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/zui_power_off_alarm:$(TARGET_COPY_OUT_VENDOR)/bin/zui_power_off_alarm \
 
 PRODUCT_PACKAGES += \
     aidl_hdcp_interface-V1-ndk \
-    android.hardware.automotive.vehicle@2.0-manager-lib \
-    android.hardware.bluetooth.audio-impl \
     btaudio_offload_if \
     com.bst.node.hdrdetect \
     com.bst.node.yuvhdr \
@@ -1559,16 +2208,13 @@ PRODUCT_PACKAGES += \
     ftm_fm_lib \
     anc.hal \
     android.hardware.bluetooth.audio-impl-qti \
-    android.hardware.bluetooth.audio@2.0-impl \
     android.hardware.bluetooth.audio_sw \
     android.hardware.bluetooth.lmp_event-impl-qti \
     android.hardware.bluetooth@1.0-impl-qti \
     android.hardware.bluetooth@aidl-impl-qti \
     android.hardware.gnss-aidl-impl-qti \
-    android.hardware.soundtrigger@2.3-impl \
     android.hardware.uwb@impl-qti \
     audio.bluetooth_qti.default \
-    audio.r_submix.default \
     libQnnSystem \
     camera.qcom.sm8750 \
     camera.qcom \
@@ -1708,7 +2354,6 @@ PRODUCT_PACKAGES += \
     libchilog \
     libchinodeevautils \
     libchinodehmeutils \
-    libclang_rt.ubsan_standalone-aarch64-android \
     libclstc_algorithm_adapter \
     libclstc_gcp_adapter \
     libclstc_tm \
@@ -2455,7 +3100,6 @@ PRODUCT_PACKAGES += \
     vendor_lib_rfsa_adsp_libtfadsp_rx_so \
     vendor_lib_rfsa_adsp_libtfadsp_tx_so \
     vendor_lib_rfsa_adsp_nlc_so \
-    android.hidl.base@1.0 \
     com.qualcomm.qti.ant@1.0 \
     com.qualcomm.qti.bluetooth_audio@1.0 \
     com.quicinc.cne.api@1.0 \
@@ -2673,7 +3317,6 @@ PRODUCT_PACKAGES += \
     TimeService \
     TxPwrAdmin \
     com.qualcomm.qti.gpudrivers.sun.api35 \
-    AccessibilityMenu \
     AtFwd2 \
     DciStatsService \
     DynamicDDSService \
@@ -2692,7 +3335,6 @@ PRODUCT_PACKAGES += \
     3c_notification \
     3c_ota \
     ActionCore \
-    AvatarPicker \
     BatteryCare \
     Bug2GoStub \
     CQATest \
@@ -2719,7 +3361,6 @@ PRODUCT_PACKAGES += \
     GoogleServicesFramework \
     GoogleWallpapers \
     HiddenMenu \
-    Launcher3QuickStep \
     LifetimeData \
     MSimSettings \
     ModemStatsService \
@@ -2746,15 +3387,11 @@ PRODUCT_PACKAGES += \
     PaksFinanceNotification \
     Personalize \
     QtiTelephony \
-    QuickAccessWallet \
     RevokerServices \
     SettingsMoto \
     SetupWizard \
     SetupWizardExt \
     SpectrumSetupExt \
-    StorageManager \
-    SystemUI \
-    WallpaperCropper \
     WfdService \
     com.motorola.android.nativedropboxagent \
     com.qualcomm.location \
@@ -2876,11 +3513,9 @@ PRODUCT_PACKAGES += \
     vendor.qti.latency-V2.1-java \
     vendor.qti.latency-V2.2-java \
     vendor.qti.latencyaidlservice-V1-java \
-    compatibility_matrix.xml \
     ImsRtpService-aidl.xml \
     android.hardware.drm-service.xml \
     android.hardware.gnss-aidl-service-qti.xml \
-    android.hardware.health-service.qti.xml \
     android.hardware.radio.config.xml \
     android.hardware.radio.data.xml \
     android.hardware.radio.messaging.xml \
@@ -2891,12 +3526,8 @@ PRODUCT_PACKAGES += \
     android.hardware.radio.voice.xml \
     android.hardware.secure_element.xml \
     android.hardware.security.keymint-service-qti.xml \
-    android.hardware.sensors-multihal.xml \
-    android.hardware.wifi.hostapd.xml \
-    android.hardware.wifi.supplicant.xml \
     atfwd-saidl.xml \
     bluetooth-finder.xml \
-    bluetooth_audio.xml \
     bluetooth_hci.xml \
     bluetooth_sar.xml \
     bt_lmp_event-saidl.xml \
@@ -2912,12 +3543,9 @@ PRODUCT_PACKAGES += \
     fm_hci.xml \
     imsdcservice-saidl.xml \
     manifest_IMoto_AIDL_Rpmb.xml \
-    manifest_audio_qti_services.xml \
     manifest_btaudiocoreservices_qti.xml \
     manifest_identity_credential.xml \
-    memtrack_qti.xml \
     mwqem-saidl.xml \
-    power.xml \
     qasr_vintf.xml \
     qcrilhook-saidl.xml \
     qesdk-manager.xml \
@@ -2927,7 +3555,6 @@ PRODUCT_PACKAGES += \
     qtiradio-saidl.xml \
     secure_element-service.xml \
     snapdragon_services.xml \
-    soundtrigger.qti.xml \
     vendor.arcsoft.hardware.camera.postproc.xml \
     vendor.qti.MemHal.xml \
     vendor.qti.camera.aon-impl.xml \
@@ -2960,8 +3587,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.sensorscalibrate.xml \
     vendor.qti.hardware.servicetrackeraidl-service.xml \
     vendor.qti.hardware.soter-service.xml \
-    vendor.qti.hardware.tetheroffload.service.xml \
-    vendor.qti.hardware.vibrator.service.xml \
     vendor.qti.hardware.vpp-service.xml \
     vendor.qti.hardware.wifi.wifilearner-service.xml \
     vendor.qti.hardware.wifidisplaysession-service.xml \
@@ -2976,8 +3601,6 @@ PRODUCT_PACKAGES += \
     manifest_sun.xml \
     manifest_tuna.xml \
     BuildManifestSystemExt.apk \
-    manifest.xml \
-    android.hidl.allocator@1.0-service.xml \
     atcmdfwd-saidl.xml \
     vendor.qti.hardware.sigma_miracast.xml \
     vendor.qti.hardware.sigma_miracast_aidl.xml \
@@ -2988,174 +3611,13 @@ PRODUCT_PACKAGES += \
     manifest_n.xml \
     manifest_nes.xml \
     manifest_nv.xml \
-    C2PAInternetService \
-    KmInstallKeybox \
-    KmValidateKeybox \
-    STFlashTool \
-    StoreKeybox \
-    acpi \
-    adpl \
-    adsprpcd \
-    aecxsimulator \
-    agmcap \
-    agmcompresscap \
-    agmcompressplay \
-    agmhostless \
-    agmplay \
-    agmvoiceui \
     apanic_annotate \
     apanic_copy \
     apanic_save \
-    aplogcat \
-    aplogd \
-    base64 \
-    basename \
-    batch \
-    batt_health \
-    blockdev \
-    bootloaderlog \
-    brctl \
-    cal \
-    capsense_reset \
-    cat \
-    ccid_daemon_nr \
-    cdsprpcd \
-    charge_only_mode \
-    chattr \
-    chcon \
-    checkpoint_gc \
-    chgrp \
-    chmod \
-    chown \
-    chroot \
-    chrt \
-    cksum \
-    clear \
-    cmp \
-    cnd \
-    cnss-daemon \
-    cnss_cli \
-    com_fastbootd \
-    comm \
     copy_qc_cert \
     coresight_reset_source_sink \
-    cp \
-    cpio \
-    cplay \
-    ctlogger \
-    cut \
-    date \
     dcc_extension \
-    dd \
-    devmem \
-    df \
-    diff \
-    dirname \
-    dmesg \
-    dos2unix \
-    dppdaemon \
-    dspservice \
-    du \
-    e_loop \
-    echo \
-    edgnss-daemon \
-    egrep \
-    embmsslServer \
-    engine-service \
-    env \
-    ese_provision_app \
-    expand \
-    expat \
-    expr \
-    fallocate \
-    false \
-    fan_service \
-    fdrcontrol \
-    fgrep \
-    file \
-    find \
-    flock \
-    fm_qsoc_patches \
-    fmconfig \
-    fmt \
-    fotacontrol \
-    free \
-    fsync \
-    ftmdaemon \
-    ftmipcd \
-    ftmmodemdebug \
-    getconf \
-    getconfig \
-    getenforce \
-    getevent \
-    getfattr \
-    getopt \
-    getprop \
-    gpiodetect \
-    gpiofind \
-    gpioget \
-    gpioinfo \
-    gpioset \
-    grep \
-    groups \
-    gunzip \
-    gzip \
-    hal_proxy_daemon \
     hardware_revisions \
-    hdcp1prov \
-    hdcp2p2prov \
-    head \
-    hexlpservice \
-    hlosminkdaemon \
-    hostname \
-    android.hardware.bluetooth@aidl-service-qti \
-    android.hardware.gatekeeper-service-qti \
-    android.hardware.gnss-aidl-service-qti \
-    android.hardware.health-service.qti \
-    android.hardware.identity-service-qti \
-    android.hardware.keymaster@4.0-service-qti \
-    android.hardware.nfc-service-st \
-    android.hardware.nqnfc-service.nxp \
-    android.hardware.secure_element-service.qti \
-    android.hardware.security.keymint-service-qti \
-    android.hardware.security.keymint-service.strongbox-thales \
-    android.hardware.uwb@service-qti \
-    motosxf \
-    qconfigservice \
-    qcrilNrd \
-    vendor.qti.MemHal-service \
-    vendor.qti.camera.provider-service_64 \
-    vendor.qti.hardware.alarm-service \
-    vendor.qti.hardware.c2pa-aidl-service-qti \
-    vendor.qti.hardware.capabilityconfigstore-service \
-    vendor.qti.hardware.display.color-service \
-    vendor.qti.hardware.lights.service \
-    vendor.qti.hardware.memtrack-service \
-    vendor.qti.hardware.minkipcbinder@1.0-service \
-    vendor.qti.hardware.perf2-hal-service \
-    vendor.qti.hardware.qseecom@1.0-service \
-    vendor.qti.hardware.secureprocessor \
-    vendor.qti.hardware.sensorscalibrate-service \
-    vendor.qti.hardware.servicetrackeraidl-service \
-    vendor.qti.hardware.soter-service \
-    vendor.qti.hardware.vibrator.service \
-    vendor.qti.media.c2@1.0-service \
-    vendor.qti.media.c2audio@1.0-service \
-    vendor.qti.psiclient@1.0-service \
-    vendor.zuialarm.hardware.alarm-service \
-    hwclock \
-    i2cdetect \
-    i2cdump \
-    i2cget \
-    i2cset \
-    i2ctransfer \
-    iconv \
-    id \
-    ifconfig \
-    ims-dataservice-daemon \
-    ims_rtp_daemon \
-    imsdaemon \
-    init.class_main \
     init.crda \
     init.gbmods \
     init.kernel.init_boot-memory \
@@ -3178,25 +3640,17 @@ PRODUCT_PACKAGES += \
     init.kernel.post_boot \
     init.mdm \
     init.mmi.block_perm \
-    init.mmi.boot \
-    init.mmi.cap \
     init.mmi.display \
     init.mmi.mdlog-getlogs \
     init.mmi.shutdown \
-    init.mmi.touch \
     init.mmi.usb \
     init.mmi.wlan-getlogs \
     init.mmi.wls \
     init.oem.fingerprint2 \
-    init.oem.hw \
-    init.qcom.class_core \
     init.qcom.coex \
-    init.qcom.early_boot \
     init.qcom.efs.sync \
-    init.qcom.post_boot \
     init.qcom.sdio \
     init.qcom.sensors \
-    init.qcom \
     init.qcrild \
     init.qti.kernel.debug-kera \
     init.qti.kernel.debug-sun \
@@ -3211,253 +3665,14 @@ PRODUCT_PACKAGES += \
     init.qti.media \
     init.qti.qcv \
     init.qti.write \
-    inotifyd \
-    insmod \
-    install \
-    ionice \
-    iorenice \
-    ipp_key_gen \
-    irsc_util \
-    kill \
-    killall \
-    kpgather \
-    kpreadwrite \
-    ks \
-    ln \
-    load_policy \
-    loadalgo \
-    loc_launcher \
-    log \
-    logger \
-    logname \
-    losetup \
-    lowi-server \
-    ls \
-    lsattr \
-    lsmod \
-    lsof \
-    lspci \
-    lsusb \
-    masterclear \
-    mbm_spy \
-    md5sum \
-    memeater \
-    microcom \
-    mkdir \
-    mkfifo \
-    mknod \
-    mkswap \
-    mktemp \
-    mlid \
-    modinfo \
-    modprobe \
-    more \
     mot_rkp_csr_extraction \
-    mot_tcmd \
-    moto_eSE_tool \
-    motobox \
-    mount \
-    mountpoint \
-    mv \
-    myftm \
-    nc \
-    netcat \
-    netstat \
-    nice \
-    nicmd \
-    nl \
-    nohup \
-    nproc \
-    nqnfcinfo \
-    nsenter \
-    od \
-    paste \
-    patch \
-    pd-mapper \
-    pgrep \
-    pidof \
-    pkill \
-    pktlogconf \
-    pm-proxy \
-    pm-service \
-    pm_ioctl_app \
-    pmap \
-    pmic_key_reset \
-    port-bridge \
-    power_off_alarm \
-    poweroffcontrol \
-    poweropt-service \
-    ppd \
-    printenv \
-    printf \
-    ps \
     pstore_annotate \
-    ptf \
-    pwd \
     qca6234-service \
-    qcc-vendor \
-    qdcmss \
-    qesdk-manager \
-    qesdk-secmanager \
-    qguard \
-    qmi_motext_hook \
-    qmipriod \
-    qms \
-    qrtr-cfg \
-    qrtr-lookup \
-    qrtr-ns \
-    qsap_dcfd \
-    qsap_location \
-    qsap_qapeservice \
-    qsap_sensors \
-    qsap_voiceui \
-    qseecomd \
-    qt-service \
-    qti \
     qtigetprop \
     qtisetprop \
-    qwes_cli \
-    qwesd \
-    ramdump_dumper \
-    readelf \
-    readlink \
-    realpath \
-    renice \
-    restorecon \
-    rkp_factory_extraction_tool64 \
-    rm \
-    rmdir \
-    rmmod \
-    rmt_storage \
-    rpmbClient \
-    rtcwake \
-    runcon \
-    sec_log_enabler \
-    sed \
-    sendevent \
-    sensors.qti \
-    seq \
-    setconfig \
-    setenforce \
-    setfattr \
-    setprop \
-    setsid \
-    sha1sum \
-    sha224sum \
-    sha256sum \
-    sha384sum \
-    sha512sum \
-    shsusrd \
-    sigma_dut \
-    sleep \
-    smcinvoke_example \
-    smcinvoke_skeleton \
-    smcinvoke_skeleton_cpp \
-    snapdragon_services \
-    sns_mot_client \
-    sort \
-    spectraltool \
-    split \
-    sscrpcd \
-    ssgtzd \
-    ssr_setup \
-    start \
-    stat \
-    stfactorydemo-vendor \
-    stop \
-    strings \
-    stty \
-    subsystem_ramdump \
-    swapoff \
-    swapon \
-    sync \
-    sysctl \
     system_dlkm_modprobe \
-    tac \
-    tail \
-    tar \
-    taskset \
-    tcmdhelp \
-    tee \
-    tftp_server \
-    thermal-engine-v2 \
-    time \
-    time_daemon \
-    timeout \
-    top \
-    touch \
-    toybox_vendor \
-    tr \
-    true \
-    truncate \
-    tsa_hdcp_service \
-    tty \
-    tzlogd \
-    ubwcconvert \
-    uclampset \
-    ufsgetsn \
-    ulimit \
-    umount \
-    uname \
-    uniq \
-    unix2dos \
-    unlink \
-    unshare \
-    uptime \
-    usleep \
-    utag_spy \
-    uudecode \
-    uuencode \
-    uuidgen \
-    vendor.dpmd \
-    vendor.qti.hardware.soter-provision \
-    vendor.qti.qspmhal-service \
-    vendor.qti.syshealthmon-service \
-    vendor_cmd_tool \
     vendor_modprobe \
-    vendor_netconfig \
-    vi \
-    vmmgr \
-    vmstat \
-    vndservicemanager \
-    vppservice \
-    watch \
-    wc \
-    wdsdaemon \
-    wfdhdcphalservice \
-    wfdvndservice \
-    which \
-    whoami \
-    wifidisplayhalservice \
-    wifilearner \
-    xargs \
-    xtra-daemon \
-    xtwifi-client \
-    xxd \
-    yes \
-    zcat \
-    zui_power_off_alarm \
-    MemHalTest-system \
-    diag_callback_sample_system \
-    diag_dci_sample_system \
-    diag_mdlog_system \
-    dpmd \
-    dun-server \
-    android.hidl.allocator@1.0-service \
-    hwservicemanager \
     init.mmi.bootlog-dmesg \
     init.mmi.bootlog-logcat \
     init.mmi.bootlog \
     motsettings \
-    perfservice \
-    qccsyshal@1.2-service \
-    qccsyshal_aidl-service \
-    qcrosvm \
-    qsguard \
-    qspmsvc \
-    qxrsplitauxservice \
-    sigma_miracasthalservice64 \
-    sigma_miracasthalservice_aidl \
-    tcmd_system \
-    test_diag_system \
-    wfdservice64
