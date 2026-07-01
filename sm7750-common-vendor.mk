@@ -6,6 +6,19 @@ PRODUCT_SOONG_NAMESPACES += \
     vendor/motorola/sm7750-common
 
 PRODUCT_COPY_FILES += \
+    vendor/motorola/sm7750-common/proprietary/system_ext/priv-app/CQATest/lib/arm64/libMPLib.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/priv-app/CQATest/lib/arm64/libMPLib.so \
+    vendor/motorola/sm7750-common/proprietary/system_ext/priv-app/CQATest/lib/arm64/libNVT36xxx.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/priv-app/CQATest/lib/arm64/libNVT36xxx.so \
+    vendor/motorola/sm7750-common/proprietary/system_ext/priv-app/CQATest/lib/arm64/libaeccalibration_jni.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/priv-app/CQATest/lib/arm64/libaeccalibration_jni.so \
+    vendor/motorola/sm7750-common/proprietary/system_ext/priv-app/CQATest/lib/arm64/libc++_shared.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/priv-app/CQATest/lib/arm64/libc++_shared.so \
+    vendor/motorola/sm7750-common/proprietary/system_ext/priv-app/CQATest/lib/arm64/libcameraOIS_jni.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/priv-app/CQATest/lib/arm64/libcameraOIS_jni.so \
+    vendor/motorola/sm7750-common/proprietary/system_ext/priv-app/CQATest/lib/arm64/libcameraraw_jni.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/priv-app/CQATest/lib/arm64/libcameraraw_jni.so \
+    vendor/motorola/sm7750-common/proprietary/system_ext/priv-app/CQATest/lib/arm64/libgcorejni.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/priv-app/CQATest/lib/arm64/libgcorejni.so \
+    vendor/motorola/sm7750-common/proprietary/system_ext/priv-app/CQATest/lib/arm64/libjigancalibration_jni.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/priv-app/CQATest/lib/arm64/libjigancalibration_jni.so \
+    vendor/motorola/sm7750-common/proprietary/system_ext/priv-app/CQATest/lib/arm64/libjiganverification_jni.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/priv-app/CQATest/lib/arm64/libjiganverification_jni.so \
+    vendor/motorola/sm7750-common/proprietary/system_ext/priv-app/CQATest/lib/arm64/libopencv_java4.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/priv-app/CQATest/lib/arm64/libopencv_java4.so \
+    vendor/motorola/sm7750-common/proprietary/system_ext/priv-app/CQATest/lib/arm64/libtestcore.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/priv-app/CQATest/lib/arm64/libtestcore.so \
+    vendor/motorola/sm7750-common/proprietary/system_ext/priv-app/CQATest/lib/arm64/libtestsdk.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/priv-app/CQATest/lib/arm64/libtestsdk.so \
+    vendor/motorola/sm7750-common/proprietary/system_ext/priv-app/CQATest/lib/arm64/libwa_calibrationtool2.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/priv-app/CQATest/lib/arm64/libwa_calibrationtool2.so \
     vendor/motorola/sm7750-common/proprietary/odm/etc/permissions/sku_dn/unavail.com.android.se.xml:$(TARGET_COPY_OUT_ODM)/etc/permissions/sku_dn/unavail.com.android.se.xml \
     vendor/motorola/sm7750-common/proprietary/odm/etc/permissions/sku_dnes/android.hardware.nfc.ese.xml:$(TARGET_COPY_OUT_ODM)/etc/permissions/sku_dnes/android.hardware.nfc.ese.xml \
     vendor/motorola/sm7750-common/proprietary/odm/etc/permissions/sku_dnes/android.hardware.se.omapi.ese.xml:$(TARGET_COPY_OUT_ODM)/etc/permissions/sku_dnes/android.hardware.se.omapi.ese.xml \
@@ -3338,19 +3351,6 @@ PRODUCT_PACKAGES += \
     BatteryCare \
     Bug2GoStub \
     CQATest \
-    libMPLib \
-    libNVT36xxx \
-    libaeccalibration_jni \
-    libc++_shared \
-    libcameraOIS_jni \
-    libcameraraw_jni \
-    libgcorejni \
-    libjigancalibration_jni \
-    libjiganverification_jni \
-    libopencv_java4 \
-    libtestcore \
-    libtestsdk \
-    libwa_calibrationtool2 \
     ChromeHomePageProvider \
     CoreSettingsExt \
     DemoMode \
