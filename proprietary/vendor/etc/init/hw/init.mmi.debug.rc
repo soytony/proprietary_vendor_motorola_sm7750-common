@@ -1,4 +1,14 @@
+on early-boot && property:ro.boot.adb_early=1
+    setprop sys.usb.configfs 1
+    setprop vendor.usb.controller ${ro.boot.usbcontroller}
+    setprop sys.usb.controller ${ro.boot.usbcontroller}
+    setprop sys.usb.config adb
+    start adbd
+    start vendor.mmi-usb-sh
+
 on boot && property:ro.boot.adb_early=1
+    setprop sys.usb.config adb
+    start adbd
     start vendor.mmi-usb-sh
 
 on moto-charger && property:ro.boot.adb_early=1
