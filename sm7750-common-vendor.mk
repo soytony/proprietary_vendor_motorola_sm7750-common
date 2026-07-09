@@ -1343,6 +1343,7 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/sm7750-common/proprietary/vendor/bin/hw/android.hardware.secure_element-service.qti:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.secure_element-service.qti \
     vendor/motorola/sm7750-common/proprietary/vendor/bin/hw/android.hardware.security.keymint-service-qti:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.security.keymint-service-qti \
     vendor/motorola/sm7750-common/proprietary/vendor/bin/hw/android.hardware.security.keymint-service.strongbox-thales:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.security.keymint-service.strongbox-thales \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/hw/android.hardware.weaver-service.thales:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.weaver-service.thales \
     vendor/motorola/sm7750-common/proprietary/vendor/bin/hw/android.hardware.uwb@service-qti:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.uwb@service-qti \
     vendor/motorola/sm7750-common/proprietary/vendor/bin/hw/motosxf:$(TARGET_COPY_OUT_VENDOR)/bin/hw/motosxf \
     vendor/motorola/sm7750-common/proprietary/vendor/bin/hw/qconfigservice:$(TARGET_COPY_OUT_VENDOR)/bin/hw/qconfigservice \
@@ -1539,6 +1540,7 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/sm7750-common/proprietary/vendor/bin/hw/android.hardware.secure_element-service.qti:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.secure_element-service.qti \
     vendor/motorola/sm7750-common/proprietary/vendor/bin/hw/android.hardware.security.keymint-service-qti:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.security.keymint-service-qti \
     vendor/motorola/sm7750-common/proprietary/vendor/bin/hw/android.hardware.security.keymint-service.strongbox-thales:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.security.keymint-service.strongbox-thales \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/hw/android.hardware.weaver-service.thales:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.weaver-service.thales \
     vendor/motorola/sm7750-common/proprietary/vendor/bin/hw/android.hardware.uwb@service-qti:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.uwb@service-qti \
     vendor/motorola/sm7750-common/proprietary/vendor/bin/hw/motosxf:$(TARGET_COPY_OUT_VENDOR)/bin/hw/motosxf \
     vendor/motorola/sm7750-common/proprietary/vendor/bin/hw/qconfigservice:$(TARGET_COPY_OUT_VENDOR)/bin/hw/qconfigservice \
@@ -1735,6 +1737,7 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/sm7750-common/proprietary/vendor/bin/hw/android.hardware.secure_element-service.qti:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.secure_element-service.qti \
     vendor/motorola/sm7750-common/proprietary/vendor/bin/hw/android.hardware.security.keymint-service-qti:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.security.keymint-service-qti \
     vendor/motorola/sm7750-common/proprietary/vendor/bin/hw/android.hardware.security.keymint-service.strongbox-thales:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.security.keymint-service.strongbox-thales \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/hw/android.hardware.weaver-service.thales:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.weaver-service.thales \
     vendor/motorola/sm7750-common/proprietary/vendor/bin/hw/android.hardware.uwb@service-qti:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.uwb@service-qti \
     vendor/motorola/sm7750-common/proprietary/vendor/bin/hw/motosxf:$(TARGET_COPY_OUT_VENDOR)/bin/hw/motosxf \
     vendor/motorola/sm7750-common/proprietary/vendor/bin/hw/qconfigservice:$(TARGET_COPY_OUT_VENDOR)/bin/hw/qconfigservice \
@@ -1931,6 +1934,7 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/sm7750-common/proprietary/vendor/bin/hw/android.hardware.secure_element-service.qti:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.secure_element-service.qti \
     vendor/motorola/sm7750-common/proprietary/vendor/bin/hw/android.hardware.security.keymint-service-qti:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.security.keymint-service-qti \
     vendor/motorola/sm7750-common/proprietary/vendor/bin/hw/android.hardware.security.keymint-service.strongbox-thales:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.security.keymint-service.strongbox-thales \
+    vendor/motorola/sm7750-common/proprietary/vendor/bin/hw/android.hardware.weaver-service.thales:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.weaver-service.thales \
     vendor/motorola/sm7750-common/proprietary/vendor/bin/hw/android.hardware.uwb@service-qti:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.uwb@service-qti \
     vendor/motorola/sm7750-common/proprietary/vendor/bin/hw/motosxf:$(TARGET_COPY_OUT_VENDOR)/bin/hw/motosxf \
     vendor/motorola/sm7750-common/proprietary/vendor/bin/hw/qconfigservice:$(TARGET_COPY_OUT_VENDOR)/bin/hw/qconfigservice \
@@ -2603,11 +2607,15 @@ PRODUCT_PACKAGES += \
     libproj_qmot_tracker \
     libproj_sot \
     libprotobuf-cpp-full-21.12 \
+    libprotobuf-cpp-full-qccsyshal-compat \
     libprotobuf-cpp-lite-21.12 \
     libpsmoptfeature \
     libq-perflog \
     libqape_oem_ext \
     libqapesdk \
+    libqsap_sdk \
+    android.hardware.radio@1.0.vendor \
+    android.hardware.radio@1.1.vendor \
     libqasr \
     libqc2audio_base \
     libqc2audio_basecodec \
@@ -2706,9 +2714,86 @@ PRODUCT_PACKAGES += \
     libqti-sslite \
     libqti-util \
     libqti-utils \
+    libqti_vndfwk_detect.vendor \
+    libqti_vndfwk_detect_vendor \
+    libsqlite.vendor \
+    libcurl.vendor \
+    libcodec2.vendor \
+    libcodec2_hal_common.vendor \
+    libcamera_metadata.vendor \
+    libexif.vendor \
+    libhwbinder.vendor \
+    libhidltransport.vendor \
+    libqdMetaData \
+    libqdutils \
+    librmnetctl \
+    libsysutils.vendor \
+    libwpa_client \
+    android.frameworks.cameraservice.common-V1-ndk.vendor \
+    android.frameworks.cameraservice.device-V2-ndk.vendor \
+    android.frameworks.cameraservice.service-V2-ndk.vendor \
+    android.frameworks.location.altitude-V2-ndk.vendor \
+    android.hardware.audio.core-V2-ndk.vendor \
+    android.hardware.biometrics.common.thread.vendor \
+    android.hardware.biometrics.common.util.vendor \
+    android.hardware.drm-V1-ndk.vendor \
+    android.hardware.identity-V5-ndk.vendor \
+    android.hardware.keymaster-V3-ndk.vendor \
+    android.hardware.gnss-V4-ndk.vendor \
+    android.hardware.health@1.0.vendor \
+    android.hardware.health@2.0.vendor \
+    android.hardware.health@2.1.vendor \
+    android.hardware.biometrics.face-V4-ndk.vendor \
+    android.hardware.biometrics.fingerprint-V3-ndk.vendor \
+    android.hardware.bluetooth@1.0.vendor \
+    android.hardware.bluetooth-V1-ndk.vendor \
+    android.hardware.bluetooth.finder-V1-ndk.vendor \
+    android.hardware.bluetooth.lmp_event-V1-ndk.vendor \
+    android.hardware.graphics.common-V5-ndk.vendor \
+    android.hardware.camera.device-V2-ndk.vendor \
+    android.hardware.camera.provider-V2-ndk.vendor \
+    android.hardware.radio.config-V3-ndk.vendor \
+    android.hardware.radio.messaging-V3-ndk.vendor \
+    android.hardware.radio.modem-V3-ndk.vendor \
+    android.hardware.radio.network-V3-ndk.vendor \
+    android.hardware.radio.sap-V1-ndk.vendor \
+    android.hardware.radio.sim-V3-ndk.vendor \
+    android.hardware.radio.voice-V3-ndk.vendor \
+    android.hardware.security.keymint-V2-ndk.vendor \
+    android.hardware.wifi.hostapd-V2-ndk.vendor \
+    android.hardware.wifi.supplicant-V3-ndk.vendor \
+    android.hardware.secure_element@1.0.vendor \
+    android.hardware.thermal@2.0 \
+    android.hardware.thermal@2.0.vendor \
+    android.hardware.media.c2@1.0.vendor \
+    android.hardware.media.c2@1.1.vendor \
+    android.hardware.media.c2@1.2.vendor \
+    android.media.audio.common.types-V2-ndk.vendor \
+    android.system.net.netd-V1-ndk.vendor \
+    vendor.display.config@1.0.vendor \
+    vendor.qti.hardware.display.config-V2-ndk.vendor \
+    vendor.qti.hardware.display.config-V7-ndk.vendor \
+    vendor.qti.hardware.display.allocator@4.0.vendor \
+    qti-audio-types-aidl-V1-ndk.vendor \
+    vendor.qti.hardware.servicetrackeraidl-V1-ndk.vendor \
     libqtigefar \
+    android.hardware.gatekeeper-V1-ndk.vendor \
     libqtiidentitycredential \
+    libgatekeeper \
     libqtikeymaster4 \
+    android.hardware.keymaster@4.0.vendor \
+    android.hardware.keymaster@4.1.vendor \
+    android.hardware.security.keymint-V3-ndk.vendor \
+    android.hardware.security.rkp-V3-ndk.vendor \
+    android.hardware.security.sharedsecret-V1-ndk.vendor \
+    android.hardware.secure_element-V1-ndk.vendor \
+    android.hardware.weaver-V2-ndk.vendor \
+    android.se.omapi-V1-ndk.vendor \
+    lib_android_keymaster_keymint_utils.vendor \
+    libcppbor_external.vendor \
+    libkeymaster_messages.vendor \
+    libkeymaster_portable.vendor \
+    libsoft_attestation_cert.vendor \
     libqtikeymint \
     libqtivibratoreffect \
     libqtivibratoreffectoffload \
@@ -2779,6 +2864,7 @@ PRODUCT_PACKAGES += \
     libssc_default_listener \
     libssd \
     libstagefrighthw \
+    libstagefright_bufferqueue_helper.vendor \
     libstandbyfeature \
     libstcMotoColor \
     libstfactory-vendor \
@@ -2913,6 +2999,7 @@ PRODUCT_PACKAGES += \
     libdlbvolaidl \
     libdownmix \
     libdynproc \
+    libeffectsconfig \
     libeffectproxy \
     libldnhncr \
     libquasar \
@@ -3082,7 +3169,7 @@ PRODUCT_PACKAGES += \
     vendor.qti.memory.pasrmanager-V1-ndk \
     vendor.qti.memory.pasrmanager@1.0 \
     vendor.qti.memory.pasrmanager@1.1 \
-    vendor.qti.qccsyshal_aidl-V1-ndk \
+    vendor.qti.qccsyshal_aidl-V1-ndk_vendor \
     vendor.qti.qccvndhal_aidl-V1-ndk \
     vendor.qti.qccvndhal_aidl-halimpl \
     vendor.qti.qesdhal-impl \
@@ -3093,7 +3180,7 @@ PRODUCT_PACKAGES += \
     vendor.qti.qesdhalaidl-V2-ndk \
     vendor.qti.qesdsys-V3-ndk \
     vendor.qti.qesdsys-V4-ndk \
-    vendor.qti.qspmhal-V1-ndk \
+    vendor.qti.qspmhal-V1-ndk_vendor \
     vendor.qti.qspmhal-impl \
     vendor.qti.snapdragonServices-V1-ndk \
     vendor.qti.snapdragonServices.qape-V1-ndk \
@@ -3322,7 +3409,9 @@ PRODUCT_PACKAGES += \
     vendor.qti.imsrtpservice@3.1 \
     vendor.qti.latency@2.3 \
     vendor.qti.mstatservice@1.0 \
+    vendor.qti.qccsyshal_aidl-V1-ndk \
     vendor.qti.qccsyshal_aidl-halimpl \
+    vendor.qti.qspmhal-V1-ndk \
     vendor.qti.qspmhal@1.0 \
     CACertService \
     CneApp \
@@ -3381,7 +3470,6 @@ PRODUCT_PACKAGES += \
     MotoTaskBar \
     MotoThinkUEM \
     MotoWifiMetrics \
-    MotorolaSettingsProvider \
     MyKey \
     PAKSFinance \
     PaksFinanceNotification \
@@ -3597,9 +3685,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.qspmhal-service.xml \
     vendor.qti.syshealthmon-service.xml \
     vendor.zuialarm.hardware.alarm.xml \
-    manifest_kera.xml \
-    manifest_sun.xml \
-    manifest_tuna.xml \
     BuildManifestSystemExt.apk \
     atcmdfwd-saidl.xml \
     vendor.qti.hardware.sigma_miracast.xml \
@@ -3675,4 +3760,4 @@ PRODUCT_PACKAGES += \
     init.mmi.bootlog-dmesg \
     init.mmi.bootlog-logcat \
     init.mmi.bootlog \
-    motsettings \
+    motsettings

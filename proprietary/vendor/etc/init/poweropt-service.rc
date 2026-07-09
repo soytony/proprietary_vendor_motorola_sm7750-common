@@ -11,4 +11,4 @@ service poweropt-service /vendor/bin/poweropt-service
     class hal
     user system
     group system readproc input
-
+    setenv LD_LIBRARY_PATH /vendor/lib64/poweropt:/vendor/lib64

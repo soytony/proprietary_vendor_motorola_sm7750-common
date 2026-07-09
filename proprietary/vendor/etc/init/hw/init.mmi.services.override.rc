@@ -2,6 +2,11 @@ service vendor.qti.hardware.display.composer /vendor/bin/hw/vendor.qti.hardware.
     class hal animation
     user system
     group graphics drmrpc
+    interface aidl android.hardware.graphics.composer3.IComposer/default
+    interface aidl vendor.qti.hardware.display.color.IDisplayColor/default
+    interface aidl vendor.qti.hardware.display.postproc.IDisplayPostproc/default
+    interface aidl vendor.qti.hardware.display.config.IDisplayConfig/default
+    interface aidl vendor.qti.hardware.display.aiqe.IDisplayAiqe/default
     capabilities SYS_NICE
     onrestart restart surfaceflinger
     socket pps stream 0660 system system

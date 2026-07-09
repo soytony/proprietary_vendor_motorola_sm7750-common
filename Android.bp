@@ -34,7 +34,6 @@ cc_prebuilt_library_shared {
     soc_specific: true,
 }
 
-
 cc_prebuilt_library_shared {
     check_elf_files: false,
     name: "btaudio_offload_if",
@@ -3650,6 +3649,10 @@ cc_prebuilt_library_shared {
             ],
         },
     },
+    shared_libs: [
+        "android.hardware.gatekeeper-V1-ndk",
+        "libgatekeeper",
+    ],
     compile_multilib: "64",
     relative_install_path: "hw",
     prefer: true,
@@ -6922,6 +6925,9 @@ cc_prebuilt_library_shared {
     check_elf_files: false,
     name: "libeffects",
     owner: "motorola",
+    shared_libs: [
+        "libeffectsconfig",
+    ],
     strip: {
         none: true,
     },
@@ -10656,6 +10662,26 @@ cc_prebuilt_library_shared {
 
 cc_prebuilt_library_shared {
     check_elf_files: false,
+    name: "libprotobuf-cpp-full-qccsyshal-compat",
+    stem: "libprotobuf-cpp-full",
+    owner: "motorola",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libprotobuf-cpp-full-21.12.so",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    system_ext_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    check_elf_files: false,
     name: "libprotobuf-cpp-lite-21.12",
     owner: "motorola",
     strip: {
@@ -10741,6 +10767,25 @@ cc_prebuilt_library_shared {
         android_arm64: {
             srcs: [
                 "proprietary/vendor/lib64/libqapesdk.so",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    check_elf_files: false,
+    name: "libqsap_sdk",
+    owner: "motorola",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libqsap_sdk.so",
             ],
         },
     },
@@ -14506,7 +14551,6 @@ cc_prebuilt_library_shared {
     prefer: true,
     soc_specific: true,
 }
-
 cc_prebuilt_library_shared {
     check_elf_files: false,
     name: "libtinyxml2_1",
@@ -14526,6 +14570,90 @@ cc_prebuilt_library_shared {
     soc_specific: true,
 }
 
+
+cc_prebuilt_library_shared {
+    check_elf_files: false,
+    name: "libcodec2_aidl_vendor",
+    stem: "libcodec2_aidl",
+    overrides: ["libcodec2_aidl"],
+    owner: "motorola",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libcodec2_aidl.so",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    check_elf_files: false,
+    name: "libcodec2_hidl_1_0_vendor",
+    stem: "libcodec2_hidl@1.0",
+    overrides: ["libcodec2_hidl@1.0"],
+    owner: "motorola",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libcodec2_hidl@1.0.so",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    check_elf_files: false,
+    name: "libcodec2_hidl_1_1_vendor",
+    stem: "libcodec2_hidl@1.1",
+    overrides: ["libcodec2_hidl@1.1"],
+    owner: "motorola",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libcodec2_hidl@1.1.so",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    check_elf_files: false,
+    name: "libcodec2_hidl_1_2_vendor",
+    stem: "libcodec2_hidl@1.2",
+    overrides: ["libcodec2_hidl@1.2"],
+    owner: "motorola",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libcodec2_hidl@1.2.so",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
 cc_prebuilt_library_shared {
     check_elf_files: false,
     name: "libtpa",
@@ -19855,7 +19983,8 @@ cc_prebuilt_library_shared {
 
 cc_prebuilt_library_shared {
     check_elf_files: false,
-    name: "vendor.qti.qccsyshal_aidl-V1-ndk",
+    name: "vendor.qti.qccsyshal_aidl-V1-ndk_vendor",
+    stem: "vendor.qti.qccsyshal_aidl-V1-ndk",
     owner: "motorola",
     strip: {
         none: true,
@@ -19870,6 +19999,25 @@ cc_prebuilt_library_shared {
     compile_multilib: "64",
     prefer: true,
     soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    check_elf_files: false,
+    name: "vendor.qti.qccsyshal_aidl-V1-ndk",
+    owner: "motorola",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/vendor.qti.qccsyshal_aidl-V1-ndk.so",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    system_ext_specific: true,
 }
 
 cc_prebuilt_library_shared {
@@ -20064,7 +20212,8 @@ cc_prebuilt_library_shared {
 
 cc_prebuilt_library_shared {
     check_elf_files: false,
-    name: "vendor.qti.qspmhal-V1-ndk",
+    name: "vendor.qti.qspmhal-V1-ndk_vendor",
+    stem: "vendor.qti.qspmhal-V1-ndk",
     owner: "motorola",
     strip: {
         none: true,
@@ -20079,6 +20228,25 @@ cc_prebuilt_library_shared {
     compile_multilib: "64",
     prefer: true,
     soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    check_elf_files: false,
+    name: "vendor.qti.qspmhal-V1-ndk",
+    owner: "motorola",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/vendor.qti.qspmhal-V1-ndk.so",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    system_ext_specific: true,
 }
 
 cc_prebuilt_library_shared {
@@ -27759,5 +27927,67 @@ android_app_import {
     owner: "motorola",
     apk: "proprietary/vendor/overlay/framework-res__roadstr__auto_generated_rro_vendor.apk",
     presigned: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    check_elf_files: false,
+    name: "libqti-perfd-client_vendor",
+    owner: "motorola",
+    overrides: ["libqti-perfd-client"],
+    stem: "libqti-perfd-client",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libqti-perfd-client.so",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+
+}
+
+cc_prebuilt_library_shared {
+    check_elf_files: false,
+    name: "libtinyxml2_vendor",
+    owner: "motorola",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libtinyxml2.so",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    check_elf_files: false,
+    name: "libtinyxml2_poweropt",
+    owner: "motorola",
+    stem: "libtinyxml2",
+    relative_install_path: "poweropt",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libtinyxml2.so",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
     soc_specific: true,
 }

@@ -47,6 +47,7 @@ service qccsyshal@1.2-service /system/system_ext/bin/qccsyshal@1.2-service
     class hal
     user system
     group misc system
+    setenv LD_LIBRARY_PATH /system_ext/lib64:/system/lib64:/apex/com.android.runtime/lib64/bionic
 
 on property:hwservicemanager.disabled=true
     stop qccsyshal@1.2-service

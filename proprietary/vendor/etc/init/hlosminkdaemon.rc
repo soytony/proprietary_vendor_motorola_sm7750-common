@@ -2,6 +2,10 @@
 # All Rights Reserved.
 # Confidential and Proprietary - Qualcomm Technologies, Inc.
 
+# Start daemon before vdc keymaster earlyBootEnded can block post-fs-data
+on post-fs-data
+    start vendor.minkdaemon
+
 # Start daemon on early-init
 on early-boot
     start vendor.minkdaemon
@@ -11,4 +15,5 @@ service vendor.minkdaemon /vendor/bin/hlosminkdaemon
     user system
     group system
     disabled
+    oneshot
     socket hlos_mink_opener stream 0660 system system
