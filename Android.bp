@@ -19349,6 +19349,41 @@ cc_prebuilt_library_shared {
     soc_specific: true,
 }
 
+cc_prebuilt_binary {
+    name: "vendor.qti.hardware.vibrator.service_prebuilt",
+    owner: "motorola",
+    stem: "vendor.qti.hardware.vibrator.service",
+    relative_install_path: "hw",
+    init_rc: ["proprietary/vendor/etc/init/vendor.qti.hardware.vibrator.service.rc"],
+    vintf_fragments: [
+        "proprietary/vendor/etc/vintf/manifest/vendor.qti.hardware.vibrator.service.xml",
+    ],
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/bin/hw/vendor.qti.hardware.vibrator.service",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    shared_libs: [
+        "android.hardware.vibrator-V2-ndk",
+        "libbase",
+        "libbinder_ndk",
+        "libcutils",
+        "liblog",
+        "libtiktapvibrator",
+        "libutils",
+        "vendor.awinic.hardware.tiktap.vibrator-V1-ndk",
+        "vendor.qti.hardware.vibrator.impl",
+    ],
+    prefer: true,
+    soc_specific: true,
+}
+
 cc_prebuilt_library_shared {
     check_elf_files: false,
     name: "vendor.qti.hardware.vibratorCL.impl",
