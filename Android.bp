@@ -17579,6 +17579,9 @@ cc_prebuilt_library_shared {
             ],
         },
     },
+    shared_libs: [
+        "vendor.qti.hardware.camera.aon-V2-ndk",
+    ],
     compile_multilib: "64",
     prefer: true,
     soc_specific: true,
@@ -17598,6 +17601,9 @@ cc_prebuilt_library_shared {
             ],
         },
     },
+    shared_libs: [
+        "vendor.qti.hardware.camera.offlinecamera-V2-ndk",
+    ],
     compile_multilib: "64",
     prefer: true,
     soc_specific: true,
@@ -24516,7 +24522,6 @@ cc_prebuilt_library_shared {
     prefer: true,
     system_ext_specific: true,
 }
-
 android_app_import {
     name: "CACertService",
     owner: "motorola",
@@ -24583,7 +24588,6 @@ android_app_import {
     soc_specific: true,
 }
 
-
 android_app_import {
     name: "AtFwd2",
     owner: "motorola",
@@ -24595,16 +24599,6 @@ android_app_import {
     system_ext_specific: true,
 }
 
-android_app_import {
-    name: "DciStatsService",
-    owner: "motorola",
-    apk: "proprietary/system_ext/app/DciStatsService/DciStatsService.apk",
-    certificate: "platform",
-    dex_preopt: {
-        enabled: false,
-    },
-    system_ext_specific: true,
-}
 
 android_app_import {
     name: "DynamicDDSService",
@@ -24617,16 +24611,6 @@ android_app_import {
     system_ext_specific: true,
 }
 
-android_app_import {
-    name: "FMRadioService",
-    owner: "motorola",
-    apk: "proprietary/system_ext/app/FMRadioService/FMRadioService.apk",
-    certificate: "platform",
-    dex_preopt: {
-        enabled: false,
-    },
-    system_ext_specific: true,
-}
 
 android_app_import {
     name: "FrameworksUtilsSysService",
@@ -24650,16 +24634,6 @@ android_app_import {
     system_ext_specific: true,
 }
 
-android_app_import {
-    name: "NFWLocationAttribution",
-    owner: "motorola",
-    apk: "proprietary/system_ext/app/NFWLocationAttribution/NFWLocationAttribution.apk",
-    certificate: "platform",
-    dex_preopt: {
-        enabled: false,
-    },
-    system_ext_specific: true,
-}
 
 android_app_import {
     name: "NtnSatApp",
@@ -24683,27 +24657,6 @@ android_app_import {
     system_ext_specific: true,
 }
 
-android_app_import {
-    name: "QtiTelephonyService",
-    owner: "motorola",
-    apk: "proprietary/system_ext/app/QtiTelephonyService/QtiTelephonyService.apk",
-    certificate: "platform",
-    dex_preopt: {
-        enabled: false,
-    },
-    system_ext_specific: true,
-}
-
-android_app_import {
-    name: "SlpcSystem",
-    owner: "motorola",
-    apk: "proprietary/system_ext/app/SlpcSystem/SlpcSystem.apk",
-    certificate: "platform",
-    dex_preopt: {
-        enabled: false,
-    },
-    system_ext_specific: true,
-}
 
 android_app_import {
     name: "atfwd",
@@ -24738,577 +24691,11 @@ android_app_import {
     system_ext_specific: true,
 }
 
-android_app_import {
-    name: "3c_devicemanagement-binary",
-    owner: "motorola",
-    apk: "proprietary/system_ext/priv-app/3c_devicemanagement-binary/3c_devicemanagement-binary.apk",
-    certificate: "platform",
-    dex_preopt: {
-        enabled: false,
-    },
-    privileged: true,
-    system_ext_specific: true,
-}
-
-android_app_import {
-    name: "3c_notification",
-    owner: "motorola",
-    apk: "proprietary/system_ext/priv-app/3c_notification/3c_notification.apk",
-    certificate: "platform",
-    dex_preopt: {
-        enabled: false,
-    },
-    privileged: true,
-    system_ext_specific: true,
-}
-
-android_app_import {
-    name: "3c_ota",
-    owner: "motorola",
-    apk: "proprietary/system_ext/priv-app/3c_ota/3c_ota.apk",
-    certificate: "platform",
-    dex_preopt: {
-        enabled: false,
-    },
-    privileged: true,
-    system_ext_specific: true,
-}
-
-android_app_import {
-    name: "ActionCore",
-    owner: "motorola",
-    apk: "proprietary/system_ext/priv-app/ActionCore/ActionCore.apk",
-    certificate: "platform",
-    dex_preopt: {
-        enabled: false,
-    },
-    privileged: true,
-    system_ext_specific: true,
-}
-
-
-android_app_import {
-    name: "BatteryCare",
-    owner: "motorola",
-    apk: "proprietary/system_ext/priv-app/BatteryCare/BatteryCare.apk",
-    certificate: "platform",
-    dex_preopt: {
-        enabled: false,
-    },
-    privileged: true,
-    system_ext_specific: true,
-}
-
-android_app_import {
-    name: "Bug2GoStub",
-    owner: "motorola",
-    apk: "proprietary/system_ext/priv-app/Bug2GoStub/Bug2GoStub.apk",
-    certificate: "platform",
-    dex_preopt: {
-        enabled: false,
-    },
-    privileged: true,
-    system_ext_specific: true,
-}
 
 android_app_import {
     name: "CQATest",
     owner: "motorola",
     apk: "proprietary/system_ext/priv-app/CQATest/CQATest.apk",
-    certificate: "platform",
-    dex_preopt: {
-        enabled: false,
-    },
-    privileged: true,
-    system_ext_specific: true,
-}
-
-android_app_import {
-    name: "ChromeHomePageProvider",
-    owner: "motorola",
-    apk: "proprietary/system_ext/priv-app/ChromeHomePageProvider/ChromeHomePageProvider.apk",
-    certificate: "platform",
-    dex_preopt: {
-        enabled: false,
-    },
-    privileged: true,
-    system_ext_specific: true,
-}
-
-android_app_import {
-    name: "CoreSettingsExt",
-    owner: "motorola",
-    apk: "proprietary/system_ext/priv-app/CoreSettingsExt/CoreSettingsExt.apk",
-    certificate: "platform",
-    dex_preopt: {
-        enabled: false,
-    },
-    privileged: true,
-    system_ext_specific: true,
-}
-
-android_app_import {
-    name: "DemoMode",
-    owner: "motorola",
-    apk: "proprietary/system_ext/priv-app/DemoMode/DemoMode.apk",
-    certificate: "platform",
-    dex_preopt: {
-        enabled: false,
-    },
-    privileged: true,
-    system_ext_specific: true,
-}
-
-android_app_import {
-    name: "EmergencyInfoGms",
-    owner: "motorola",
-    apk: "proprietary/system_ext/priv-app/EmergencyInfoGms/EmergencyInfoGms.apk",
-    certificate: "platform",
-    dex_preopt: {
-        enabled: false,
-    },
-    privileged: true,
-    system_ext_specific: true,
-}
-
-android_app_import {
-    name: "EnterpriseAdapterService",
-    owner: "motorola",
-    apk: "proprietary/system_ext/priv-app/EnterpriseAdapterService/EnterpriseAdapterService.apk",
-    certificate: "platform",
-    dex_preopt: {
-        enabled: false,
-    },
-    privileged: true,
-    system_ext_specific: true,
-}
-
-android_app_import {
-    name: "GestureNavigationTutorial",
-    owner: "motorola",
-    apk: "proprietary/system_ext/priv-app/GestureNavigationTutorial/GestureNavigationTutorial.apk",
-    certificate: "platform",
-    dex_preopt: {
-        enabled: false,
-    },
-    privileged: true,
-    system_ext_specific: true,
-}
-
-android_app_import {
-    name: "GoogleFeedback",
-    owner: "motorola",
-    apk: "proprietary/system_ext/priv-app/GoogleFeedback/GoogleFeedback.apk",
-    certificate: "platform",
-    dex_preopt: {
-        enabled: false,
-    },
-    privileged: true,
-    system_ext_specific: true,
-}
-
-android_app_import {
-    name: "GoogleServicesFramework",
-    owner: "motorola",
-    apk: "proprietary/system_ext/priv-app/GoogleServicesFramework/GoogleServicesFramework.apk",
-    certificate: "platform",
-    dex_preopt: {
-        enabled: false,
-    },
-    privileged: true,
-    system_ext_specific: true,
-}
-
-android_app_import {
-    name: "GoogleWallpapers",
-    owner: "motorola",
-    apk: "proprietary/system_ext/priv-app/GoogleWallpapers/GoogleWallpapers.apk",
-    certificate: "platform",
-    dex_preopt: {
-        enabled: false,
-    },
-    privileged: true,
-    system_ext_specific: true,
-}
-
-android_app_import {
-    name: "HiddenMenu",
-    owner: "motorola",
-    apk: "proprietary/system_ext/priv-app/HiddenMenu/HiddenMenu.apk",
-    certificate: "platform",
-    dex_preopt: {
-        enabled: false,
-    },
-    privileged: true,
-    system_ext_specific: true,
-}
-
-
-android_app_import {
-    name: "LifetimeData",
-    owner: "motorola",
-    apk: "proprietary/system_ext/priv-app/LifetimeData/LifetimeData.apk",
-    certificate: "platform",
-    dex_preopt: {
-        enabled: false,
-    },
-    privileged: true,
-    system_ext_specific: true,
-}
-
-android_app_import {
-    name: "MSimSettings",
-    owner: "motorola",
-    apk: "proprietary/system_ext/priv-app/MSimSettings/MSimSettings.apk",
-    certificate: "platform",
-    dex_preopt: {
-        enabled: false,
-    },
-    privileged: true,
-    system_ext_specific: true,
-}
-
-android_app_import {
-    name: "ModemStatsService",
-    owner: "motorola",
-    apk: "proprietary/system_ext/priv-app/ModemStatsService/ModemStatsService.apk",
-    certificate: "platform",
-    dex_preopt: {
-        enabled: false,
-    },
-    privileged: true,
-    system_ext_specific: true,
-}
-
-android_app_import {
-    name: "MotCameraDesktop",
-    owner: "motorola",
-    apk: "proprietary/system_ext/priv-app/MotCameraDesktop/MotCameraDesktop.apk",
-    certificate: "platform",
-    dex_preopt: {
-        enabled: false,
-    },
-    privileged: true,
-    system_ext_specific: true,
-}
-
-android_app_import {
-    name: "MotoBtAptxMode",
-    owner: "motorola",
-    apk: "proprietary/system_ext/priv-app/MotoBtAptxMode/MotoBtAptxMode.apk",
-    certificate: "platform",
-    dex_preopt: {
-        enabled: false,
-    },
-    privileged: true,
-    system_ext_specific: true,
-}
-
-android_app_import {
-    name: "MotoCare",
-    owner: "motorola",
-    apk: "proprietary/system_ext/priv-app/MotoCare/MotoCare.apk",
-    certificate: "platform",
-    dex_preopt: {
-        enabled: false,
-    },
-    privileged: true,
-    system_ext_specific: true,
-}
-
-android_app_import {
-    name: "MotoDesktopCore",
-    owner: "motorola",
-    apk: "proprietary/system_ext/priv-app/MotoDesktopCore/MotoDesktopCore.apk",
-    certificate: "platform",
-    dex_preopt: {
-        enabled: false,
-    },
-    privileged: true,
-    system_ext_specific: true,
-}
-
-android_app_import {
-    name: "MotoFreeForm",
-    owner: "motorola",
-    apk: "proprietary/system_ext/priv-app/MotoFreeForm/MotoFreeForm.apk",
-    certificate: "platform",
-    dex_preopt: {
-        enabled: false,
-    },
-    privileged: true,
-    system_ext_specific: true,
-}
-
-android_app_import {
-    name: "MotoInstaller",
-    owner: "motorola",
-    apk: "proprietary/system_ext/priv-app/MotoInstaller/MotoInstaller.apk",
-    certificate: "platform",
-    dex_preopt: {
-        enabled: false,
-    },
-    privileged: true,
-    system_ext_specific: true,
-}
-
-android_app_import {
-    name: "MotoLiveWallpaper3",
-    owner: "motorola",
-    apk: "proprietary/system_ext/priv-app/MotoLiveWallpaper3/MotoLiveWallpaper3.apk",
-    certificate: "platform",
-    dex_preopt: {
-        enabled: false,
-    },
-    privileged: true,
-    system_ext_specific: true,
-}
-
-android_app_import {
-    name: "MotoMagicWordsStub",
-    owner: "motorola",
-    apk: "proprietary/system_ext/priv-app/MotoMagicWordsStub/MotoMagicWordsStub.apk",
-    certificate: "platform",
-    dex_preopt: {
-        enabled: false,
-    },
-    privileged: true,
-    system_ext_specific: true,
-}
-
-android_app_import {
-    name: "MotoSecureCore",
-    owner: "motorola",
-    apk: "proprietary/system_ext/priv-app/MotoSecureCore/MotoSecureCore.apk",
-    certificate: "platform",
-    dex_preopt: {
-        enabled: false,
-    },
-    privileged: true,
-    system_ext_specific: true,
-}
-
-android_app_import {
-    name: "MotoSecureVault",
-    owner: "motorola",
-    apk: "proprietary/system_ext/priv-app/MotoSecureVault/MotoSecureVault.apk",
-    certificate: "platform",
-    dex_preopt: {
-        enabled: false,
-    },
-    privileged: true,
-    system_ext_specific: true,
-}
-
-android_app_import {
-    name: "MotoSecurityHub",
-    owner: "motorola",
-    apk: "proprietary/system_ext/priv-app/MotoSecurityHub/MotoSecurityHub.apk",
-    certificate: "platform",
-    dex_preopt: {
-        enabled: false,
-    },
-    privileged: true,
-    system_ext_specific: true,
-}
-
-android_app_import {
-    name: "MotoSecurityHubExt",
-    owner: "motorola",
-    apk: "proprietary/system_ext/priv-app/MotoSecurityHubExt/MotoSecurityHubExt.apk",
-    certificate: "platform",
-    dex_preopt: {
-        enabled: false,
-    },
-    privileged: true,
-    system_ext_specific: true,
-}
-
-android_app_import {
-    name: "MotoSmart5G",
-    owner: "motorola",
-    apk: "proprietary/system_ext/priv-app/MotoSmart5G/MotoSmart5G.apk",
-    certificate: "platform",
-    dex_preopt: {
-        enabled: false,
-    },
-    privileged: true,
-    system_ext_specific: true,
-}
-
-android_app_import {
-    name: "MotoSstSoundService",
-    owner: "motorola",
-    apk: "proprietary/system_ext/priv-app/MotoSstSoundService/MotoSstSoundService.apk",
-    certificate: "platform",
-    dex_preopt: {
-        enabled: false,
-    },
-    privileged: true,
-    system_ext_specific: true,
-}
-
-android_app_import {
-    name: "MotoTaskBar",
-    owner: "motorola",
-    apk: "proprietary/system_ext/priv-app/MotoTaskBar/MotoTaskBar.apk",
-    certificate: "platform",
-    dex_preopt: {
-        enabled: false,
-    },
-    privileged: true,
-    system_ext_specific: true,
-}
-
-android_app_import {
-    name: "MotoThinkUEM",
-    owner: "motorola",
-    apk: "proprietary/system_ext/priv-app/MotoThinkUEM/MotoThinkUEM.apk",
-    certificate: "platform",
-    dex_preopt: {
-        enabled: false,
-    },
-    privileged: true,
-    system_ext_specific: true,
-}
-
-android_app_import {
-    name: "MotoWifiMetrics",
-    owner: "motorola",
-    apk: "proprietary/system_ext/priv-app/MotoWifiMetrics/MotoWifiMetrics.apk",
-    certificate: "platform",
-    dex_preopt: {
-        enabled: false,
-    },
-    privileged: true,
-    system_ext_specific: true,
-}
-
-android_app_import {
-    name: "MotorolaSettingsProvider",
-    owner: "motorola",
-    apk: "proprietary/system_ext/priv-app/MotorolaSettingsProvider/MotorolaSettingsProvider.apk",
-    certificate: "platform",
-    dex_preopt: {
-        enabled: false,
-    },
-    privileged: true,
-    system_ext_specific: true,
-}
-
-android_app_import {
-    name: "MyKey",
-    owner: "motorola",
-    apk: "proprietary/system_ext/priv-app/MyKey/MyKey.apk",
-    certificate: "platform",
-    dex_preopt: {
-        enabled: false,
-    },
-    privileged: true,
-    system_ext_specific: true,
-}
-
-android_app_import {
-    name: "PAKSFinance",
-    owner: "motorola",
-    apk: "proprietary/system_ext/priv-app/PAKSFinance/PAKSFinance.apk",
-    certificate: "platform",
-    dex_preopt: {
-        enabled: false,
-    },
-    privileged: true,
-    system_ext_specific: true,
-}
-
-android_app_import {
-    name: "PaksFinanceNotification",
-    owner: "motorola",
-    apk: "proprietary/system_ext/priv-app/PaksFinanceNotification/PaksFinanceNotification.apk",
-    certificate: "platform",
-    dex_preopt: {
-        enabled: false,
-    },
-    privileged: true,
-    system_ext_specific: true,
-}
-
-android_app_import {
-    name: "Personalize",
-    owner: "motorola",
-    apk: "proprietary/system_ext/priv-app/Personalize/Personalize.apk",
-    certificate: "platform",
-    dex_preopt: {
-        enabled: false,
-    },
-    privileged: true,
-    system_ext_specific: true,
-}
-
-android_app_import {
-    name: "QtiTelephony",
-    owner: "motorola",
-    apk: "proprietary/system_ext/priv-app/QtiTelephony/QtiTelephony.apk",
-    certificate: "platform",
-    dex_preopt: {
-        enabled: false,
-    },
-    privileged: true,
-    system_ext_specific: true,
-}
-
-
-android_app_import {
-    name: "RevokerServices",
-    owner: "motorola",
-    apk: "proprietary/system_ext/priv-app/RevokerServices/RevokerServices.apk",
-    certificate: "platform",
-    dex_preopt: {
-        enabled: false,
-    },
-    privileged: true,
-    system_ext_specific: true,
-}
-
-android_app_import {
-    name: "SettingsMoto",
-    owner: "motorola",
-    apk: "proprietary/system_ext/priv-app/SettingsMoto/SettingsMoto.apk",
-    certificate: "platform",
-    dex_preopt: {
-        enabled: false,
-    },
-    privileged: true,
-    system_ext_specific: true,
-}
-
-android_app_import {
-    name: "SetupWizard",
-    owner: "motorola",
-    apk: "proprietary/system_ext/priv-app/SetupWizard/SetupWizard.apk",
-    certificate: "platform",
-    dex_preopt: {
-        enabled: false,
-    },
-    privileged: true,
-    system_ext_specific: true,
-}
-
-android_app_import {
-    name: "SetupWizardExt",
-    owner: "motorola",
-    apk: "proprietary/system_ext/priv-app/SetupWizardExt/SetupWizardExt.apk",
-    certificate: "platform",
-    dex_preopt: {
-        enabled: false,
-    },
-    privileged: true,
-    system_ext_specific: true,
-}
-
-android_app_import {
-    name: "SpectrumSetupExt",
-    owner: "motorola",
-    apk: "proprietary/system_ext/priv-app/SpectrumSetupExt/SpectrumSetupExt.apk",
     certificate: "platform",
     dex_preopt: {
         enabled: false,
@@ -25330,17 +24717,6 @@ android_app_import {
     system_ext_specific: true,
 }
 
-android_app_import {
-    name: "com.motorola.android.nativedropboxagent",
-    owner: "motorola",
-    apk: "proprietary/system_ext/priv-app/com.motorola.android.nativedropboxagent/com.motorola.android.nativedropboxagent.apk",
-    certificate: "platform",
-    dex_preopt: {
-        enabled: false,
-    },
-    privileged: true,
-    system_ext_specific: true,
-}
 
 android_app_import {
     name: "com.qualcomm.location",
@@ -25354,17 +24730,6 @@ android_app_import {
     system_ext_specific: true,
 }
 
-android_app_import {
-    name: "daxService",
-    owner: "motorola",
-    apk: "proprietary/system_ext/priv-app/daxService/daxService.apk",
-    certificate: "platform",
-    dex_preopt: {
-        enabled: false,
-    },
-    privileged: true,
-    system_ext_specific: true,
-}
 
 android_app_import {
     name: "dpmserviceapp",
@@ -25390,17 +24755,6 @@ android_app_import {
     system_ext_specific: true,
 }
 
-android_app_import {
-    name: "motoDigitalAccount",
-    owner: "motorola",
-    apk: "proprietary/system_ext/priv-app/motoDigitalAccount/motoDigitalAccount.apk",
-    certificate: "platform",
-    dex_preopt: {
-        enabled: false,
-    },
-    privileged: true,
-    system_ext_specific: true,
-}
 
 android_app_import {
     name: "qcrilmsgtunnel",
@@ -25414,41 +24768,6 @@ android_app_import {
     system_ext_specific: true,
 }
 
-android_app_import {
-    name: "rcsConfigService",
-    owner: "motorola",
-    apk: "proprietary/system_ext/priv-app/rcsConfigService/rcsConfigService.apk",
-    certificate: "platform",
-    dex_preopt: {
-        enabled: false,
-    },
-    privileged: true,
-    system_ext_specific: true,
-}
-
-android_app_import {
-    name: "xrcbservice",
-    owner: "motorola",
-    apk: "proprietary/system_ext/priv-app/xrcbservice/xrcbservice.apk",
-    certificate: "platform",
-    dex_preopt: {
-        enabled: false,
-    },
-    privileged: true,
-    system_ext_specific: true,
-}
-
-android_app_import {
-    name: "xrvdservice",
-    owner: "motorola",
-    apk: "proprietary/system_ext/priv-app/xrvdservice/xrvdservice.apk",
-    certificate: "platform",
-    dex_preopt: {
-        enabled: false,
-    },
-    privileged: true,
-    system_ext_specific: true,
-}
 
 dex_import {
     name: "com.motorola.camera.extensions",
@@ -26477,15 +25796,6 @@ prebuilt_etc_xml {
 }
 
 prebuilt_etc_xml {
-    name: "android.hardware.radio.data.xml",
-    owner: "motorola",
-    src: "proprietary/vendor/etc/vintf/manifest/android.hardware.radio.data.xml",
-    filename_from_src: true,
-    sub_dir: "vintf/manifest",
-    soc_specific: true,
-}
-
-prebuilt_etc_xml {
     name: "android.hardware.radio.messaging.xml",
     owner: "motorola",
     src: "proprietary/vendor/etc/vintf/manifest/android.hardware.radio.messaging.xml",
@@ -27224,15 +26534,6 @@ prebuilt_etc_xml {
     soc_specific: true,
 }
 
-prebuilt_etc {
-    name: "BuildManifestSystemExt.apk",
-    owner: "motorola",
-    src: "proprietary/system_ext/etc/security/fsverity/BuildManifestSystemExt.apk",
-    filename_from_src: true,
-    sub_dir: "security/fsverity",
-    system_ext_specific: true,
-}
-
 prebuilt_etc_xml {
     name: "atcmdfwd-saidl.xml",
     owner: "motorola",
@@ -27861,45 +27162,6 @@ sh_binary {
     system_ext_specific: true,
 }
 
-android_app_import {
-    name: "MSimSettingsOverlay",
-    owner: "motorola",
-    apk: "proprietary/system_ext/overlay/MSimSettingsOverlay.apk",
-    presigned: true,
-    system_ext_specific: true,
-}
-
-android_app_import {
-    name: "MotoFrameworkResOverlayHWDualSim",
-    owner: "motorola",
-    apk: "proprietary/vendor/overlay/MotoFrameworkResOverlayHWDualSim.apk",
-    presigned: true,
-    soc_specific: true,
-}
-
-android_app_import {
-    name: "MotoFrameworkResOverlayVendorCommon",
-    owner: "motorola",
-    apk: "proprietary/vendor/overlay/MotoFrameworkResOverlayVendorCommon.apk",
-    presigned: true,
-    soc_specific: true,
-}
-
-android_app_import {
-    name: "MotoFrameworkResOverlayWFD",
-    owner: "motorola",
-    apk: "proprietary/vendor/overlay/MotoFrameworkResOverlayWFD.apk",
-    presigned: true,
-    soc_specific: true,
-}
-
-android_app_import {
-    name: "MotoFrameworkResOverlayWlc",
-    owner: "motorola",
-    apk: "proprietary/vendor/overlay/MotoFrameworkResOverlayWlc.apk",
-    presigned: true,
-    soc_specific: true,
-}
 
 android_app_import {
     name: "SecureElementResTarget_Vendor",
@@ -27909,13 +27171,6 @@ android_app_import {
     soc_specific: true,
 }
 
-android_app_import {
-    name: "SettingsProvider__roadstr__auto_generated_rro_vendor",
-    owner: "motorola",
-    apk: "proprietary/vendor/overlay/SettingsProvider__roadstr__auto_generated_rro_vendor.apk",
-    presigned: true,
-    soc_specific: true,
-}
 
 android_app_import {
     name: "StSecureElementWithouteSEResOverlay",
@@ -27925,45 +27180,6 @@ android_app_import {
     soc_specific: true,
 }
 
-android_app_import {
-    name: "SystemUI__roadstr__auto_generated_rro_vendor",
-    owner: "motorola",
-    apk: "proprietary/vendor/overlay/SystemUI__roadstr__auto_generated_rro_vendor.apk",
-    presigned: true,
-    soc_specific: true,
-}
-
-android_app_import {
-    name: "WifiRes6GhzEnable",
-    owner: "motorola",
-    apk: "proprietary/vendor/overlay/WifiRes6GhzEnable.apk",
-    presigned: true,
-    soc_specific: true,
-}
-
-android_app_import {
-    name: "WifiResDualStaEnablePRC",
-    owner: "motorola",
-    apk: "proprietary/vendor/overlay/WifiResDualStaEnablePRC.apk",
-    presigned: true,
-    soc_specific: true,
-}
-
-android_app_import {
-    name: "WifiResDualStaEnableROW",
-    owner: "motorola",
-    apk: "proprietary/vendor/overlay/WifiResDualStaEnableROW.apk",
-    presigned: true,
-    soc_specific: true,
-}
-
-android_app_import {
-    name: "framework-res__roadstr__auto_generated_rro_vendor",
-    owner: "motorola",
-    apk: "proprietary/vendor/overlay/framework-res__roadstr__auto_generated_rro_vendor.apk",
-    presigned: true,
-    soc_specific: true,
-}
 
 cc_prebuilt_library_shared {
     check_elf_files: false,

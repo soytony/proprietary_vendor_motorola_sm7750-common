@@ -36,7 +36,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/sm7750-common/proprietary/system_ext/etc/default-permissions/default-permission-com.motorola.ccc.ota.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/default-permissions/default-permission-com.motorola.ccc.ota.xml \
     vendor/motorola/sm7750-common/proprietary/system_ext/etc/default-permissions/default-permission-com.motorola.installer.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/default-permissions/default-permission-com.motorola.installer.xml \
     vendor/motorola/sm7750-common/proprietary/system_ext/etc/default-permissions/default-permissions-com.bluetooth.aptxmode.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/default-permissions/default-permissions-com.bluetooth.aptxmode.xml \
-    vendor/motorola/sm7750-common/proprietary/system_ext/etc/default-permissions/default-permissions-com.motorola.bach.modemstats.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/default-permissions/default-permissions-com.motorola.bach.modemstats.xml \
     vendor/motorola/sm7750-common/proprietary/system_ext/etc/default-permissions/default-permissions-com.motorola.batterycare.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/default-permissions/default-permissions-com.motorola.batterycare.xml \
     vendor/motorola/sm7750-common/proprietary/system_ext/etc/default-permissions/default-permissions-com.motorola.magicwords.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/default-permissions/default-permissions-com.motorola.magicwords.xml \
     vendor/motorola/sm7750-common/proprietary/system_ext/etc/default-permissions/default-permissions-com.motorola.mobiledesktop.core.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/default-permissions/default-permissions-com.motorola.mobiledesktop.core.xml \
@@ -200,7 +199,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/sm7750-common/proprietary/system_ext/etc/permissions/com.android.hotwordenrollment.common.util.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.android.hotwordenrollment.common.util.xml \
     vendor/motorola/sm7750-common/proprietary/system_ext/etc/permissions/com.motorola.android.tcmd.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.motorola.android.tcmd.xml \
     vendor/motorola/sm7750-common/proprietary/system_ext/etc/permissions/com.motorola.camera.desktop.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.motorola.camera.desktop.xml \
-    vendor/motorola/sm7750-common/proprietary/system_ext/etc/permissions/com.motorola.dciservice.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.motorola.dciservice.xml \
     vendor/motorola/sm7750-common/proprietary/system_ext/etc/permissions/com.motorola.freeform.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.motorola.freeform.xml \
     vendor/motorola/sm7750-common/proprietary/system_ext/etc/permissions/com.motorola.game_moment.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.motorola.game_moment.xml \
     vendor/motorola/sm7750-common/proprietary/system_ext/etc/permissions/com.motorola.launcher3.split_by_xt.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.motorola.launcher3.split_by_xt.xml \
@@ -240,14 +238,12 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/sm7750-common/proprietary/system_ext/etc/permissions/privapp-permissions-com.google.android.apps.wallpaper.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/privapp-permissions-com.google.android.apps.wallpaper.xml \
     vendor/motorola/sm7750-common/proprietary/system_ext/etc/permissions/privapp-permissions-com.motorola.actioncore.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/privapp-permissions-com.motorola.actioncore.xml \
     vendor/motorola/sm7750-common/proprietary/system_ext/etc/permissions/privapp-permissions-com.motorola.android.providers.chromehomepage.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/privapp-permissions-com.motorola.android.providers.chromehomepage.xml \
-    vendor/motorola/sm7750-common/proprietary/system_ext/etc/permissions/privapp-permissions-com.motorola.bach.modemstats.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/privapp-permissions-com.motorola.bach.modemstats.xml \
     vendor/motorola/sm7750-common/proprietary/system_ext/etc/permissions/privapp-permissions-com.motorola.batterycare.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/privapp-permissions-com.motorola.batterycare.xml \
     vendor/motorola/sm7750-common/proprietary/system_ext/etc/permissions/privapp-permissions-com.motorola.bug2go.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/privapp-permissions-com.motorola.bug2go.xml \
     vendor/motorola/sm7750-common/proprietary/system_ext/etc/permissions/privapp-permissions-com.motorola.ccc.devicemanagement.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/privapp-permissions-com.motorola.ccc.devicemanagement.xml \
     vendor/motorola/sm7750-common/proprietary/system_ext/etc/permissions/privapp-permissions-com.motorola.ccc.notificationQ.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/privapp-permissions-com.motorola.ccc.notificationQ.xml \
     vendor/motorola/sm7750-common/proprietary/system_ext/etc/permissions/privapp-permissions-com.motorola.ccc.ota.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/privapp-permissions-com.motorola.ccc.ota.xml \
     vendor/motorola/sm7750-common/proprietary/system_ext/etc/permissions/privapp-permissions-com.motorola.coresettingsext.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/privapp-permissions-com.motorola.coresettingsext.xml \
-    vendor/motorola/sm7750-common/proprietary/system_ext/etc/permissions/privapp-permissions-com.motorola.dciservice.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/privapp-permissions-com.motorola.dciservice.xml \
     vendor/motorola/sm7750-common/proprietary/system_ext/etc/permissions/privapp-permissions-com.motorola.demo.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/privapp-permissions-com.motorola.demo.xml \
     vendor/motorola/sm7750-common/proprietary/system_ext/etc/permissions/privapp-permissions-com.motorola.dimo.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/privapp-permissions-com.motorola.dimo.xml \
     vendor/motorola/sm7750-common/proprietary/system_ext/etc/permissions/privapp-permissions-com.motorola.enterprise.adapter.service.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/privapp-permissions-com.motorola.enterprise.adapter.service.xml \
@@ -273,7 +269,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/sm7750-common/proprietary/system_ext/etc/permissions/privapp-permissions-com.motorola.securevault.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/privapp-permissions-com.motorola.securevault.xml \
     vendor/motorola/sm7750-common/proprietary/system_ext/etc/permissions/privapp-permissions-com.motorola.securityhub.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/privapp-permissions-com.motorola.securityhub.xml \
     vendor/motorola/sm7750-common/proprietary/system_ext/etc/permissions/privapp-permissions-com.motorola.setup.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/privapp-permissions-com.motorola.setup.xml \
-    vendor/motorola/sm7750-common/proprietary/system_ext/etc/permissions/privapp-permissions-com.motorola.smart5g.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/privapp-permissions-com.motorola.smart5g.xml \
     vendor/motorola/sm7750-common/proprietary/system_ext/etc/permissions/privapp-permissions-com.motorola.spectrum.setup.extensions.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/privapp-permissions-com.motorola.spectrum.setup.extensions.xml \
     vendor/motorola/sm7750-common/proprietary/system_ext/etc/permissions/privapp-permissions-com.motorola.sstservice.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/privapp-permissions-com.motorola.sstservice.xml \
     vendor/motorola/sm7750-common/proprietary/system_ext/etc/permissions/privapp-permissions-com.motorola.systemui.desk.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/privapp-permissions-com.motorola.systemui.desk.xml \
@@ -302,7 +297,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/sm7750-common/proprietary/system_ext/etc/seccomp_policy/sxraux-arm.policy:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/seccomp_policy/sxraux-arm.policy \
     vendor/motorola/sm7750-common/proprietary/system_ext/etc/seccomp_policy/tcmd.policy:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/seccomp_policy/tcmd.policy \
     vendor/motorola/sm7750-common/proprietary/system_ext/etc/seccomp_policy/wfdservice64.policy:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/seccomp_policy/wfdservice64.policy \
-    vendor/motorola/sm7750-common/proprietary/system_ext/etc/security/fsverity/BuildManifestSystemExt.apk.idsig:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/security/fsverity/BuildManifestSystemExt.apk.idsig \
     vendor/motorola/sm7750-common/proprietary/system_ext/etc/sysconfig/com.motorola.bug2go.powersave.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/sysconfig/com.motorola.bug2go.powersave.xml \
     vendor/motorola/sm7750-common/proprietary/system_ext/etc/sysconfig/com.motorola.ccc.devicemanagement.powersave.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/sysconfig/com.motorola.ccc.devicemanagement.powersave.xml \
     vendor/motorola/sm7750-common/proprietary/system_ext/etc/sysconfig/com.motorola.ccc.notification.powersaveQ.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/sysconfig/com.motorola.ccc.notification.powersaveQ.xml \
@@ -3420,77 +3414,20 @@ PRODUCT_PACKAGES += \
     TxPwrAdmin \
     com.qualcomm.qti.gpudrivers.sun.api35 \
     AtFwd2 \
-    DciStatsService \
     DynamicDDSService \
-    FMRadioService \
     FrameworksUtilsSysService \
     ImsRcsService \
-    NFWLocationAttribution \
     NtnSatApp \
     QCC \
-    QtiTelephonyService \
-    SlpcSystem \
     atfwd \
     uceShimService \
     workloadclassifier \
-    3c_devicemanagement-binary \
-    3c_notification \
-    3c_ota \
-    ActionCore \
-    BatteryCare \
-    Bug2GoStub \
     CQATest \
-    ChromeHomePageProvider \
-    CoreSettingsExt \
-    DemoMode \
-    EmergencyInfoGms \
-    EnterpriseAdapterService \
-    GestureNavigationTutorial \
-    GoogleFeedback \
-    GoogleServicesFramework \
-    GoogleWallpapers \
-    HiddenMenu \
-    LifetimeData \
-    MSimSettings \
-    ModemStatsService \
-    MotCameraDesktop \
-    MotoBtAptxMode \
-    MotoCare \
-    MotoDesktopCore \
-    MotoFreeForm \
-    MotoInstaller \
-    MotoLiveWallpaper3 \
-    MotoMagicWordsStub \
-    MotoSecureCore \
-    MotoSecureVault \
-    MotoSecurityHub \
-    MotoSecurityHubExt \
-    MotoSmart5G \
-    MotoSstSoundService \
-    MotoTaskBar \
-    MotoThinkUEM \
-    MotoWifiMetrics \
-    MyKey \
-    PAKSFinance \
-    PaksFinanceNotification \
-    Personalize \
-    QtiTelephony \
-    RevokerServices \
-    SettingsMoto \
-    SetupWizard \
-    SetupWizardExt \
-    SpectrumSetupExt \
     WfdService \
-    com.motorola.android.nativedropboxagent \
     com.qualcomm.location \
-    daxService \
     dpmserviceapp \
     ims \
-    motoDigitalAccount \
     qcrilmsgtunnel \
-    rcsConfigService \
-    xrcbservice \
-    xrvdservice \
     com.motorola.camera.extensions \
     com.qti.dpmframework \
     com.qti.location.sdk \
@@ -3605,7 +3542,6 @@ PRODUCT_PACKAGES += \
     android.hardware.drm-service.xml \
     android.hardware.gnss-aidl-service-qti.xml \
     android.hardware.radio.config.xml \
-    android.hardware.radio.data.xml \
     android.hardware.radio.messaging.xml \
     android.hardware.radio.modem.xml \
     android.hardware.radio.network.xml \
@@ -3685,7 +3621,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.qspmhal-service.xml \
     vendor.qti.syshealthmon-service.xml \
     vendor.zuialarm.hardware.alarm.xml \
-    BuildManifestSystemExt.apk \
     atcmdfwd-saidl.xml \
     vendor.qti.hardware.sigma_miracast.xml \
     vendor.qti.hardware.sigma_miracast_aidl.xml \
