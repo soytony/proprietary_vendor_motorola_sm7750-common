@@ -3439,6 +3439,10 @@ PRODUCT_PACKAGES += \
     com.qualcomm.qti.uceservice-V2.2-java \
     com.qualcomm.qti.uceservice-V2.3-java \
     dpmapi \
+    moto-ims-ext \
+    moto-ims-ext.xml \
+    moto-telephony \
+    moto-telephony.xml \
     qcom-moto-ims-ext \
     qcom-moto-telephony-ext \
     qti-telephony-common \

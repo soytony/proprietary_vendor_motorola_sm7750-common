@@ -24869,6 +24869,24 @@ dex_import {
 }
 
 dex_import {
+    name: "moto-ims-ext",
+    owner: "motorola",
+    jars: [
+        "proprietary/system_ext/framework/moto-ims-ext.jar",
+    ],
+    system_ext_specific: true,
+}
+
+dex_import {
+    name: "moto-telephony",
+    owner: "motorola",
+    jars: [
+        "proprietary/system_ext/framework/moto-telephony.jar",
+    ],
+    system_ext_specific: true,
+}
+
+dex_import {
     name: "qcom-moto-ims-ext",
     owner: "motorola",
     jars: [
@@ -26540,6 +26558,24 @@ prebuilt_etc_xml {
     src: "proprietary/system_ext/etc/vintf/manifest/atcmdfwd-saidl.xml",
     filename_from_src: true,
     sub_dir: "vintf/manifest",
+    system_ext_specific: true,
+}
+
+prebuilt_etc_xml {
+    name: "moto-ims-ext.xml",
+    owner: "motorola",
+    src: "proprietary/system_ext/etc/permissions/moto-ims-ext.xml",
+    filename_from_src: true,
+    sub_dir: "permissions",
+    system_ext_specific: true,
+}
+
+prebuilt_etc_xml {
+    name: "moto-telephony.xml",
+    owner: "motorola",
+    src: "proprietary/system_ext/etc/permissions/moto-telephony.xml",
+    filename_from_src: true,
+    sub_dir: "permissions",
     system_ext_specific: true,
 }
 
