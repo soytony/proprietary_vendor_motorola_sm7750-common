@@ -3571,7 +3571,6 @@ PRODUCT_PACKAGES += \
     fm_hci.xml \
     imsdcservice-saidl.xml \
     manifest_IMoto_AIDL_Rpmb.xml \
-    manifest_btaudiocoreservices_qti.xml \
     manifest_identity_credential.xml \
     mwqem-saidl.xml \
     qasr_vintf.xml \

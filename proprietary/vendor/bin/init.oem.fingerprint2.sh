@@ -103,6 +103,17 @@ function start_hal_service(){
 
     insmod ${kernel_so_list[$1]}
     sleep 1
+
+    # anc_fps_mmi registers character-device major 456 but does not publish a
+    # devtmpfs node. Create the node before starting the ANC fingerprint HAL.
+    if [ "${vendor_list[$1]}" = "jiiov" ] && [ ! -e /dev/jiiov_fp ]; then
+        if ! mknod /dev/jiiov_fp c 456 0; then
+            log "failed to create /dev/jiiov_fp"
+        fi
+        chown system system /dev/jiiov_fp
+        chmod 0660 /dev/jiiov_fp
+    fi
+
     setprop $prop_fps_ident ${vendor_list[$1]}
 
     log "start ${hal_list[$1]}"

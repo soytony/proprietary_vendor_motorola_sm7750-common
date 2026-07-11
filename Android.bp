@@ -15,6 +15,59 @@ soong_namespace {
     ],
 }
 
+filegroup {
+    name: "roadstr_android_hardware_audio_core_v2_ndk",
+    srcs: ["proprietary/vendor/lib64/android.hardware.audio.core-V2-ndk.so"],
+}
+
+filegroup {
+    name: "roadstr_android_hardware_audio_core_sounddose_v2_ndk",
+    srcs: ["proprietary/vendor/lib64/android.hardware.audio.core.sounddose-V2-ndk.so"],
+}
+
+filegroup {
+    name: "roadstr_android_hardware_audio_common_v3_ndk",
+    srcs: ["proprietary/vendor/lib64/android.hardware.audio.common-V3-ndk.so"],
+}
+
+filegroup {
+    name: "roadstr_android_hardware_audio_effect_v2_ndk",
+    srcs: ["proprietary/vendor/lib64/android.hardware.audio.effect-V2-ndk.so"],
+}
+
+filegroup {
+    name: "roadstr_android_media_audio_common_types_v3_ndk",
+    srcs: ["proprietary/vendor/lib64/android.media.audio.common.types-V3-ndk.so"],
+}
+
+filegroup {
+    name: "roadstr_android_hardware_bluetooth_audio_v4_ndk",
+    srcs: ["proprietary/vendor/lib64/android.hardware.bluetooth.audio-V4-ndk.so"],
+}
+
+filegroup {
+    name: "roadstr_vendor_qti_bluetooth_audio_v2_ndk",
+    srcs: ["proprietary/vendor/lib64/vendor.qti.hardware.bluetooth.audio-V2-ndk.so"],
+}
+
+cc_prebuilt_library_shared {
+    name: "libaudiocorehal.qti.stock",
+    owner: "motorola",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: ["proprietary/vendor/lib64/hw/libaudiocorehal.qti.so"],
+        },
+    },
+    check_elf_files: false,
+    compile_multilib: "64",
+    relative_install_path: "hw",
+    prefer: true,
+    soc_specific: true,
+}
+
 cc_prebuilt_library_shared {
     check_elf_files: false,
     name: "aidl_hdcp_interface-V1-ndk",
@@ -27203,6 +27256,10 @@ android_app_import {
     name: "SecureElementResTarget_Vendor",
     owner: "motorola",
     apk: "proprietary/vendor/overlay/SecureElementResTarget_Vendor.apk",
+    dex_preopt: {
+        enabled: false,
+    },
+    preprocessed: true,
     presigned: true,
     soc_specific: true,
 }
