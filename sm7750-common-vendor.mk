@@ -3419,6 +3419,7 @@ PRODUCT_PACKAGES += \
     ImsRcsService \
     NtnSatApp \
     QCC \
+    QtiTelephonyService \
     atfwd \
     uceShimService \
     workloadclassifier \
