@@ -2641,6 +2641,7 @@ PRODUCT_PACKAGES += \
     libqcodec2_utils \
     libqcodec2_v4l2codec \
     libqconfigclient \
+    android.hardware.radio.data-V3-ndk.vendor \
     libqcrilDataModule \
     libqcrilNr \
     libqcrilNrCellInfoModule \
@@ -3550,6 +3551,7 @@ PRODUCT_PACKAGES += \
     android.hardware.drm-service.xml \
     android.hardware.gnss-aidl-service-qti.xml \
     android.hardware.radio.config.xml \
+    android.hardware.radio.data.xml \
     android.hardware.radio.messaging.xml \
     android.hardware.radio.modem.xml \
     android.hardware.radio.network.xml \

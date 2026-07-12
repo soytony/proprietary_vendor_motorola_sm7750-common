@@ -25878,6 +25878,15 @@ prebuilt_etc_xml {
 }
 
 prebuilt_etc_xml {
+    name: "android.hardware.radio.data.xml",
+    owner: "motorola",
+    src: "proprietary/vendor/etc/vintf/manifest/android.hardware.radio.data.xml",
+    filename_from_src: true,
+    sub_dir: "vintf/manifest",
+    soc_specific: true,
+}
+
+prebuilt_etc_xml {
     name: "android.hardware.radio.messaging.xml",
     owner: "motorola",
     src: "proprietary/vendor/etc/vintf/manifest/android.hardware.radio.messaging.xml",
