@@ -6,6 +6,8 @@ PRODUCT_SOONG_NAMESPACES += \
     vendor/motorola/sm7750-common
 
 PRODUCT_COPY_FILES += \
+    vendor/motorola/sm7750-common/proprietary/product/etc/default-permissions/default-permissions-com.google.android.euicc.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/default-permissions/default-permissions-com.google.android.euicc.xml \
+    vendor/motorola/sm7750-common/proprietary/product/etc/permissions/privapp-permissions-com.google.android.euicc.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/privapp-permissions-com.google.android.euicc.xml \
     vendor/motorola/sm7750-common/proprietary/system_ext/priv-app/CQATest/lib/arm64/libMPLib.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/priv-app/CQATest/lib/arm64/libMPLib.so \
     vendor/motorola/sm7750-common/proprietary/system_ext/priv-app/CQATest/lib/arm64/libNVT36xxx.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/priv-app/CQATest/lib/arm64/libNVT36xxx.so \
     vendor/motorola/sm7750-common/proprietary/system_ext/priv-app/CQATest/lib/arm64/libaeccalibration_jni.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/priv-app/CQATest/lib/arm64/libaeccalibration_jni.so \
@@ -2049,6 +2051,7 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/sm7750-common/proprietary/vendor/bin/zui_power_off_alarm:$(TARGET_COPY_OUT_VENDOR)/bin/zui_power_off_alarm \
 
 PRODUCT_PACKAGES += \
+    EuiccGoogle \
     aidl_hdcp_interface-V1-ndk \
     btaudio_offload_if \
     com.bst.node.hdrdetect \
