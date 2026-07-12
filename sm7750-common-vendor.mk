@@ -24,7 +24,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/sm7750-common/proprietary/odm/etc/permissions/sku_dn/unavail.com.android.se.xml:$(TARGET_COPY_OUT_ODM)/etc/permissions/sku_dn/unavail.com.android.se.xml \
     vendor/motorola/sm7750-common/proprietary/odm/etc/permissions/sku_dnes/android.hardware.nfc.ese.xml:$(TARGET_COPY_OUT_ODM)/etc/permissions/sku_dnes/android.hardware.nfc.ese.xml \
     vendor/motorola/sm7750-common/proprietary/odm/etc/permissions/sku_dnes/android.hardware.se.omapi.ese.xml:$(TARGET_COPY_OUT_ODM)/etc/permissions/sku_dnes/android.hardware.se.omapi.ese.xml \
-    vendor/motorola/sm7750-common/proprietary/odm/etc/permissions/sku_dnes/android.hardware.strongbox_keystore.xml:$(TARGET_COPY_OUT_ODM)/etc/permissions/sku_dnes/android.hardware.strongbox_keystore.xml \
     vendor/motorola/sm7750-common/proprietary/odm/etc/permissions/sku_n/unavail.com.android.se.xml:$(TARGET_COPY_OUT_ODM)/etc/permissions/sku_n/unavail.com.android.se.xml \
     vendor/motorola/sm7750-common/proprietary/odm/etc/permissions/sku_nes/android.hardware.nfc.ese.xml:$(TARGET_COPY_OUT_ODM)/etc/permissions/sku_nes/android.hardware.nfc.ese.xml \
     vendor/motorola/sm7750-common/proprietary/odm/etc/permissions/sku_nes/android.hardware.se.omapi.ese.xml:$(TARGET_COPY_OUT_ODM)/etc/permissions/sku_nes/android.hardware.se.omapi.ese.xml \

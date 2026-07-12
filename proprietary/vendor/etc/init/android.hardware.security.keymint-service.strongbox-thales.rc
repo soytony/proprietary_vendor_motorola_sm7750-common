@@ -16,16 +16,12 @@ on property:vendor.tcmd.ese.strongbox.disable=1 && property:ro.bootmode=mot-fact
 on property:vendor.tcmd.ese.strongbox.disable=0 && property:ro.bootmode=mot-factory && property:ro.boot.strongbox_support=true
     start vendor.keymint-strongbox
 
-on property:vendor.roadstr.secure_stack.ready=1 && property:ro.boot.strongbox_support=true
-    start vendor.keymint-strongbox
-
 on property:vendor.ese.client.restart=1 && property:ro.boot.strongbox_support=true
     stop vendor.secure_element
     stop vendor.keymint-strongbox
     stop keystore2
     stop weaver_hal_service
     start keystore2
-    start vendor.keymint-strongbox
     start vendor.secure_element
     start weaver_hal_service
     setprop vendor.ese.client.restart 0
