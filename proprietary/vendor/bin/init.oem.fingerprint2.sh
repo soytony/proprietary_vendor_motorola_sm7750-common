@@ -104,13 +104,27 @@ function start_hal_service(){
     insmod ${kernel_so_list[$1]}
     sleep 1
 
-    # anc_fps_mmi registers character-device major 456 but does not publish a
-    # devtmpfs node. Create the node before starting the ANC fingerprint HAL.
-    if [ "${vendor_list[$1]}" = "jiiov" ] && [ ! -e /dev/jiiov_fp ]; then
-        if ! mknod /dev/jiiov_fp c 456 0; then
-            log "failed to create /dev/jiiov_fp"
+    if [ "${vendor_list[$1]}" = "jiiov" ]; then
+        # ANC probe can be deferred while its regulator becomes available.
+        # Never create a fallback node: an unbound major 456 looks valid but
+        # makes HAL fail immediately with no driver behind it.
+        for ii in $(seq 1 $MAX_TIMES)
+        do
+            if [ -e /sys/bus/platform/drivers/jiiov_fp/soc:jiiov_fp ] && \
+                    [ -c /dev/jiiov_fp ]; then
+                break
+            fi
+            sleep 0.1
+        done
+        if [ ! -e /sys/bus/platform/drivers/jiiov_fp/soc:jiiov_fp ] || \
+                [ ! -c /dev/jiiov_fp ]; then
+            log "timed out waiting for ANC fingerprint driver probe"
+            rmmod ${kernel_so_name_list[$1]}
+            return 255
         fi
-        chown system system /dev/jiiov_fp
+
+        # HAL runs as system and needs read/write access to the real node.
+        chown system:system /dev/jiiov_fp
         chmod 0660 /dev/jiiov_fp
     fi
 
