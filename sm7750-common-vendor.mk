@@ -2284,6 +2284,7 @@ PRODUCT_PACKAGES += \
     libOmxCore \
     libOpenCL \
     libOpenCL_adreno \
+    libPeripheralStateUtils \
     libQSEEComAPI \
     libQcelp13SwCodec \
     libQnnHtp \
