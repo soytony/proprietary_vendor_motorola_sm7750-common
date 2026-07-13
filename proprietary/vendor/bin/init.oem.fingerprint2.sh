@@ -70,6 +70,7 @@ prop_persist_fps=persist.vendor.hardware.fingerprint
 
 FPS_STATUS_NONE=none
 FPS_STATUS_OK=ok
+PREFERRED_VENDOR_RETRIES=5
 
 function save_qseelog() {
     secure_property=ro.boot.bl_state
@@ -188,7 +189,17 @@ fi
 log "FPS vendor (last): $fps_vendor2"
 
 fps_vendor=$(cat $persist_fps_id)
-if [ -z $fps_vendor ]; then
+if [ -z "$fps_vendor" ] || [ "$fps_vendor" = "$FPS_VENDOR_NONE" ]; then
+    # A failed boot writes "none" to vendor_id, but last_vendor_id still
+    # identifies the previously working sensor. Probe it first to avoid
+    # loading the wrong driver/HAL while secure-world services are starting.
+    if [ -n "$fps_vendor2" ] && [ "$fps_vendor2" != "$FPS_VENDOR_NONE" ]; then
+        fps_vendor=$fps_vendor2
+    else
+        fps_vendor=$FPS_VENDOR_NONE
+    fi
+fi
+if [ -z "$fps_vendor" ]; then
     fps_vendor=$FPS_VENDOR_NONE
 fi
 log "FPS vendor (current): $fps_vendor"
@@ -200,10 +211,19 @@ if [ $fps_vendor != $FPS_STATUS_NONE ]; then
     vendor_index=$?
     if [ $vendor_index != 255 ]; then
         log "start $fps_vendor hal service"
-        start_hal_service $vendor_index
-        if [ $? != 255 ]; then
-            return 0
-        fi
+        # Secure-world clients can briefly contend while NFC finishes startup.
+        # Retry the known sensor instead of immediately probing the wrong HAL.
+        for start_attempt in $(seq 1 $PREFERRED_VENDOR_RETRIES)
+        do
+            start_hal_service $vendor_index
+            if [ $? != 255 ]; then
+                return 0
+            fi
+            if [ "$start_attempt" != "$PREFERRED_VENDOR_RETRIES" ]; then
+                log "retry $fps_vendor hal after transient startup failure"
+                sleep 2
+            fi
+        done
     fi
 fi
 
