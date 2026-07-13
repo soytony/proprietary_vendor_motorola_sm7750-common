@@ -101,31 +101,44 @@ function start_hal_service(){
     setprop $prop_fps_status $FPS_STATUS_NONE
     setprop $prop_fps_ident $FPS_STATUS_NONE
 
-    insmod ${kernel_so_list[$1]}
-    sleep 1
-
     if [ "${vendor_list[$1]}" = "jiiov" ]; then
         # ANC probe can be deferred while its regulator becomes available.
         # Never create a fallback node: an unbound major 456 looks valid but
         # makes HAL fail immediately with no driver behind it.
-        for ii in $(seq 1 $MAX_TIMES)
+        for probe_attempt in $(seq 1 4)
         do
-            if [ -e /sys/bus/platform/drivers/jiiov_fp/soc:jiiov_fp ] && \
-                    [ -c /dev/jiiov_fp ]; then
-                break
+            if ! insmod ${kernel_so_list[$1]}; then
+                log "failed to load ${kernel_so_name_list[$1]} on attempt ${probe_attempt}"
             fi
-            sleep 0.1
+            for ii in $(seq 1 $MAX_TIMES)
+            do
+                if [ -e /sys/bus/platform/drivers/jiiov_fp/soc:jiiov_fp ] && \
+                        [ -c /dev/jiiov_fp ]; then
+                    break 2
+                fi
+                sleep 0.1
+            done
+
+            # Reloading reprobes after late boot regulator dependencies settle.
+            log "ANC probe attempt ${probe_attempt} timed out"
+            rmmod ${kernel_so_name_list[$1]}
+            if [ "$probe_attempt" != "4" ]; then
+                log "retrying ANC fingerprint driver probe"
+                sleep 1
+            fi
         done
         if [ ! -e /sys/bus/platform/drivers/jiiov_fp/soc:jiiov_fp ] || \
                 [ ! -c /dev/jiiov_fp ]; then
             log "timed out waiting for ANC fingerprint driver probe"
-            rmmod ${kernel_so_name_list[$1]}
             return 255
         fi
 
         # HAL runs as system and needs read/write access to the real node.
         chown system:system /dev/jiiov_fp
         chmod 0660 /dev/jiiov_fp
+    else
+        insmod ${kernel_so_list[$1]}
+        sleep 1
     fi
 
     setprop $prop_fps_ident ${vendor_list[$1]}
