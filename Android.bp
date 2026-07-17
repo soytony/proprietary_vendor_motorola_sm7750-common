@@ -7257,6 +7257,26 @@ cc_prebuilt_library_shared {
 
 cc_prebuilt_library_shared {
     check_elf_files: false,
+    name: "libflatbuffers-cpp_vendor_system",
+    stem: "libflatbuffers-cpp_vendor",
+    owner: "motorola",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libflatbuffers-cpp_vendor.so",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    system_ext_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    check_elf_files: false,
     name: "libgame_enhance",
     owner: "motorola",
     strip: {
@@ -13244,6 +13264,26 @@ cc_prebuilt_library_shared {
 
 cc_prebuilt_library_shared {
     check_elf_files: false,
+    name: "libruy_vendor_system",
+    stem: "libruy_vendor",
+    owner: "motorola",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libruy_vendor.so",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    system_ext_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    check_elf_files: false,
     name: "libsbprovision",
     owner: "motorola",
     strip: {
@@ -14501,6 +14541,26 @@ cc_prebuilt_library_shared {
 
 cc_prebuilt_library_shared {
     check_elf_files: false,
+    name: "libtextclassifier_hash_vendor_system",
+    stem: "libtextclassifier_hash_vendor",
+    owner: "motorola",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libtextclassifier_hash_vendor.so",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    system_ext_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    check_elf_files: false,
     name: "libtfestriping",
     owner: "motorola",
     strip: {
@@ -14535,6 +14595,28 @@ cc_prebuilt_library_shared {
     compile_multilib: "64",
     prefer: true,
     soc_specific: true,
+}
+
+// workloadclassifier is a system_ext app, but its stock model JNI links against
+// Qualcomm's vendor TensorFlow Lite runtime under the non-vendor filename.
+cc_prebuilt_library_shared {
+    check_elf_files: false,
+    name: "libtflite_workloadclassifier",
+    stem: "libtflite",
+    owner: "motorola",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libtflite_vendor.so",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    system_ext_specific: true,
 }
 
 cc_prebuilt_library_shared {
@@ -18265,6 +18347,26 @@ cc_prebuilt_library_shared {
 
 cc_prebuilt_library_shared {
     check_elf_files: false,
+    name: "vendor.qti.hardware.iop@2.0_system",
+    stem: "vendor.qti.hardware.iop@2.0",
+    owner: "motorola",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/vendor.qti.hardware.iop@2.0.so",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    system_ext_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    check_elf_files: false,
     name: "vendor.qti.hardware.minkipcbinder-V1-ndk",
     owner: "motorola",
     strip: {
@@ -18342,6 +18444,26 @@ cc_prebuilt_library_shared {
     compile_multilib: "64",
     prefer: true,
     soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    check_elf_files: false,
+    name: "vendor.qti.hardware.perf2-V1-ndk_system",
+    stem: "vendor.qti.hardware.perf2-V1-ndk",
+    owner: "motorola",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/vendor.qti.hardware.perf2-V1-ndk.so",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    system_ext_specific: true,
 }
 
 cc_prebuilt_library_shared {
@@ -20147,7 +20269,8 @@ cc_prebuilt_library_shared {
 
 cc_prebuilt_library_shared {
     check_elf_files: false,
-    name: "vendor.qti.qccvndhal_aidl-V1-ndk",
+    name: "vendor.qti.qccvndhal_aidl-V1-ndk_vendor",
+    stem: "vendor.qti.qccvndhal_aidl-V1-ndk",
     owner: "motorola",
     strip: {
         none: true,
@@ -20162,6 +20285,28 @@ cc_prebuilt_library_shared {
     compile_multilib: "64",
     prefer: true,
     soc_specific: true,
+}
+
+// libqccfileservice is loaded from system_ext and cannot resolve a vendor-only
+// AIDL stub through the platform linker namespace. Install the stock stub in
+// both namespaces, as is already required for qccsyshal above.
+cc_prebuilt_library_shared {
+    check_elf_files: false,
+    name: "vendor.qti.qccvndhal_aidl-V1-ndk",
+    owner: "motorola",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/vendor.qti.qccvndhal_aidl-V1-ndk.so",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    system_ext_specific: true,
 }
 
 cc_prebuilt_library_shared {
@@ -27345,6 +27490,28 @@ cc_prebuilt_library_shared {
     prefer: true,
     soc_specific: true,
 
+}
+
+// The system_ext performance JNI links this stock client by its _system name.
+// Keep a platform-namespace copy alongside the vendor HAL client.
+cc_prebuilt_library_shared {
+    check_elf_files: false,
+    name: "libqti-perfd-client-impl_system",
+    owner: "motorola",
+    stem: "libqti-perfd-client",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libqti-perfd-client.so",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    system_ext_specific: true,
 }
 
 cc_prebuilt_library_shared {

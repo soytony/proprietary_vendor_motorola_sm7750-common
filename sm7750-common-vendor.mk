@@ -3168,7 +3168,7 @@ PRODUCT_PACKAGES += \
     vendor.qti.memory.pasrmanager@1.0 \
     vendor.qti.memory.pasrmanager@1.1 \
     vendor.qti.qccsyshal_aidl-V1-ndk_vendor \
-    vendor.qti.qccvndhal_aidl-V1-ndk \
+    vendor.qti.qccvndhal_aidl-V1-ndk_vendor \
     vendor.qti.qccvndhal_aidl-halimpl \
     vendor.qti.qesdhal-impl \
     vendor.qti.qesdhal@1.0 \
@@ -3299,8 +3299,15 @@ PRODUCT_PACKAGES += \
     libqti-MemHal-client-system \
     libqti-at \
     libqti-iopd-client_system \
+    libqti-perfd-client_system \
     libqti_performance \
     libqti_workloadclassifiermodel \
+    libflatbuffers-cpp_vendor_system \
+    libruy_vendor_system \
+    libtextclassifier_hash_vendor_system \
+    libtflite_workloadclassifier \
+    vendor.qti.hardware.iop@2.0_system \
+    vendor.qti.hardware.perf2-V1-ndk_system \
     libqxrsplitauxservice.qti \
     librecpp_intf \
     libsd_sdk_display.qti \
@@ -3409,6 +3416,7 @@ PRODUCT_PACKAGES += \
     vendor.qti.mstatservice@1.0 \
     vendor.qti.qccsyshal_aidl-V1-ndk \
     vendor.qti.qccsyshal_aidl-halimpl \
+    vendor.qti.qccvndhal_aidl-V1-ndk \
     vendor.qti.qspmhal-V1-ndk \
     vendor.qti.qspmhal@1.0 \
     CACertService \
