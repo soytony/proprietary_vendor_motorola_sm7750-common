@@ -356,7 +356,7 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/sm7750-common/proprietary/vendor/etc/aualgo/ainr_tfv2.dat:$(TARGET_COPY_OUT_VENDOR)/etc/aualgo/ainr_tfv2.dat \
     vendor/motorola/sm7750-common/proprietary/vendor/etc/aualgo/aualgo_comp_azs.conf:$(TARGET_COPY_OUT_VENDOR)/etc/aualgo/aualgo_comp_azs.conf \
     vendor/motorola/sm7750-common/proprietary/vendor/etc/aualgo/aualgo_spk_satc.conf:$(TARGET_COPY_OUT_VENDOR)/etc/aualgo/aualgo_spk_satc.conf \
-    vendor/motorola/sm7750-common/proprietary/vendor/etc/audio/audio_module_config_primary.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/audio_module_config_primary.xml \
+    $(if $(ROADSTR_HAS_NO_FM_TUNER),,vendor/motorola/sm7750-common/proprietary/vendor/etc/audio/audio_module_config_primary.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/audio_module_config_primary.xml) \
     vendor/motorola/sm7750-common/proprietary/vendor/etc/audio/sku_kera/audio_effects.conf:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_kera/audio_effects.conf \
     vendor/motorola/sm7750-common/proprietary/vendor/etc/audio/sku_kera/audio_effects.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_kera/audio_effects.xml \
     vendor/motorola/sm7750-common/proprietary/vendor/etc/audio/sku_kera/audio_effects_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_kera/audio_effects_config.xml \
