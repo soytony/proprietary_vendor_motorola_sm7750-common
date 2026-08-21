@@ -1,0 +1,78 @@
+// RoadSTR vendor ABI libraries. These override platform builds only for
+// Motorola products importing this namespace.
+
+cc_prebuilt_library_shared {
+    name: "android.hardware.audio.core-V2-ndk",
+    srcs: ["//vendor/motorola/sm7750-common:roadstr_android_hardware_audio_core_v2_ndk"],
+    check_elf_files: false,
+    compile_multilib: "64",
+    prefer: true,
+    sdk_version: "current",
+    strip: { none: true },
+    vendor_available: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "android.hardware.audio.core.sounddose-V2-ndk",
+    srcs: ["//vendor/motorola/sm7750-common:roadstr_android_hardware_audio_core_sounddose_v2_ndk"],
+    check_elf_files: false,
+    compile_multilib: "64",
+    prefer: true,
+    sdk_version: "current",
+    strip: { none: true },
+    vendor_available: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "android.hardware.audio.common-V3-ndk",
+    srcs: ["//vendor/motorola/sm7750-common:roadstr_android_hardware_audio_common_v3_ndk"],
+    check_elf_files: false,
+    compile_multilib: "64",
+    prefer: true,
+    sdk_version: "current",
+    strip: { none: true },
+    vendor_available: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "android.hardware.audio.effect-V2-ndk",
+    srcs: ["//vendor/motorola/sm7750-common:roadstr_android_hardware_audio_effect_v2_ndk"],
+    check_elf_files: false,
+    compile_multilib: "64",
+    prefer: true,
+    sdk_version: "current",
+    strip: { none: true },
+    vendor_available: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "android.media.audio.common.types-V3-ndk",
+    srcs: ["//vendor/motorola/sm7750-common:roadstr_android_media_audio_common_types_v3_ndk"],
+    check_elf_files: false,
+    compile_multilib: "64",
+    prefer: true,
+    sdk_version: "current",
+    strip: { none: true },
+    vendor_available: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "android.hardware.bluetooth.audio-V4-ndk",
+    srcs: ["//vendor/motorola/sm7750-common:roadstr_android_hardware_bluetooth_audio_v4_ndk"],
+    check_elf_files: false,
+    compile_multilib: "64",
+    prefer: true,
+    sdk_version: "current",
+    strip: { none: true },
+    vendor_available: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "vendor.qti.hardware.bluetooth.audio-V2-ndk",
+    srcs: ["//vendor/motorola/sm7750-common:roadstr_vendor_qti_bluetooth_audio_v2_ndk"],
+    check_elf_files: false,
+    compile_multilib: "64",
+    prefer: true,
+    strip: { none: true },
+    vendor_available: true,
+}
