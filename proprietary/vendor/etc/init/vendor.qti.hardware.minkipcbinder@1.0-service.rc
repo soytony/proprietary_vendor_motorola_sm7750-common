@@ -3,6 +3,9 @@
 # Confidential and Proprietary - Qualcomm Technologies, Inc.
 #
 
+on early-init
+    start minkipcbinder-service
+
 on property:vendor.roadstr.secure_stack.ready=1
     start minkipcbinder-service
 

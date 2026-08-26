@@ -10786,7 +10786,8 @@ cc_prebuilt_library_shared {
 
 cc_prebuilt_library_shared {
     check_elf_files: false,
-    name: "libprotobuf-cpp-lite-21.12",
+    name: "libprotobuf-cpp-lite-21.12-moto",
+    stem: "libprotobuf-cpp-lite-21.12",
     owner: "motorola",
     strip: {
         none: true,

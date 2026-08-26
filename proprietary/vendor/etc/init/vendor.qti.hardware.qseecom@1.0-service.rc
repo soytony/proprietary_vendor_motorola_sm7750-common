@@ -5,6 +5,9 @@
 #
 #
 
+on early-init
+    start qseecom-service
+
 on property:vendor.roadstr.secure_stack.ready=1
     start qseecom-service
 
