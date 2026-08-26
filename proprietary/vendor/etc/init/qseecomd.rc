@@ -2,6 +2,9 @@
 # All Rights Reserved.
 # Confidential and Proprietary - Qualcomm Technologies, Inc.
 
+on early-init
+    start vendor.qseecomd
+
 on property:vendor.roadstr.secure_stack.ready=1
     start vendor.qseecomd
 

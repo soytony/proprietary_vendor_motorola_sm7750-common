@@ -2605,7 +2605,7 @@ PRODUCT_PACKAGES += \
     libproj_sot \
     libprotobuf-cpp-full-21.12 \
     libprotobuf-cpp-full-qccsyshal-compat \
-    libprotobuf-cpp-lite-21.12 \
+    libprotobuf-cpp-lite-21.12-moto \
     libpsmoptfeature \
     libq-perflog \
     libqape_oem_ext \
