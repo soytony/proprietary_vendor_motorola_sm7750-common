@@ -70,7 +70,6 @@ prop_persist_fps=persist.vendor.hardware.fingerprint
 
 FPS_STATUS_NONE=none
 FPS_STATUS_OK=ok
-PREFERRED_VENDOR_RETRIES=5
 
 function save_qseelog() {
     secure_property=ro.boot.bl_state
@@ -102,46 +101,8 @@ function start_hal_service(){
     setprop $prop_fps_status $FPS_STATUS_NONE
     setprop $prop_fps_ident $FPS_STATUS_NONE
 
-    if [ "${vendor_list[$1]}" = "jiiov" ]; then
-        # ANC probe can be deferred while its regulator becomes available.
-        # Never create a fallback node: an unbound major 456 looks valid but
-        # makes HAL fail immediately with no driver behind it.
-        for probe_attempt in $(seq 1 4)
-        do
-            if ! insmod ${kernel_so_list[$1]}; then
-                log "failed to load ${kernel_so_name_list[$1]} on attempt ${probe_attempt}"
-            fi
-            for ii in $(seq 1 $MAX_TIMES)
-            do
-                if [ -e /sys/bus/platform/drivers/jiiov_fp/soc:jiiov_fp ] && \
-                        [ -c /dev/jiiov_fp ]; then
-                    break 2
-                fi
-                sleep 0.1
-            done
-
-            # Reloading reprobes after late boot regulator dependencies settle.
-            log "ANC probe attempt ${probe_attempt} timed out"
-            rmmod ${kernel_so_name_list[$1]}
-            if [ "$probe_attempt" != "4" ]; then
-                log "retrying ANC fingerprint driver probe"
-                sleep 1
-            fi
-        done
-        if [ ! -e /sys/bus/platform/drivers/jiiov_fp/soc:jiiov_fp ] || \
-                [ ! -c /dev/jiiov_fp ]; then
-            log "timed out waiting for ANC fingerprint driver probe"
-            return 255
-        fi
-
-        # HAL runs as system and needs read/write access to the real node.
-        chown system:system /dev/jiiov_fp
-        chmod 0660 /dev/jiiov_fp
-    else
-        insmod ${kernel_so_list[$1]}
-        sleep 1
-    fi
-
+    insmod ${kernel_so_list[$1]}
+    sleep 1
     setprop $prop_fps_ident ${vendor_list[$1]}
 
     log "start ${hal_list[$1]}"
@@ -189,17 +150,7 @@ fi
 log "FPS vendor (last): $fps_vendor2"
 
 fps_vendor=$(cat $persist_fps_id)
-if [ -z "$fps_vendor" ] || [ "$fps_vendor" = "$FPS_VENDOR_NONE" ]; then
-    # A failed boot writes "none" to vendor_id, but last_vendor_id still
-    # identifies the previously working sensor. Probe it first to avoid
-    # loading the wrong driver/HAL while secure-world services are starting.
-    if [ -n "$fps_vendor2" ] && [ "$fps_vendor2" != "$FPS_VENDOR_NONE" ]; then
-        fps_vendor=$fps_vendor2
-    else
-        fps_vendor=$FPS_VENDOR_NONE
-    fi
-fi
-if [ -z "$fps_vendor" ]; then
+if [ -z $fps_vendor ]; then
     fps_vendor=$FPS_VENDOR_NONE
 fi
 log "FPS vendor (current): $fps_vendor"
@@ -211,19 +162,10 @@ if [ $fps_vendor != $FPS_STATUS_NONE ]; then
     vendor_index=$?
     if [ $vendor_index != 255 ]; then
         log "start $fps_vendor hal service"
-        # Secure-world clients can briefly contend while NFC finishes startup.
-        # Retry the known sensor instead of immediately probing the wrong HAL.
-        for start_attempt in $(seq 1 $PREFERRED_VENDOR_RETRIES)
-        do
-            start_hal_service $vendor_index
-            if [ $? != 255 ]; then
-                return 0
-            fi
-            if [ "$start_attempt" != "$PREFERRED_VENDOR_RETRIES" ]; then
-                log "retry $fps_vendor hal after transient startup failure"
-                sleep 2
-            fi
-        done
+        start_hal_service $vendor_index
+        if [ $? != 255 ]; then
+            return 0
+        fi
     fi
 fi
 

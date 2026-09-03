@@ -4,5 +4,5 @@ service weaver_hal_service /vendor/bin/hw/android.hardware.weaver-service.thales
     group vendor_thales_weaver
     disabled
 
-on property:vendor.roadstr.secure_stack.ready=1 && property:ro.boot.strongbox_support=true
+on init && property:ro.boot.strongbox_support=true
     start weaver_hal_service

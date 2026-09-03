@@ -115,6 +115,7 @@
         <low_power_stream_type>PAL_STREAM_VOICE_UI</low_power_stream_type>
         <low_power_stream_type>PAL_STREAM_ACD</low_power_stream_type>
         <low_power_stream_type>PAL_STREAM_ULTRASOUND</low_power_stream_type>
+        <low_power_stream_type>PAL_STREAM_AOP</low_power_stream_type>
         <low_power_stream_type>PAL_STREAM_SENSOR_PCM_DATA</low_power_stream_type>
         <avoid_vote_stream_type>PAL_STREAM_CONTEXT_PROXY</avoid_vote_stream_type>
     </sleep_monitor_vote_streams>
@@ -233,6 +234,12 @@
                 <custom-config key="screen-call">
                     <snd_device_name>screen-call-dual-mic</snd_device_name>
                 </custom-config>
+            </usecase>
+            <usecase>
+                <name>PAL_STREAM_VOICE_CALL_RECORD_ASR</name>
+                <bit_width>16</bit_width>
+                <channels>2</channels>
+                <snd_device_name>handset-dual-mic</snd_device_name>
             </usecase>
             <usecase>
                 <name>PAL_STREAM_ULTRA_LOW_LATENCY</name>
@@ -380,6 +387,12 @@
                 </custom-config>
             </usecase>
             <usecase>
+                <name>PAL_STREAM_VOICE_CALL_RECORD_ASR</name>
+                <bit_width>16</bit_width>
+                <channels>2</channels>
+                <snd_device_name>speaker-stereo-dmic-ef</snd_device_name>
+            </usecase>
+            <usecase>
                 <name>PAL_STREAM_LOOPBACK</name>
             </usecase>
             <usecase>
@@ -482,6 +495,9 @@
                 <name>PAL_STREAM_VOIP_TX</name>
             </usecase>
             <usecase>
+                <name>PAL_STREAM_VOICE_CALL_RECORD_ASR</name>
+            </usecase>
+            <usecase>
                 <name>PAL_STREAM_VOICE_CALL</name>
                 <priority>1</priority>
             </usecase>
@@ -563,6 +579,9 @@
                 <priority>1</priority>
                 <sidetone_mode>HW</sidetone_mode>
                 <ec_enable>1</ec_enable>
+            </usecase>
+            <usecase>
+                <name>PAL_STREAM_VOICE_CALL_RECORD_ASR</name>
             </usecase>
             <usecase>
                 <name>PAL_STREAM_ULTRA_LOW_LATENCY</name>
@@ -662,6 +681,9 @@
                 <priority>1</priority>
             </usecase>
             <usecase>
+                <name>PAL_STREAM_VOICE_CALL_RECORD_ASR</name>
+            </usecase>
+            <usecase>
                 <name>PAL_STREAM_ULTRA_LOW_LATENCY</name>
             </usecase>
             <ec_rx_device>
@@ -688,6 +710,11 @@
             <snd_device_name>ultrasound-mic</snd_device_name>
             <usecase>
                 <name>PAL_STREAM_ULTRASOUND</name>
+            </usecase>
+            <usecase>
+                <name>PAL_STREAM_AOP</name>
+                <channels>3</channels>
+                <snd_device_name>presence-mic</snd_device_name>
             </usecase>
         </in-device>
         <in-device>
@@ -750,11 +777,7 @@
             <samplerate>48000</samplerate>
             <bit_width>32</bit_width>
             <snd_device_name>speaker</snd_device_name>
-            <!-- The stock PAL speaker-protection payload is rejected by the
-                 current DSP graph (ADSP result 2), aborting all speaker
-                 playback. Keep the base speaker path usable while that
-                 proprietary protection ABI is unavailable. -->
-            <speaker_protection_enabled>0</speaker_protection_enabled>
+            <speaker_protection_enabled>1</speaker_protection_enabled>
             <!-- To enable external EC reference the flag extec_ref_enabled must be added as 1 -->
             <ext_ec_ref_enabled>0</ext_ec_ref_enabled>
 
@@ -822,6 +845,10 @@
               <custom-config key="HAC">
                  <snd_device_name>voice-handset-hac</snd_device_name> <!-- override sound device name with HAC handset for voip -->
               </custom-config>
+          </usecase>
+          <usecase>
+              <name>PAL_STREAM_AOP</name>
+              <snd_device_name>presence-handset</snd_device_name>
           </usecase>
         </out-device>
         <out-device>
@@ -1120,6 +1147,10 @@
             <snd_device_name>ultrasound-handset</snd_device_name>
             <samplerate>48000</samplerate>
             <bit_width>32</bit_width>
+            <usecase>
+                <name>PAL_STREAM_AOP</name>
+                <snd_device_name>presence-speaker</snd_device_name>
+            </usecase>
         </out-device>
         <out-device>
             <id>PAL_DEVICE_OUT_ULTRASOUND_DEDICATED</id>
@@ -1141,6 +1172,10 @@
                 <custom-config key="bottom-spkr">
                     <snd_device_name>speaker-mono-2</snd_device_name>
                 </custom-config>
+            </usecase>
+            <usecase>
+                <name>PAL_STREAM_AOP</name>
+                <snd_device_name>presence-speaker</snd_device_name>
             </usecase>
         </out-device>
         <out-device>
@@ -1870,7 +1905,7 @@
             <stream_config>
                 <name>CUSTOM_VOICE_UI</name>
                 <!-- NOTE: Customer need to replace with their own uuid and match with sound model -->
-                <param vendor_uuid="dc90a99a-0aba-500e-81b5-79830d49d398" />
+                <param vendor_uuid="1b2a923e-62dc-db51-9748-e4a2b11d6df5" />
                 <param interface_plugin_lib="libcustomva_intf.so" />
                 <param merge_first_stage_sound_models="false" />
                 <!-- Profile specific data which the algorithm can support -->

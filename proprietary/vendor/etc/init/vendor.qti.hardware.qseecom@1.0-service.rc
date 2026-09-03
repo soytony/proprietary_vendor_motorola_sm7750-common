@@ -5,10 +5,7 @@
 #
 #
 
-on early-init
-    start qseecom-service
-
-on property:vendor.roadstr.secure_stack.ready=1
+on init
     start qseecom-service
 
 service qseecom-service /vendor/bin/hw/vendor.qti.hardware.qseecom@1.0-service
@@ -16,4 +13,3 @@ service qseecom-service /vendor/bin/hw/vendor.qti.hardware.qseecom@1.0-service
     user system
     group system drmrpc
     interface aidl vendor.qti.hardware.qseecom
-    disabled

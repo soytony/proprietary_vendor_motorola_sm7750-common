@@ -6,7 +6,6 @@
 # Create the directories used by qwes
 on post-fs-data
     mkdir /data/vendor/qwes 0755 system system
-    start vendor.ssgtzd
 
 # Start daemon on early-init
 on early-boot
@@ -19,6 +18,5 @@ service vendor.ssgtzd /vendor/bin/ssgtzd
     group system oem_2912 wakelock
     capabilities WAKE_ALARM BLOCK_SUSPEND
     disabled
-    oneshot
     socket ssgtzd stream 0660 system oem_2912
     socket ssgtzd_opener stream 0660 system system
