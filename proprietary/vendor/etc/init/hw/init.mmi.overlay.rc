@@ -360,6 +360,8 @@ on property:sys.boot_completed=1
     #set game quick touch feature enable
     setprop debug.vendor.perf.smart_touch 1
 
+    write /sys/module/mm_tune/parameters/cma_bypass 0
+
 #Override fwpath string when wpa_supplicant server was killed
 on property:vendor.wifi.station=true
     write /sys/module/qca_cld3_qca6750/parameters/sar_sta enabled
@@ -463,6 +465,14 @@ on property:sys.boot_completed=1 && property:ro.build.type=userdebug
 
 on property:sys.boot_completed=1 && property:ro.boot.cid=0x0000
     start vendor.sys_monitor
+
+# For Android Auto connected
+on property:sys.android.auto.connect=1
+    write /sys/class/power_supply/battery/android_auto_mode 1
+
+# For Android Auto disconnected
+on property:sys.android.auto.connect=0
+    write /sys/class/power_supply/battery/android_auto_mode 0
 
 service vendor.sys_monitor /vendor/bin/sys_monitor
     class late_start

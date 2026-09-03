@@ -1227,3 +1227,150 @@ DELETE FROM qcril_emergency_source_mcc_mnc_table where MCC = '228' AND MNC = '02
 DELETE FROM qcril_emergency_source_mcc_mnc_table where MCC = '228' AND MNC = '03' AND NUMBER = '1414';
 
 
+
+CREATE TABLE IF NOT EXISTS qcril_properties_table (property TEXT, def_val TEXT, value TEXT, PRIMARY KEY(property));
+UPDATE qcril_properties_table set value='63' where property='qcrildb_version';
+
+DELETE FROM qcril_emergency_source_mcc_table where MCC = '420' AND NUMBER = '993';
+INSERT OR REPLACE INTO "qcril_emergency_source_mcc_table" VALUES('420','994','','');
+INSERT OR REPLACE INTO "qcril_emergency_source_mcc_table" VALUES('420','996','','');
+
+
+CREATE TABLE IF NOT EXISTS qcril_properties_table (property TEXT, def_val TEXT, value TEXT, PRIMARY KEY(property));
+UPDATE qcril_properties_table set value='64' where property='qcrildb_version';
+
+DELETE FROM qcril_emergency_source_mcc_table where MCC = '602' AND NUMBER = '112';
+DELETE FROM qcril_emergency_source_mcc_table where MCC = '602' AND NUMBER = '911';
+DELETE FROM qcril_emergency_source_mcc_table where MCC = '602' AND NUMBER = '129';
+
+DELETE FROM qcril_emergency_source_voice_table where MCC = '602' AND NUMBER = '121';
+DELETE FROM qcril_emergency_source_voice_table where MCC = '602' AND NUMBER = '126';
+DELETE FROM qcril_emergency_source_voice_table where MCC = '602' AND NUMBER = '122';
+DELETE FROM qcril_emergency_source_voice_table where MCC = '602' AND NUMBER = '123';
+DELETE FROM qcril_emergency_source_voice_table where MCC = '602' AND NUMBER = '180';
+
+
+
+
+CREATE TABLE IF NOT EXISTS qcril_properties_table (property TEXT, def_val TEXT, value TEXT, PRIMARY KEY(property));
+UPDATE qcril_properties_table set value='66' where property='qcrildb_version';
+
+INSERT OR REPLACE INTO "qcril_emergency_source_mcc_mnc_table" VALUES('704','01','119','','');
+INSERT OR REPLACE INTO "qcril_emergency_source_mcc_mnc_table" VALUES('704','01','110','','');
+INSERT OR REPLACE INTO "qcril_emergency_source_mcc_mnc_table" VALUES('704','01','120','','');
+INSERT OR REPLACE INTO "qcril_emergency_source_mcc_mnc_table" VALUES('704','01','122','','');
+INSERT OR REPLACE INTO "qcril_emergency_source_mcc_mnc_table" VALUES('704','01','123','','');
+INSERT OR REPLACE INTO "qcril_emergency_source_mcc_mnc_table" VALUES('704','01','125','','');
+INSERT OR REPLACE INTO "qcril_emergency_source_mcc_mnc_table" VALUES('704','01','128','','');
+
+INSERT OR REPLACE  INTO qcril_emergency_source_hard_mcc_table VALUES('704','119','','');
+INSERT OR REPLACE  INTO qcril_emergency_source_hard_mcc_table VALUES('704','110','','');
+INSERT OR REPLACE  INTO qcril_emergency_source_hard_mcc_table VALUES('704','120','','');
+INSERT OR REPLACE  INTO qcril_emergency_source_hard_mcc_table VALUES('704','122','','');
+INSERT OR REPLACE  INTO qcril_emergency_source_hard_mcc_table VALUES('704','123','','');
+INSERT OR REPLACE  INTO qcril_emergency_source_hard_mcc_table VALUES('704','125','','');
+INSERT OR REPLACE  INTO qcril_emergency_source_hard_mcc_table VALUES('704','128','','');
+
+
+INSERT OR REPLACE  INTO qcril_emergency_source_hard_mcc_table VALUES('706','123','','');
+INSERT OR REPLACE  INTO qcril_emergency_source_hard_mcc_table VALUES('706','132','','');
+
+
+INSERT OR REPLACE INTO "qcril_emergency_source_mcc_mnc_table" VALUES('708','001','911','','');
+INSERT OR REPLACE INTO "qcril_emergency_source_mcc_mnc_table" VALUES('708','001','112','','');
+INSERT OR REPLACE INTO "qcril_emergency_source_mcc_mnc_table" VALUES('708','001','104','','');
+INSERT OR REPLACE INTO "qcril_emergency_source_mcc_mnc_table" VALUES('708','001','106','','');
+INSERT OR REPLACE INTO "qcril_emergency_source_mcc_mnc_table" VALUES('708','001','107','','');
+INSERT OR REPLACE INTO "qcril_emergency_source_mcc_mnc_table" VALUES('708','001','108','','');
+INSERT OR REPLACE INTO "qcril_emergency_source_mcc_mnc_table" VALUES('708','001','109','','');
+INSERT OR REPLACE INTO "qcril_emergency_source_mcc_mnc_table" VALUES('708','001','111','','');
+INSERT OR REPLACE INTO "qcril_emergency_source_mcc_mnc_table" VALUES('708','001','115','','');
+INSERT OR REPLACE INTO "qcril_emergency_source_mcc_mnc_table" VALUES('708','001','116','','');
+INSERT OR REPLACE INTO "qcril_emergency_source_mcc_mnc_table" VALUES('708','001','117','','');
+INSERT OR REPLACE INTO "qcril_emergency_source_mcc_mnc_table" VALUES('708','001','118','','');
+INSERT OR REPLACE INTO "qcril_emergency_source_mcc_mnc_table" VALUES('708','001','119','','');
+INSERT OR REPLACE INTO "qcril_emergency_source_mcc_mnc_table" VALUES('708','001','120','','');
+INSERT OR REPLACE INTO "qcril_emergency_source_mcc_mnc_table" VALUES('708','001','130','','');
+INSERT OR REPLACE INTO "qcril_emergency_source_mcc_mnc_table" VALUES('708','001','131','','');
+INSERT OR REPLACE INTO "qcril_emergency_source_mcc_mnc_table" VALUES('708','001','133','','');
+INSERT OR REPLACE INTO "qcril_emergency_source_mcc_mnc_table" VALUES('708','001','134','','');
+INSERT OR REPLACE INTO "qcril_emergency_source_mcc_mnc_table" VALUES('708','001','135','','');
+INSERT OR REPLACE INTO "qcril_emergency_source_mcc_mnc_table" VALUES('708','001','136','','');
+INSERT OR REPLACE INTO "qcril_emergency_source_mcc_mnc_table" VALUES('708','001','137','','');
+INSERT OR REPLACE INTO "qcril_emergency_source_mcc_mnc_table" VALUES('708','001','138','','');
+INSERT OR REPLACE INTO "qcril_emergency_source_mcc_mnc_table" VALUES('708','001','143','','');
+INSERT OR REPLACE INTO "qcril_emergency_source_mcc_mnc_table" VALUES('708','001','150','','');
+INSERT OR REPLACE INTO "qcril_emergency_source_mcc_mnc_table" VALUES('708','001','177','','');
+
+INSERT OR REPLACE  INTO qcril_emergency_source_hard_mcc_table VALUES('708','104','','');
+INSERT OR REPLACE  INTO qcril_emergency_source_hard_mcc_table VALUES('708','106','','');
+INSERT OR REPLACE  INTO qcril_emergency_source_hard_mcc_table VALUES('708','107','','');
+INSERT OR REPLACE  INTO qcril_emergency_source_hard_mcc_table VALUES('708','108','','');
+INSERT OR REPLACE  INTO qcril_emergency_source_hard_mcc_table VALUES('708','109','','');
+INSERT OR REPLACE  INTO qcril_emergency_source_hard_mcc_table VALUES('708','111','','');
+INSERT OR REPLACE  INTO qcril_emergency_source_hard_mcc_table VALUES('708','115','','');
+INSERT OR REPLACE  INTO qcril_emergency_source_hard_mcc_table VALUES('708','116','','');
+INSERT OR REPLACE  INTO qcril_emergency_source_hard_mcc_table VALUES('708','117','','');
+INSERT OR REPLACE  INTO qcril_emergency_source_hard_mcc_table VALUES('708','118','','');
+INSERT OR REPLACE  INTO qcril_emergency_source_hard_mcc_table VALUES('708','119','','');
+INSERT OR REPLACE  INTO qcril_emergency_source_hard_mcc_table VALUES('708','120','','');
+INSERT OR REPLACE  INTO qcril_emergency_source_hard_mcc_table VALUES('708','130','','');
+INSERT OR REPLACE  INTO qcril_emergency_source_hard_mcc_table VALUES('708','131','','');
+INSERT OR REPLACE  INTO qcril_emergency_source_hard_mcc_table VALUES('708','133','','');
+INSERT OR REPLACE  INTO qcril_emergency_source_hard_mcc_table VALUES('708','134','','');
+INSERT OR REPLACE  INTO qcril_emergency_source_hard_mcc_table VALUES('708','135','','');
+INSERT OR REPLACE  INTO qcril_emergency_source_hard_mcc_table VALUES('708','136','','');
+INSERT OR REPLACE  INTO qcril_emergency_source_hard_mcc_table VALUES('708','137','','');
+INSERT OR REPLACE  INTO qcril_emergency_source_hard_mcc_table VALUES('708','138','','');
+INSERT OR REPLACE  INTO qcril_emergency_source_hard_mcc_table VALUES('708','143','','');
+INSERT OR REPLACE  INTO qcril_emergency_source_hard_mcc_table VALUES('708','150','','');
+INSERT OR REPLACE  INTO qcril_emergency_source_hard_mcc_table VALUES('708','177','','');
+
+
+INSERT OR REPLACE INTO "qcril_emergency_source_mcc_mnc_table" VALUES('710','21','911','','');
+INSERT OR REPLACE INTO "qcril_emergency_source_mcc_mnc_table" VALUES('710','21','112','','');
+INSERT OR REPLACE INTO "qcril_emergency_source_mcc_mnc_table" VALUES('710','21','101','','');
+INSERT OR REPLACE INTO "qcril_emergency_source_mcc_mnc_table" VALUES('710','21','115','','');
+INSERT OR REPLACE INTO "qcril_emergency_source_mcc_mnc_table" VALUES('710','21','118','','');
+INSERT OR REPLACE INTO "qcril_emergency_source_mcc_mnc_table" VALUES('710','21','120','','');
+INSERT OR REPLACE INTO "qcril_emergency_source_mcc_mnc_table" VALUES('710','21','125','','');
+INSERT OR REPLACE INTO "qcril_emergency_source_mcc_mnc_table" VALUES('710','21','126','','');
+INSERT OR REPLACE INTO "qcril_emergency_source_mcc_mnc_table" VALUES('710','21','127','','');
+INSERT OR REPLACE INTO "qcril_emergency_source_mcc_mnc_table" VALUES('710','21','128','','');
+INSERT OR REPLACE INTO "qcril_emergency_source_mcc_mnc_table" VALUES('710','21','133','','');
+INSERT OR REPLACE INTO "qcril_emergency_source_mcc_mnc_table" VALUES('710','21','135','','');
+
+INSERT OR REPLACE  INTO qcril_emergency_source_hard_mcc_table VALUES('710','101','','');
+INSERT OR REPLACE  INTO qcril_emergency_source_hard_mcc_table VALUES('710','115','','');
+INSERT OR REPLACE  INTO qcril_emergency_source_hard_mcc_table VALUES('710','118','','');
+INSERT OR REPLACE  INTO qcril_emergency_source_hard_mcc_table VALUES('710','120','','');
+INSERT OR REPLACE  INTO qcril_emergency_source_hard_mcc_table VALUES('710','125','','');
+INSERT OR REPLACE  INTO qcril_emergency_source_hard_mcc_table VALUES('710','126','','');
+INSERT OR REPLACE  INTO qcril_emergency_source_hard_mcc_table VALUES('710','127','','');
+INSERT OR REPLACE  INTO qcril_emergency_source_hard_mcc_table VALUES('710','128','','');
+INSERT OR REPLACE  INTO qcril_emergency_source_hard_mcc_table VALUES('710','133','','');
+INSERT OR REPLACE  INTO qcril_emergency_source_hard_mcc_table VALUES('710','135','','');
+
+
+
+
+/* This file contains all the statements from version 60-62, which are missing in stable line
+ * 'mv-qc-mw-r1-stable7'.
+ */
+CREATE TABLE IF NOT EXISTS qcril_properties_table (property TEXT, def_val TEXT, value TEXT, PRIMARY KEY(property));
+UPDATE qcril_properties_table set value='67' where property='qcrildb_version';
+
+-- This section copied from `60_version_qcrildb.sql`
+-- Replace 'INSERT' with 'INSERT OR REPLACE'
+INSERT OR REPLACE INTO "qcril_emergency_source_mcc_mnc_table" VALUES('362','91','112','','');
+INSERT OR REPLACE INTO "qcril_emergency_source_mcc_mnc_table" VALUES('362','91','911','','');
+
+-- This section based on `61_version_qcrildb.sql`, and ignored statements will be deleted in version 64.
+DELETE FROM qcril_emergency_source_voice_table where MCC = '602';
+DELETE FROM qcril_emergency_source_mcc_table where MCC = '602';
+
+-- This section copied from `62_version_qcrildb.sql`
+INSERT OR REPLACE INTO "qcril_emergency_source_mcc_mnc_table" VALUES('706','01','123','','');
+INSERT OR REPLACE INTO "qcril_emergency_source_mcc_mnc_table" VALUES('706','01','132','','');
+
+

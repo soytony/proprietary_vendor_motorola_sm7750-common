@@ -110,8 +110,26 @@ if [ $month -le 12 -a $day -le 31 -a $year -ge 12 ]; then
 else
 	notice "Corrupt FTI data"
 fi
+
+# FEATURE-7596 The utag date is preferred
+utag_date=$(cat /proc/config/date/ascii 2>/dev/null)
+if [ ! -z "$utag_date" ]; then
+	# utage date format mm-dd-yyyy
+	utag_date=(${utag_date//-/ })
+	m=${utag_date[0]}
+	d=${utag_date[1]}
+	y=${utag_date[2]}
+	let year=$y month=$m day=$d
+	if [ $month -le 12 -a $month -ge 1 -a $day -le 31 -a $day -ge 1 -a $year -ge 2012 ]; then
+		mdate=$month/$day/$year
+	else
+		notice $month $day $year
+		notice "Corrupt utag date"
+	fi
+fi
+
 setprop ro.vendor.manufacturedate $mdate
-unset fti y m d year month day utag_fti pds_fti fti_utag mdate
+unset fti y m d year month day utag_fti pds_fti fti_utag mdate utag_date
 
 t=$(getprop ro.build.tags)
 if [[ "$t" != *release* ]]; then

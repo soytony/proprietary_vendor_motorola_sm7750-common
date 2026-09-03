@@ -1,4 +1,4 @@
-version=24
+version=25
 file=input=json.lst
 file=panel=/proc/device-tree/chosen/mmi,panel_name
 file=output=/mnt/vendor/persist/sensors/registry/registry

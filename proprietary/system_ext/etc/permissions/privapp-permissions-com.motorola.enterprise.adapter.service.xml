@@ -3,7 +3,10 @@
     <privapp-permissions package="com.motorola.enterprise.adapter.service">
         <permission name="android.permission.READ_PRIVILEGED_PHONE_STATE"/>
         <permission name="android.permission.INTERACT_ACROSS_USERS"/>
+        <permission name="android.permission.MANAGE_USERS"/>
         <permission name="com.motorola.permission.ENTERPRISE_ANALYTICS_NOTIFICATION"/>
         <permission name="com.motorola.permission.SEND_RECEIVE_ENABLE_DISABLE_FILE"/>
+        <permission name="android.permission.DUMP" />
+        <permission name="android.permission.CHANGE_DEVICE_IDLE_TEMP_WHITELIST"/>
     </privapp-permissions>
 </permissions>

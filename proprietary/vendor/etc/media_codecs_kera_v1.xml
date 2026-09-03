@@ -109,7 +109,7 @@
 -->
 
 <MediaCodecs>
-    <Include href="media_codecs_google_c2_audio.xml" />
+    <Include href="media_codecs_google_audio.xml" />
     <Include href="media_codecs_vendor_audio.xml" />
     <Include href="media_codecs_google_telephony.xml" />
     <Include href="media_codecs_c2_audio.xml" />
@@ -334,10 +334,10 @@
         <!-- C2 encoders -->
         <MediaCodec name="c2.qti.avc.encoder" type="video/avc">
             <Alias name="OMX.qcom.video.encoder.avc"/>
-            <Limit name="size" min="128x128" max="4096x4096" />
+            <Limit name="size" min="128x128" max="3840x3840" />
             <Limit name="alignment" value="2x2" />
             <Limit name="block-size" value="16x16" />
-            <Limit name="blocks-per-second" min="64" max="979200" />
+            <Limit name="blocks-per-second" min="64" max="1944000" />
             <Limit name="block-count" range="64-32400" />
             <Limit name="bitrate" range="1-100000000" />
             <Limit name="frame-rate" range="1-120" />
@@ -349,14 +349,14 @@
             <Feature name="video-minimum-quality" />
             <Feature name="can-swap-width-height" required="true" />
             <Limit name="performance-point-1920x1080" value="120" />
-            <Limit name="performance-point-3840x2160" value="30" />
+            <Limit name="performance-point-3840x2160" value="60" />
         </MediaCodec>
         <MediaCodec name="c2.qti.hevc.encoder" type="video/hevc">
             <Alias name="OMX.qcom.video.encoder.hevc"/>
-            <Limit name="size" min="96x96" max="4096x4096" />
+            <Limit name="size" min="96x96" max="3840x3840" />
             <Limit name="alignment" value="2x2" />
             <Limit name="block-size" value="16x16" />
-            <Limit name="blocks-per-second" min="64" max="979200" />
+            <Limit name="blocks-per-second" min="64" max="1944000" />
             <Limit name="block-count" range="36-32400" />
             <Limit name="bitrate" range="1-100000000" />
             <Limit name="frame-rate" range="1-120" />
@@ -369,7 +369,7 @@
             <Feature name="video-minimum-quality" />
             <Feature name="can-swap-width-height" required="true" />
             <Limit name="performance-point-1920x1080" value="120" />
-            <Limit name="performance-point-3840x2160" value="30" />
+            <Limit name="performance-point-3840x2160" value="60" />
         </MediaCodec>
         <MediaCodec name="c2.qti.hevc.encoder.hdr" type="video/hevc">
             <Limit name="size" min="96x96" max="3840x3840" />

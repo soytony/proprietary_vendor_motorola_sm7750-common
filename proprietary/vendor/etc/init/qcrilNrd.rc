@@ -98,3 +98,15 @@ on property:persist.radio.multisim.config=DSDS && property:ro.baseband=mdm
     start vendor.qcrild
     start vendor.qcrild2
 
+on property:persist.vendor.radio.start_cp_md_log=1
+    chmod 0750 /data/vendor/dontpanic/
+    copy /mnt/vendor/persist/rfs/msm/mpss/modem_efs_log_0.txt /data/vendor/dontpanic/modem_efs_log_0.txt
+    chown root log /data/vendor/dontpanic/modem_efs_log_0.txt
+    chmod 0640 /data/vendor/dontpanic/modem_efs_log_0.txt
+    copy /mnt/vendor/persist/rfs/msm/mpss/modem_efs_log_1.txt /data/vendor/dontpanic/modem_efs_log_1.txt
+    chown root log /data/vendor/dontpanic/modem_efs_log_1.txt
+    chmod 0640 /data/vendor/dontpanic/modem_efs_log_1.txt
+    copy /mnt/vendor/persist/rfs/msm/mpss/mot_efs_buffered_log.txt /data/vendor/dontpanic/mot_efs_buffered_log.txt
+    chown root log /data/vendor/dontpanic/mot_efs_buffered_log.txt
+    chmod 0640 /data/vendor/dontpanic/mot_efs_buffered_log.txt
+    setprop persist.vendor.radio.start_cp_md_log 0

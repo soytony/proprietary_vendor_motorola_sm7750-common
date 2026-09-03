@@ -12,3 +12,5 @@ on property:persist.app.booking.trackingid=*
 on property:persist.app.inmobi.weather=*
   setprop ro.inmobi.weather ${persist.app.inmobi.weather}
 
+on property:persist.app.meta.attribution=*
+  setprop ro.meta.app.attribution ${persist.app.meta.attribution}

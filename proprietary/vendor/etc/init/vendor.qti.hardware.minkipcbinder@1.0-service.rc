@@ -3,10 +3,7 @@
 # Confidential and Proprietary - Qualcomm Technologies, Inc.
 #
 
-on early-init
-    start minkipcbinder-service
-
-on property:vendor.roadstr.secure_stack.ready=1
+on init
     start minkipcbinder-service
 
 service minkipcbinder-service /vendor/bin/hw/vendor.qti.hardware.minkipcbinder@1.0-service
@@ -14,4 +11,3 @@ service minkipcbinder-service /vendor/bin/hw/vendor.qti.hardware.minkipcbinder@1
    user system
    group system
    interface aidl vendor.qti.hardware.minkipcbinder
-   disabled
