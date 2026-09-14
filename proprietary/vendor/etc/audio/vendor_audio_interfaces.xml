@@ -26,6 +26,8 @@ SPDX-License-Identifier: BSD-3-Clause-Clear
             method="createISoundTriggerFactory" mandatory="true" />
     <library name="btaudio" libraryName="android.hardware.bluetooth.audio-impl.so"
             method="createIBluetoothAudioProviderFactory" mandatory="true" />
+    <library name="btaudio_sw" libraryName="libaudio_bluetooth_roadstr.so"
+            method="registerBluetoothAudioModule" mandatory="false" />
     <library name = "asr" libraryName="libqasr.so"
             method="registerService" mandatory="false" />
 </libraries>
