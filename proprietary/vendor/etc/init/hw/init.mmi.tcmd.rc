@@ -206,10 +206,8 @@ on property:vendor.boot_completed=1 && property:ro.bootmode=mot-factory
 
 on property:vendor.boot_completed=1
     setprop ro.vendor.boot.hwrev                ${ro.boot.hwrev}
-    setprop ro.vendor.boot.secure_hardware      ${ro.boot.secure_hardware}
     setprop ro.vendor.carrier                   ${ro.carrier}
     setprop ro.vendor.build.version.sdk         ${ro.build.version.sdk}
-    setprop ro.vendor.sys.adb_reset_protected   ${ro.sys.adb_reset_protected}
     setprop ro.vendor.telephony.default_network ${ro.telephony.default_network}
     setprop ro.vendor.boot.radio                ${ro.boot.radio}
     setprop ro.vendor.build.description         ${ro.build.description}

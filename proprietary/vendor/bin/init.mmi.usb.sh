@@ -46,7 +46,9 @@ log_info()
 	echo "${0##*/}: $*" > /dev/kmsg
 }
 
-target=`getprop ro.board.platform`
+# This common blob cannot read platform-owned ro.board.platform from its
+# dedicated vendor SELinux domain. RoadSTR's platform is fixed to sun.
+target="sun"
 usb_action=`getprop vendor.usb.mmi-usb-sh.action`
 log_dbg "mmi-usb-sh: action = \"$usb_action\""
 sys_usb_config=`getprop vendor.usb.config`
@@ -367,17 +369,23 @@ fi
 usb_config=`getprop persist.vendor.usb.config`
 mot_usb_config=`getprop persist.vendor.mot.usb.config`
 bootmode=`getprop ro.bootmode`
-buildtype=`getprop ro.build.type`
+buildtype=`getprop ro.vendor.build.type`
 securehw=`getprop ro.boot.secure_hardware`
 cid=`getprop ro.vendor.boot.cid`
 diagmode=`getprop persist.vendor.radio.usbdiag`
-debuggable=`getprop ro.debuggable`
+if [ "$buildtype" = "user" ]; then
+    debuggable=0
+else
+    debuggable=1
+fi
 
 log_info "mmi-usb-sh: persist usb configs = \"$usb_config\", \"$mot_usb_config\", \"$diagmode\""
 
 
-phonelock_type=`getprop persist.sys.phonelock.mode`
-usb_restricted=`getprop persist.sys.usb.policylocked`
+# Motorola's stock framework supplied these platform-owned policy properties.
+# Lineage does not implement either feature, so preserve their empty fallback.
+phonelock_type=""
+usb_restricted=""
 log_info "mmi-usb-sh: phonelock.mode=$phonelock_type, usb.policylocked=$usb_restricted, securehw=$securehw, buildtype=$buildtype, cid=$cid"
 if [ "$securehw" == "1" ] && [ "$buildtype" == "user" ] && [ "$(($cid))" != 0 ]
 then
