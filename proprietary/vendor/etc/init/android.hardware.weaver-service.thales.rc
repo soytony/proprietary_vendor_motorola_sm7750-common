@@ -4,5 +4,7 @@ service weaver_hal_service /vendor/bin/hw/android.hardware.weaver-service.thales
     group vendor_thales_weaver
     disabled
 
-on init && property:ro.boot.strongbox_support=true
+# Current platform owns ro.boot.* and rejects VHW's runtime export. Use VHW's
+# underlying eSE hardware result so Weaver starts only on StrongBox-capable SKUs.
+on init && property:ro.vendor.hw.nfc=ese_st
     start weaver_hal_service
