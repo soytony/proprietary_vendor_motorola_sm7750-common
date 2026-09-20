@@ -10767,7 +10767,7 @@ cc_prebuilt_library_shared {
 cc_prebuilt_library_shared {
     check_elf_files: false,
     name: "libprotobuf-cpp-full-qccsyshal-compat",
-    stem: "libprotobuf-cpp-full",
+    stem: "libprotobuf-cpp-full-21.12",
     owner: "motorola",
     strip: {
         none: true,
