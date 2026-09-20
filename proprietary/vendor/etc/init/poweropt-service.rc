@@ -11,4 +11,7 @@ service poweropt-service /vendor/bin/poweropt-service
     class hal
     user system
     group system readproc input
-
+    # Refreshed PowerOpt blobs crash in PowerOptXMLParser every five seconds,
+    # eventually blocking ActivityManager and forcing system_server restarts.
+    # Lineage's primary power HAL remains active; keep this optional module off.
+    disabled
