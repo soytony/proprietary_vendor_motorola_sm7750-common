@@ -4,19 +4,19 @@ service vendor.keymint-strongbox /vendor/bin/hw/android.hardware.security.keymin
     group vendor_thales_strongbox
     disabled
 
-on property:sys.bootbroadcast_completed=1 && property:ro.vendor.build.motfactory=1 && property:ro.bootmode=mot-factory && property:ro.boot.strongbox_support=true
+on property:sys.bootbroadcast_completed=1 && property:ro.vendor.build.motfactory=1 && property:ro.bootmode=mot-factory && property:ro.vendor.hw.nfc=ese_st
     stop vendor.keymint-strongbox
 
-on property:vendor.tcmd.ese.strongbox.disable=1 && property:ro.bootmode=mot-factory && property:ro.boot.strongbox_support=true
+on property:vendor.tcmd.ese.strongbox.disable=1 && property:ro.bootmode=mot-factory && property:ro.vendor.hw.nfc=ese_st
     stop vendor.keymint-strongbox
 
-on property:vendor.tcmd.ese.strongbox.disable=0 && property:ro.bootmode=mot-factory && property:ro.boot.strongbox_support=true
+on property:vendor.tcmd.ese.strongbox.disable=0 && property:ro.bootmode=mot-factory && property:ro.vendor.hw.nfc=ese_st
     start vendor.keymint-strongbox
 
-on init && property:ro.boot.strongbox_support=true
+on init && property:ro.vendor.hw.nfc=ese_st
     start vendor.keymint-strongbox
 
-on property:vendor.ese.client.restart=1 && property:ro.boot.strongbox_support=true
+on property:vendor.ese.client.restart=1 && property:ro.vendor.hw.nfc=ese_st
     stop vendor.secure_element
     stop vendor.keymint-strongbox
     stop keystore2

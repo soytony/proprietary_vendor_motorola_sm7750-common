@@ -12,6 +12,21 @@
         <fqname>ISecureElement/SIM2</fqname>
         <fqname>ISecureElement/eSE1</fqname>
     </hal>
+    <!-- dnes is StrongBox-capable; declare services registered by Thales HAL. -->
+    <hal format="aidl">
+        <name>android.hardware.security.keymint</name>
+        <version>3</version>
+        <fqname>IKeyMintDevice/strongbox</fqname>
+    </hal>
+    <hal format="aidl">
+        <name>android.hardware.security.keymint</name>
+        <version>3</version>
+        <fqname>IRemotelyProvisionedComponent/strongbox</fqname>
+    </hal>
+    <hal format="aidl">
+        <name>android.hardware.security.sharedsecret</name>
+        <fqname>ISharedSecret/strongbox</fqname>
+    </hal>
     <hal format="aidl">
         <name>android.hardware.weaver</name>
         <version>2</version>
