@@ -2788,7 +2788,6 @@ PRODUCT_PACKAGES += \
     android.hardware.weaver-V2-ndk.vendor \
     android.se.omapi-V1-ndk.vendor \
     lib_android_keymaster_keymint_utils.vendor \
-    libcppbor_external.vendor \
     libkeymaster_messages.vendor \
     libkeymaster_portable.vendor \
     libsoft_attestation_cert.vendor \
