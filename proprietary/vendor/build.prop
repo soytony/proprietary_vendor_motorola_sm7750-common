@@ -188,7 +188,7 @@ vendor.hw.sf.supportPolicyCorrection=1
 debug.sf.brightness_diming_boost_refreshrate=60
 persist.sys.sf.force_brightness_capability=1
 debug.sf.scroll_boost_refreshrate=120
-debug.sf.touch_boost_refreshrate=90
+debug.sf.touch_boost_refreshrate=120
 debug.sf.touch_scroll_predict_ms=5000
 vendor.display.enable_async_powermode=1
 vendor.display.hdmi_cfg_idx=0:0:60:60
@@ -209,7 +209,7 @@ debug.sf.fix_doze_rr_prim=60
 debug.sf.doze_on_wait_ms=250
 debug.sf.doze_resend_brightness_ms=30
 debug.sf.doze_must_contain_notification_shade=1
-vendor.display.only_report_first_mode=1
+vendor.display.only_report_first_mode=0
 vendor.display.use_desiredpresenttime_as_candidate=1
 vendor.display.boost_RR_during_brightness_dimming=1
 vendor.display.low_framerate_limit=48
@@ -244,7 +244,7 @@ debug.sf.supportvideomvb=true
 persist.sys.systemui.disable_hwc_screen_decorations=1
 persist.sys.systemui.draw_wake_lock_release_time=350
 ro.vendor.display.notify_sf_rr_mode=1
-vendor.display.disable_idle_fps_switch=1
+vendor.display.disable_idle_fps_switch=0
 debug.hwui.enable_hdr10bitPlus=false
 debug.hwui.surface_size_multiplier=144
 persist.vendor.radio.sar_sensor=1
@@ -430,4 +430,3 @@ import /vendor/etc/motorola/props/hardware.sku.${ro.boot.hardware.sku}.prop
 import /vendor/etc/motorola/props/carrier.${ro.boot.carrier}.prop
 # end of device/moto/init/props/vendor.prop
 # end of file
-
