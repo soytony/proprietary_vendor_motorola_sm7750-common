@@ -3433,7 +3433,6 @@ PRODUCT_PACKAGES += \
     QtiTelephonyService \
     atfwd \
     uceShimService \
-    workloadclassifier \
     CQATest \
     WfdService \
     com.qualcomm.location \
