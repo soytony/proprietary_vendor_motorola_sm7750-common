@@ -2457,6 +2457,7 @@ PRODUCT_PACKAGES += \
     libisphwsetting \
     libizat_client_api \
     libizat_core \
+    libcppbor_thales \
     libjc_keymint-thales \
     libjc_keymint_transport-thales \
     libjc_weaver_transport \
