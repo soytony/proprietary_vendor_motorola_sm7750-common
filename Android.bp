@@ -7964,6 +7964,25 @@ cc_prebuilt_library_shared {
 
 cc_prebuilt_library_shared {
     check_elf_files: false,
+    name: "libcppbor_thales",
+    owner: "motorola",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libcppbor_thales.so",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    check_elf_files: false,
     name: "libjc_keymint-thales",
     owner: "motorola",
     strip: {
