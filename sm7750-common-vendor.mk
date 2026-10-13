@@ -1044,7 +1044,7 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/sm7750-common/proprietary/vendor/firmware/haptic_ram.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/haptic_ram.bin \
     vendor/motorola/sm7750-common/proprietary/vendor/firmware/sc9624.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/sc9624.bin \
     vendor/motorola/sm7750-common/proprietary/vendor/firmware/st54j_fw.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/st54j_fw.bin \
-    vendor/motorola/sm7750-common/proprietary/vendor/firmware/tfa98xx.cnt:$(TARGET_COPY_OUT_VENDOR)/firmware/tfa98xx.cnt \
+    $(if $(ROADSTR_TFA_CONTAINER),$(ROADSTR_TFA_CONTAINER),vendor/motorola/sm7750-common/proprietary/vendor/firmware/tfa98xx.cnt):$(TARGET_COPY_OUT_VENDOR)/firmware/tfa98xx.cnt \
     vendor/motorola/sm7750-common/proprietary/vendor/firmware/tiktap_config.txt:$(TARGET_COPY_OUT_VENDOR)/firmware/tiktap_config.txt \
     vendor/motorola/sm7750-common/proprietary/vendor/firmware/tiktap_params.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/tiktap_params.bin \
     vendor/motorola/sm7750-common/proprietary/vendor/firmware/tiktap_wave.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/tiktap_wave.bin \
