@@ -7674,27 +7674,8 @@ cc_prebuilt_library_shared {
     soc_specific: true,
 }
 
-cc_prebuilt_library_shared {
-    check_elf_files: false,
-    name: "libhidparser",
-    owner: "motorola",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libhidparser.so",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    shared_libs: [
-        "libbase",
-    ],
-    prefer: true,
-    soc_specific: true,
-}
+// Build libhidparser from source alongside the dynamic sensor HAL so its
+// public C++ headers and implementation stay paired.
 
 cc_prebuilt_library_shared {
     check_elf_files: false,
@@ -9558,30 +9539,8 @@ cc_prebuilt_library_shared {
     soc_specific: true,
 }
 
-cc_prebuilt_library_shared {
-    check_elf_files: false,
-    name: "libnbaio_mono",
-    owner: "motorola",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libnbaio_mono.so",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    shared_libs: [
-        "libaudioutils",
-        "libcutils",
-        "liblog",
-        "libutils",
-    ],
-    prefer: true,
-    soc_specific: true,
-}
+// Use the platform libnbaio_mono with Android 17 source audio consumers.
+// The stock prebuilt does not provide their public C++ headers.
 
 cc_prebuilt_library_shared {
     check_elf_files: false,
@@ -9602,46 +9561,9 @@ cc_prebuilt_library_shared {
     soc_specific: true,
 }
 
-cc_prebuilt_library_shared {
-    check_elf_files: false,
-    name: "libnetfilter_conntrack",
-    owner: "motorola",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libnetfilter_conntrack.so",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    shared_libs: [
-        "libnfnetlink",
-    ],
-    prefer: true,
-    soc_specific: true,
-}
+// Use source libnetfilter_conntrack with matching public headers for source IPACM.
 
-cc_prebuilt_library_shared {
-    check_elf_files: false,
-    name: "libnfnetlink",
-    owner: "motorola",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libnfnetlink.so",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
+// Use source libnfnetlink with matching public headers for source IPACM.
 
 cc_prebuilt_library_shared {
     check_elf_files: false,
@@ -10766,25 +10688,6 @@ cc_prebuilt_library_shared {
 
 cc_prebuilt_library_shared {
     check_elf_files: false,
-    name: "libprotobuf-cpp-full-21.12",
-    owner: "motorola",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libprotobuf-cpp-full-21.12.so",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    check_elf_files: false,
     name: "libprotobuf-cpp-full-qccsyshal-compat",
     stem: "libprotobuf-cpp-full-21.12",
     owner: "motorola",
@@ -10801,26 +10704,6 @@ cc_prebuilt_library_shared {
     compile_multilib: "64",
     prefer: true,
     system_ext_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    check_elf_files: false,
-    name: "libprotobuf-cpp-lite-21.12-moto",
-    stem: "libprotobuf-cpp-lite-21.12",
-    owner: "motorola",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libprotobuf-cpp-lite-21.12.so",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
 }
 
 cc_prebuilt_library_shared {
@@ -14719,6 +14602,8 @@ cc_prebuilt_library_shared {
     check_elf_files: false,
     name: "libtinycompress",
     owner: "motorola",
+    header_libs: ["libtinycompress_headers"],
+    export_header_lib_headers: ["libtinycompress_headers"],
     shared_libs: [
         "libcutils",
         "libutils",
@@ -17618,6 +17503,16 @@ cc_prebuilt_library_shared {
     check_elf_files: false,
     name: "vendor.qti.hardware.agm-V1-ndk",
     owner: "motorola",
+    // The stock library replaces the source AIDL implementation, so export
+    // its generated interface headers for source AGM consumers.
+    generated_headers: [
+        "android.hardware.common-V2-ndk-source",
+        "vendor.qti.hardware.agm-V1-ndk-source",
+    ],
+    export_generated_headers: [
+        "android.hardware.common-V2-ndk-source",
+        "vendor.qti.hardware.agm-V1-ndk-source",
+    ],
     shared_libs: [
         "android.hardware.common-V2-ndk",
         "libbinder_ndk",
@@ -18427,6 +18322,18 @@ cc_prebuilt_library_shared {
     check_elf_files: false,
     name: "vendor.qti.hardware.pal-V1-ndk",
     owner: "motorola",
+    // Preserve the stock implementation while exposing its AIDL interface
+    // and imported parcelable headers to source PAL consumers.
+    generated_headers: [
+        "android.hardware.common-V2-ndk-source",
+        "android.hardware.common.fmq-V1-ndk-source",
+        "vendor.qti.hardware.pal-V1-ndk-source",
+    ],
+    export_generated_headers: [
+        "android.hardware.common-V2-ndk-source",
+        "android.hardware.common.fmq-V1-ndk-source",
+        "vendor.qti.hardware.pal-V1-ndk-source",
+    ],
     strip: {
         none: true,
     },
@@ -19583,12 +19490,13 @@ cc_prebuilt_library_shared {
 
 cc_prebuilt_binary {
     name: "vendor.qti.hardware.vibrator.service_prebuilt",
+    source_module_name: "vendor.qti.hardware.vibrator.service",
     owner: "motorola",
     stem: "vendor.qti.hardware.vibrator.service",
     relative_install_path: "hw",
-    init_rc: ["proprietary/vendor/etc/init/vendor.qti.hardware.vibrator.service.rc"],
+    required: ["vendor.qti.hardware.vibrator.service-moto.rc"],
     vintf_fragments: [
-        "proprietary/vendor/etc/vintf/manifest/vendor.qti.hardware.vibrator.service.xml",
+        "proprietary/vendor/etc/vintf/manifest/vendor.qti.hardware.vibrator.service-moto.xml",
     ],
     strip: {
         none: true,
@@ -19613,6 +19521,15 @@ cc_prebuilt_binary {
         "vendor.qti.hardware.vibrator.impl",
     ],
     prefer: true,
+    soc_specific: true,
+}
+
+// Keep the stock init script separate from the source service's same-named
+// script. Soong emits init install rules even for the replaced source module.
+prebuilt_etc {
+    name: "vendor.qti.hardware.vibrator.service-moto.rc",
+    src: "proprietary/vendor/etc/init/vendor.qti.hardware.vibrator.service.rc",
+    sub_dir: "init",
     soc_specific: true,
 }
 
